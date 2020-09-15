@@ -13,9 +13,25 @@ var streetmap = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}
 }).addTo(mainmap);
 
 // Load GeoJSON file
-var Alliance_Polygons_Studied = new L.GeoJSON.AJAX("./json/myhg_master.geojson").addTo(mainmap)
+var points = new L.GeoJSON.AJAX("./json/myhg_master.geojson").addTo(mainmap)
 
+points.on("click", function (event) {
 
+    var properties = event.layer.feature.properties
+
+    var text_string = "<h2>" + properties.Name_EN + "</h2><h3>" + properties.Name_CH + "</h3><h3>" + properties.Name_ML + "</h3>" + "<p><b>Location: </b>" + properties.Location + "</p><p><b>State: </b>" + properties.Region + "</p>"
+
+    console.log(event.layer.feature.properties)
+    var popup = L.popup({
+            maxHeight: 500,
+            maxWidth: 600,
+            closeOnClick: false,
+            keepInView: true
+        })
+        .setLatLng(event.latlng)
+        .setContent(text_string)
+        .openOn(mainmap);
+})
 
 $(document).ready(function () {
     mainmap.invalidateSize()
