@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "Category_3",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name_CH": "玻璃市广东公会", "Name_ML": "Persatuan Guang Dong Guan Di Miao Perlis", "Name_EN": null, "Location": "Taman Mutiara, Fasa 3, 01000 Kangar, Perlis.", "Longitude": 100.1885371, "Latitude": 6.434396, "Region": "Perlis", "Category": "地缘", "PageNumber": "37" }, "geometry": { "type": "Point", "coordinates": [ 100.1885, 6.4344, 100.1885 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "玻璃市福建会馆", "Name_ML": "Persatuan Hokkien Perlis", "Name_EN": "Perlis Hokkien Association", "Location": "No.1, Jalan Barrack, Kangar, Perlis.", "Longitude": 100.229309, "Latitude": 6.5333079, "Region": "Perlis", "Category": "地缘", "PageNumber": "37" }, "geometry": { "type": "Point", "coordinates": [ 100.2293, 6.5333, 100.2293 ] } }
+]
+}

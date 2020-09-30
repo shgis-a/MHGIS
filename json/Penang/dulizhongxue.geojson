@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "Category_2",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name_CH": "大山脚日新中学", "Name_ML": null, "Name_EN": "Jit Sin Independent High School", "Location": "Jalan Aston, 14000 Bukit Mertajam, Pulau Pinang.", "Longitude": 100.462499, "Latitude": 5.364164, "Region": "Penang", "Category": "独立中学", "PageNumber": "413" }, "geometry": { "type": "Point", "coordinates": [ 100.4625, 5.3642, 100.4625 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "槟城槟华女子独立中学", "Name_ML": null, "Name_EN": "Penang Chinese Girl's Private High School", "Location": "2, Jalan Goltlie, 10350 Penang.", "Longitude": 100.308282, "Latitude": 5.407652, "Region": "Penang", "Category": "独立中学", "PageNumber": "413" }, "geometry": { "type": "Point", "coordinates": [ 100.3083, 5.4077, 100.3083 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "槟城韩江中学", "Name_ML": null, "Name_EN": "Han Chiang High School", "Location": "Jalan Han Chiang, 11600 Penang,", "Longitude": 100.303802, "Latitude": 5.407282, "Region": "Penang", "Category": "独立中学", "PageNumber": "413" }, "geometry": { "type": "Point", "coordinates": [ 100.3038, 5.4073, 100.3038 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "槟城菩提中学", "Name_ML": null, "Name_EN": "Hor Tay Private High School", "Location": "19-A, Jalan Bagan Jermal, 10250 Penang", "Longitude": 100.306262, "Latitude": 5.438545, "Region": "Penang", "Category": "独立中学", "PageNumber": "413" }, "geometry": { "type": "Point", "coordinates": [ 100.3063, 5.4385, 100.3063 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "槟城钟灵中学", "Name_ML": null, "Name_EN": "Chung Ling Private High School", "Location": "Kampong Bahru, 11400 Penang.", "Longitude": 118.623938, "Latitude": 4.504658, "Region": "Penang", "Category": "独立中学", "PageNumber": "413" }, "geometry": { "type": "Point", "coordinates": [ 118.6239, 4.5047, 118.6239 ] } }
+]
+}

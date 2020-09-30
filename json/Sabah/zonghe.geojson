@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "Category_6",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name_CH": "沙巴中华大会堂", "Name_ML": "Gabungan Persatuan Cina Sabah", "Name_EN": "The Federation Of Chinese Associations Sabah", "Location": "11A Wisma Pendidikan, Jalan Padang, P.O.Box 19902, 88871 Kota Kinabalu, Sabah.", "Longitude": 116.076115, "Latitude": 5.978375, "Region": "Sabah", "Category": "综合", "PageNumber": "384" }, "geometry": { "type": "Point", "coordinates": [ 116.0761, 5.9784, 116.0761 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "古打毛律中华公会", "Name_ML": null, "Name_EN": "Chung Hwa Association Kota Belud", "Location": "P.O.Box 54, 89157 Kota Belud, Sabah.", "Longitude": 116.293291, "Latitude": 6.214785, "Region": "Sabah", "Category": "综合", "PageNumber": "384" }, "geometry": { "type": "Point", "coordinates": [ 116.2933, 6.2148, 116.2933 ] } }
+]
+}

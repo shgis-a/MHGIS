@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "Category_6",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name_CH": "槟州华人大会堂", "Name_ML": "Dewan Perhimpunann Cine Pulau Pinang", "Name_EN": "Penang Chinese Town Hall", "Location": "22, Jalan Masjid Kapitan Keling, 10200 Pulau Pinang.", "Longitude": 100.3388467, "Latitude": 5.4188249, "Region": "Penang", "Category": "综合", "PageNumber": "62" }, "geometry": { "type": "Point", "coordinates": [ 100.3388, 5.4188, 100.3388 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "槟城州华人公会", "Name_ML": null, "Name_EN": "State Chinese Penang Association", "Location": "13, Jalan Perakz 10150 Penang.", "Longitude": 100.317384, "Latitude": 5.4236458, "Region": "Penang", "Category": "综合", "PageNumber": "62" }, "geometry": { "type": "Point", "coordinates": [ 100.3174, 5.4236, 100.3174 ] } }
+]
+}
