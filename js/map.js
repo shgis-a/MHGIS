@@ -33,19 +33,58 @@ points.on("click", function (event) {
         .openOn(mainmap);
 })
 
+function clickFunction(feature, latlng) {
+    feature.on("click", function (event) {
+
+        var properties = event.layer.feature.properties
+
+        var text_string = "<h2>" + properties.Name_EN + "</h2><h3>" + properties.Name_CH + "</h3><h3>" + properties.Name_ML + "</h3>" + "<p><b>Location: </b>" + properties.Location + "</p><p><b>State: </b>" + properties.Region + "</p>"
+
+        console.log(event.layer.feature.properties)
+        var popup = L.popup({
+                maxHeight: 500,
+                maxWidth: 600,
+                closeOnClick: false,
+                keepInView: true
+            })
+            .setLatLng(event.latlng)
+            .setContent(text_string)
+            .openOn(mainmap);
+    })
+}
+
 // Load Layers
 var baseMaps = [
-    {
-        groupName: "Base Maps",
-        expanded: false,
-        layers: {
-            "OpenStreetMap": streetmap
-        }
-    }
 ]
 
+var villages_new = new L.GeoJSON.AJAX("./json/Villages_new.geojson")
+var towns_new = new L.GeoJSON.AJAX("./json/TownsNEW.geojson")
+var temples_new = new L.GeoJSON.AJAX("./json/Temples_new.geojson")
 
-var TRG_csfl = new L.GeoJSON.AJAX("./json/Terengganu/cishanfuli.geojson").addTo(mainmap)
+var TRG_csfl = new L.GeoJSON.AJAX("./json/Terengganu/cishanfuli.geojson", {
+    pointToLayer: function (feature, latlng) {
+        console.log(feature)
+
+        feature.on("click", function (event) {
+
+            var properties = event.layer.feature.properties
+
+            var text_string = "<h2>" + properties.Name_EN + "</h2><h3>" + properties.Name_CH + "</h3><h3>" + properties.Name_ML + "</h3>" + "<p><b>Location: </b>" + properties.Location + "</p><p><b>State: </b>" + properties.Region + "</p>"
+
+            console.log(event.layer.feature.properties)
+            var popup = L.popup({
+                    maxHeight: 500,
+                    maxWidth: 600,
+                    closeOnClick: false,
+                    keepInView: true
+                })
+                .setLatLng(event.latlng)
+                .setContent(text_string)
+                .openOn(mainmap);
+        })
+
+    }
+}).addTo(mainmap)
 var TRG_dy = new L.GeoJSON.AJAX("./json/Terengganu/diyuan.geojson").addTo(mainmap)
 var TRG_tyly = new L.GeoJSON.AJAX("./json/Terengganu/tiyulianyi.geojson").addTo(mainmap)
 var TRG_wj = new L.GeoJSON.AJAX("./json/Terengganu/wenjiao.geojson").addTo(mainmap)
@@ -77,7 +116,7 @@ var SWK_zj = new L.GeoJSON.AJAX("./json/Sarawak/zongjiao.geojson").addTo(mainmap
 var SBH_csfl = new L.GeoJSON.AJAX("./json/Sabah/cishanfuli.geojson").addTo(mainmap)
 var SBH_dy = new L.GeoJSON.AJAX("./json/Sabah/diyuan.geojson").addTo(mainmap)
 var SBH_dlzx = new L.GeoJSON.AJAX("./json/Sabah/dulizhongxue.geojson").addTo(mainmap)
-var SBH_qnfn = new L.GeoJSON.AJAX("./json/Sabah/qingnianfunu.geojson").addTo(mainmap)
+var SBH_qnfn = new L.GeoJSON.AJAX("./json/Sabah/qingniaofunu.geojson").addTo(mainmap)
 var SBH_tyly = new L.GeoJSON.AJAX("./json/Sabah/tiyulianyi.geojson").addTo(mainmap)
 var SBH_wj = new L.GeoJSON.AJAX("./json/Sabah/wenjiao.geojson").addTo(mainmap)
 var SBH_xy = new L.GeoJSON.AJAX("./json/Sabah/xueyuan.geojson").addTo(mainmap)
@@ -87,7 +126,7 @@ var SBH_zj = new L.GeoJSON.AJAX("./json/Sabah/zongjiao.geojson").addTo(mainmap)
 
 var PLS_csfl = new L.GeoJSON.AJAX("./json/Perlis/cishanfuli.geojson").addTo(mainmap)
 var PLS_dy = new L.GeoJSON.AJAX("./json/Perlis/diyuan.geojson").addTo(mainmap)
-var PLS_qnfn = new L.GeoJSON.AJAX("./json/Perlis/qingnianfunu.geojson").addTo(mainmap)
+var PLS_qnfn = new L.GeoJSON.AJAX("./json/Perlis/qingniaofunu.geojson").addTo(mainmap)
 var PLS_tyly = new L.GeoJSON.AJAX("./json/Perlis/tiyulianyi.geojson").addTo(mainmap)
 var PLS_wj = new L.GeoJSON.AJAX("./json/Perlis/wenjiao.geojson").addTo(mainmap)
 var PLS_xy = new L.GeoJSON.AJAX("./json/Perlis/xueyuan.geojson").addTo(mainmap)
@@ -98,7 +137,7 @@ var PLS_zj = new L.GeoJSON.AJAX("./json/Perlis/zongjiao.geojson").addTo(mainmap)
 var PRK_csfl = new L.GeoJSON.AJAX("./json/Perak/cishanfuli.geojson").addTo(mainmap)
 var PRK_dy = new L.GeoJSON.AJAX("./json/Perak/diyuan.geojson").addTo(mainmap)
 var PRK_dlzx = new L.GeoJSON.AJAX("./json/Perak/dulizhongxue.geojson").addTo(mainmap)
-var PRK_qnfn = new L.GeoJSON.AJAX("./json/Perak/qingnianfunu.geojson").addTo(mainmap)
+var PRK_qnfn = new L.GeoJSON.AJAX("./json/Perak/qingniaofunu.geojson").addTo(mainmap)
 var PRK_tyly = new L.GeoJSON.AJAX("./json/Perak/tiyulianyi.geojson").addTo(mainmap)
 var PRK_wj = new L.GeoJSON.AJAX("./json/Perak/wenjiao.geojson").addTo(mainmap)
 var PRK_xy = new L.GeoJSON.AJAX("./json/Perak/xueyuan.geojson").addTo(mainmap)
@@ -109,7 +148,7 @@ var PRK_zj = new L.GeoJSON.AJAX("./json/Perak/zongjiao.geojson").addTo(mainmap)
 var PNG_csfl = new L.GeoJSON.AJAX("./json/Penang/cishanfuli.geojson").addTo(mainmap)
 var PNG_dy = new L.GeoJSON.AJAX("./json/Penang/diyuan.geojson").addTo(mainmap)
 var PNG_dlzx = new L.GeoJSON.AJAX("./json/Penang/dulizhongxue.geojson").addTo(mainmap)
-var PNG_qnfn = new L.GeoJSON.AJAX("./json/Penang/qingnianfunu.geojson").addTo(mainmap)
+var PNG_qnfn = new L.GeoJSON.AJAX("./json/Penang/qingniaofunu.geojson").addTo(mainmap)
 var PNG_tyly = new L.GeoJSON.AJAX("./json/Penang/tiyulianyi.geojson").addTo(mainmap)
 var PNG_wj = new L.GeoJSON.AJAX("./json/Penang/wenjiao.geojson").addTo(mainmap)
 var PNG_xy = new L.GeoJSON.AJAX("./json/Penang/xueyuan.geojson").addTo(mainmap)
@@ -119,7 +158,7 @@ var PNG_zj = new L.GeoJSON.AJAX("./json/Penang/zongjiao.geojson").addTo(mainmap)
 
 var PHG_csfl = new L.GeoJSON.AJAX("./json/Pahang/cishanfuli.geojson").addTo(mainmap)
 var PHG_dy = new L.GeoJSON.AJAX("./json/Pahang/diyuan.geojson").addTo(mainmap)
-var PHG_qnfn = new L.GeoJSON.AJAX("./json/Pahang/qingnianfunu.geojson").addTo(mainmap)
+var PHG_qnfn = new L.GeoJSON.AJAX("./json/Pahang/qingniaofunu.geojson").addTo(mainmap)
 var PHG_tyly = new L.GeoJSON.AJAX("./json/Pahang/tiyulianyi.geojson").addTo(mainmap)
 var PHG_wj = new L.GeoJSON.AJAX("./json/Pahang/wenjiao.geojson").addTo(mainmap)
 var PHG_xy = new L.GeoJSON.AJAX("./json/Pahang/xueyuan.geojson").addTo(mainmap)
@@ -130,7 +169,7 @@ var PHG_zj = new L.GeoJSON.AJAX("./json/Pahang/zongjiao.geojson").addTo(mainmap)
 var NSN_csfl = new L.GeoJSON.AJAX("./json/Negeri Sembilan/cishanfuli.geojson").addTo(mainmap)
 var NSN_dy = new L.GeoJSON.AJAX("./json/Negeri Sembilan/diyuan.geojson").addTo(mainmap)
 var NSN_dlzx = new L.GeoJSON.AJAX("./json/Negeri Sembilan/dulizhongxue.geojson").addTo(mainmap)
-var NSN_qnfn = new L.GeoJSON.AJAX("./json/Negeri Sembilan/qingnianfunu.geojson").addTo(mainmap)
+var NSN_qnfn = new L.GeoJSON.AJAX("./json/Negeri Sembilan/qingniaofunu.geojson").addTo(mainmap)
 var NSN_tyly = new L.GeoJSON.AJAX("./json/Negeri Sembilan/tiyulianyi.geojson").addTo(mainmap)
 var NSN_wj = new L.GeoJSON.AJAX("./json/Negeri Sembilan/wenjiao.geojson").addTo(mainmap)
 var NSN_xy = new L.GeoJSON.AJAX("./json/Negeri Sembilan/xueyuan.geojson").addTo(mainmap)
@@ -155,7 +194,7 @@ var KTN_zj = new L.GeoJSON.AJAX("./json/Kelantan/zongjiao.geojson").addTo(mainma
 var KDH_csfl = new L.GeoJSON.AJAX("./json/Kedah/cishanfuli.geojson").addTo(mainmap)
 var KDH_dy = new L.GeoJSON.AJAX("./json/Kedah/diyuan.geojson").addTo(mainmap)
 var KDH_dlzx = new L.GeoJSON.AJAX("./json/Kedah/dulizhongxue.geojson").addTo(mainmap)
-var KDH_qnfn = new L.GeoJSON.AJAX("./json/Kedah/qingnianfunu.geojson").addTo(mainmap)
+var KDH_qnfn = new L.GeoJSON.AJAX("./json/Kedah/qingniaofunu.geojson").addTo(mainmap)
 var KDH_tyly = new L.GeoJSON.AJAX("./json/Kedah/tiyulianyi.geojson").addTo(mainmap)
 var KDH_wj = new L.GeoJSON.AJAX("./json/Kedah/wenjiao.geojson").addTo(mainmap)
 var KDH_xy = new L.GeoJSON.AJAX("./json/Kedah/xueyuan.geojson").addTo(mainmap)
@@ -166,7 +205,7 @@ var KDH_zj = new L.GeoJSON.AJAX("./json/Kedah/zongjiao.geojson").addTo(mainmap)
 var JHR_csfl = new L.GeoJSON.AJAX("./json/Johor/cishanfuli.geojson").addTo(mainmap)
 var JHR_dy = new L.GeoJSON.AJAX("./json/Johor/diyuan.geojson").addTo(mainmap)
 var JHR_dlzx = new L.GeoJSON.AJAX("./json/Johor/dulizhongxue.geojson").addTo(mainmap)
-var JHR_qnfn = new L.GeoJSON.AJAX("./json/Johor/qingnianfunu.geojson").addTo(mainmap)
+var JHR_qnfn = new L.GeoJSON.AJAX("./json/Johor/qingniaofunu.geojson").addTo(mainmap)
 var JHR_tyly = new L.GeoJSON.AJAX("./json/Johor/tiyulianyi.geojson").addTo(mainmap)
 var JHR_wj = new L.GeoJSON.AJAX("./json/Johor/wenjiao.geojson").addTo(mainmap)
 var JHR_xy = new L.GeoJSON.AJAX("./json/Johor/xueyuan.geojson").addTo(mainmap)
@@ -176,13 +215,6 @@ var JHR_zj = new L.GeoJSON.AJAX("./json/Johor/zongjiao.geojson").addTo(mainmap)
 
 
 var overlays = [
-    {
-        groupName: "Master",
-        expanded: false,
-        layers: {
-            "Master": points
-        }
-    },
     {
         groupName: "Terengganu",
         expanded: true,
@@ -380,14 +412,23 @@ var overlays = [
             "综合": JHR_zh,
             "宗教": JHR_zj
         }
+    },
+    {
+        groupName: "Misc",
+        expanded: true,
+        layers: {
+            "Villages_new": villages_new,
+            "towns_new": towns_new,
+            "temples_new": temples_new
+        }
     }
 ]
 
 var options = {
     container_width: "300px",
-    container_maxHeight: "1000px",
+    container_maxHeight: "700px",
     group_maxHeight: "250px",
-    exclusive: false
+    groupCheckboxes: true
 };
 
 
