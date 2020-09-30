@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Category_0",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name_CH": "马六甲培风中学", "Name_ML": null, "Name_EN": "Pay Fong High School", "Location": "40, Jalan Tan Chay Yon, 75300, Melaka.", "Longitude": 102.337624, "Latitude": 2.322985, "Region": "Melaka", "Category": "独立中学", "PageNumber": "415" }, "geometry": { "type": "Point", "coordinates": [ 102.3376, 2.323, 102.3376 ] } }
+]
+}
