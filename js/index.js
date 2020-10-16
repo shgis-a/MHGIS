@@ -46,7 +46,7 @@ d3.xml("./img/Blank_malaysia_map.svg")
                     return false;
                 })
             } else {
-                throw "svg map is wrongly formatted"
+                throw "svg map is wrongly formatted."
             }
         })
     });

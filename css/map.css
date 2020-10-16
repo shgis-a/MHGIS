@@ -58,3 +58,7 @@ a:active {
     height: 100%;
     width: 100%;
 }
+
+.markerThumbnail {
+    height: 13px;
+}
