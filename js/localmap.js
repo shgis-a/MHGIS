@@ -66,6 +66,20 @@ var icon8 = L.icon({
     iconAnchor: [10, 37],
     popupAnchor: [0, -28]
 });
+var icon9 = L.icon({
+    iconUrl: './img/icon9.png',
+    iconSize: [20, 35],
+    iconAnchor: [10, 37],
+    popupAnchor: [0, -28]
+});
+var icon10 = L.icon({
+    iconUrl: './img/icon10.png',
+    iconSize: [20, 35],
+    iconAnchor: [10, 37],
+    popupAnchor: [0, -28]
+});
+
+console.log(sourcepath.concat("cishanfuli.geojson"))
 
 var cishanfuli = new L.GeoJSON.AJAX(sourcepath.concat("cishanfuli.geojson"), {
     pointToLayer: function (geoJsonPoint, latlng) {
@@ -131,6 +145,22 @@ var zongjiao = new L.GeoJSON.AJAX(sourcepath.concat("zongjiao.geojson"), {
     },
     onEachFeature: popup
 }).addTo(mainmap)
+var dulizhongxue = new L.GeoJSON.AJAX(sourcepath.concat("dulizhongxue.geojson"), {
+    pointToLayer: function (geoJsonPoint, latlng) {
+        return L.marker(latlng, {
+            icon: icon9
+        }); //options object for Marker
+    },
+    onEachFeature: popup
+}).addTo(mainmap)
+var qingniaofunu = new L.GeoJSON.AJAX(sourcepath.concat("qingniaofunu.geojson"), {
+    pointToLayer: function (geoJsonPoint, latlng) {
+        return L.marker(latlng, {
+            icon: icon10
+        }); //options object for Marker
+    },
+    onEachFeature: popup
+}).addTo(mainmap)
 
 var baseMaps = [{
     groupName: "Base maps",
@@ -140,7 +170,7 @@ var baseMaps = [{
     }
     }]
 var overlays = [{
-    groupName: "Terengganu",
+    groupName: "Selangor",
     expanded: true,
     layers: {
         "慈善福利 <img src='./img/icon1.png', class='markerThumbnail'>": cishanfuli,
@@ -150,9 +180,10 @@ var overlays = [{
         "血缘 <img src='./img/icon5.png', class='markerThumbnail'>": xueyuan,
         "业缘 <img src='./img/icon6.png', class='markerThumbnail'>": yeyuan,
         "综合 <img src='./img/icon8.png', class='markerThumbnail'>": zonghe,
-        "宗教 <img src='./img/icon9.png', class='markerThumbnail'>": zongjiao
+        "宗教 <img src='./img/icon9.png', class='markerThumbnail'>": zongjiao,
+        "独立中学 <img src='./img/icon10.png', class='markerThumbnail'>": dulizhongxue
     }
-    }]
+}]
 
 var options = {
     container_width: "300px",
