@@ -1,3 +1,9 @@
+// Function to generate popup
+function popup(feature, layer) {
+    var properties = layer.feature.properties
+    layer.bindPopup("<h2>" + properties.Name_EN + "</h2><h3>" + properties.Name_CH + "</h3><h3>" + properties.Name_ML + "</h3>" + "<p><b>Location: </b>" + properties.Location + "</p><p><b>State: </b>" + properties.Region + "</p>")
+}
+
 // Initialise map
 var mainmap = L.map('mapcont').setView([4.2, 108.00], 6);
 
@@ -67,7 +73,7 @@ var cishanfuli = new L.GeoJSON.AJAX(sourcepath.concat("cishanfuli.geojson"), {
             icon: icon1
         }); //options object for Marker
     },
-    onEachFeature: function () {}
+    onEachFeature: popup
 }).addTo(mainmap)
 var diyuan = new L.GeoJSON.AJAX(sourcepath.concat("diyuan.geojson"), {
     pointToLayer: function (geoJsonPoint, latlng) {
@@ -75,7 +81,7 @@ var diyuan = new L.GeoJSON.AJAX(sourcepath.concat("diyuan.geojson"), {
             icon: icon2
         }); //options object for Marker
     },
-    onEachFeature: function () {}
+    onEachFeature: popup
 }).addTo(mainmap)
 var tiyulianyi = new L.GeoJSON.AJAX(sourcepath.concat("tiyulianyi.geojson"), {
     pointToLayer: function (geoJsonPoint, latlng) {
@@ -83,7 +89,7 @@ var tiyulianyi = new L.GeoJSON.AJAX(sourcepath.concat("tiyulianyi.geojson"), {
             icon: icon3
         }); //options object for Marker
     },
-    onEachFeature: function () {}
+    onEachFeature: popup
 }).addTo(mainmap)
 var wenjiao = new L.GeoJSON.AJAX(sourcepath.concat("wenjiao.geojson"), {
     pointToLayer: function (geoJsonPoint, latlng) {
@@ -91,7 +97,7 @@ var wenjiao = new L.GeoJSON.AJAX(sourcepath.concat("wenjiao.geojson"), {
             icon: icon4
         }); //options object for Marker
     },
-    onEachFeature: function () {}
+    onEachFeature: popup
 }).addTo(mainmap)
 var xueyuan = new L.GeoJSON.AJAX(sourcepath.concat("xueyuan.geojson"), {
     pointToLayer: function (geoJsonPoint, latlng) {
@@ -99,7 +105,7 @@ var xueyuan = new L.GeoJSON.AJAX(sourcepath.concat("xueyuan.geojson"), {
             icon: icon5
         }); //options object for Marker
     },
-    onEachFeature: function () {}
+    onEachFeature: popup
 }).addTo(mainmap)
 var yeyuan = new L.GeoJSON.AJAX(sourcepath.concat("yeyuan.geojson"), {
     pointToLayer: function (geoJsonPoint, latlng) {
@@ -107,7 +113,7 @@ var yeyuan = new L.GeoJSON.AJAX(sourcepath.concat("yeyuan.geojson"), {
             icon: icon6
         }); //options object for Marker
     },
-    onEachFeature: function () {}
+    onEachFeature: popup
 }).addTo(mainmap)
 var zonghe = new L.GeoJSON.AJAX(sourcepath.concat("zonghe.geojson"), {
     pointToLayer: function (geoJsonPoint, latlng) {
@@ -115,7 +121,7 @@ var zonghe = new L.GeoJSON.AJAX(sourcepath.concat("zonghe.geojson"), {
             icon: icon7
         }); //options object for Marker
     },
-    onEachFeature: function () {}
+    onEachFeature: popup
 }).addTo(mainmap)
 var zongjiao = new L.GeoJSON.AJAX(sourcepath.concat("zongjiao.geojson"), {
     pointToLayer: function (geoJsonPoint, latlng) {
@@ -123,7 +129,7 @@ var zongjiao = new L.GeoJSON.AJAX(sourcepath.concat("zongjiao.geojson"), {
             icon: icon8
         }); //options object for Marker
     },
-    onEachFeature: function () {}
+    onEachFeature: popup
 }).addTo(mainmap)
 
 var baseMaps = [{
