@@ -12,27 +12,8 @@ var streetmap = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}
     zoomOffset: -1
 }).addTo(mainmap);
 
-// Icons
-var icon = L.Icon.extend({
-    options: {
-        iconSize: [38, 95],
-        shadowSize: [50, 64],
-        iconAnchor: [22, 94],
-        shadowAnchor: [4, 62],
-        popupAnchor: [-3, -76]
-    }
-})
-
-var icon1 = L.icon({
-    iconUrl: "./img/icon1.png",
-    iconSize: [38, 95], // size of the icon
-    iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
-})
-
 // Load GeoJSON file
-var points = new L.GeoJSON.AJAX("./json/myhg_master.geojson", {
-    icon: icon1
-})
+var points = new L.GeoJSON.AJAX("./json/myhg_master.geojson")
 
 points.on('data:loaded', function () {
     var markers = new L.markerClusterGroup();
@@ -56,6 +37,7 @@ points.on('data:loaded', function () {
             .openOn(mainmap);
     })
 })
+
 
 var villages_new = new L.GeoJSON.AJAX("./json/Villages_new.geojson")
 var towns_new = new L.GeoJSON.AJAX("./json/TownsNEW.geojson")
