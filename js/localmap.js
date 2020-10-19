@@ -170,7 +170,7 @@ var baseMaps = [{
     }
     }]
 var overlays = [{
-    groupName: "Selangor",
+    groupName: "State data",
     expanded: true,
     layers: {
         "慈善福利 <img src='./img/icon1.png', class='markerThumbnail'>": cishanfuli,
