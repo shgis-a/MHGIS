@@ -15,6 +15,10 @@ hr {
     width: 250px;
 }
 
+h4 {
+    text-align: center;
+}
+
 #header {
     height: 70px;
     background-color: #d53e4f;

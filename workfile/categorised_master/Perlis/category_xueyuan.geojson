@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Category_5",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name_CH": "吉玻庄严同宗会", "Name_ML": "Persatuan Zhuang Yam Kedah Dan Perlis", "Name_EN": null, "Location": "No.4, Tingkat 2, Taman Selesa, Simpang Kuala, 05400 Alor Setae Kedah.", "Region": "Perlis", "Category": "血缘", "PageNumber": 37, "Country": "Malaysia", "latitude": 6.0961657, "longitude": 100.3640476 }, "geometry": { "type": "Point", "coordinates": [ 100.3640476, 6.0961657 ] } }
+]
+}

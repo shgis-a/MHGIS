@@ -24,7 +24,7 @@ points.on('data:loaded', function () {
 
         var properties = event.layer.feature.properties
 
-        var text_string = "<h2>" + properties.Name_EN + "</h2><h3>" + properties.Name_CH + "</h3><h3>" + properties.Name_ML + "</h3>" + "<p><b>Location: </b>" + properties.Location + "</p><p><b>State: </b>" + properties.Region + "</p>"
+        var text_string = "<h2>" + properties.Name_EN + "</h2><h3>" + properties.Name_CH + "</h3><h3>" + properties.Name_ML + "</h3>" + "<p><b>Location: </b>" + properties.Location + "</p><p><b>State: </b>" + properties.Region + +"</p><p><b>Page Number: </b>" + properties.PageNumber + "</p>"
 
         var popup = L.popup({
                 maxHeight: 500,

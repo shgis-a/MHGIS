@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "Category_1",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name_CH": "青年团结运动答株县会", "Name_ML": "Persatuan Gerakan Belia Bersatu Batu Pahat Johor", "Name_EN": null, "Location": "13A, Jalan Pantai Baru1, Taman Pantai Baru,83000 Batu Pahat Johor.", "Region": "Johor", "Category": "青年妇女", "PageNumber": 323, "Country": "Malaysia", "latitude": 1.842144, "longitude": 102.9243402 }, "geometry": { "type": "Point", "coordinates": [ 102.9243402, 1.842144 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "巴力拉惹青年促进会", "Name_ML": "Persatuan Belia Tenaga Mumi Parit Raja Batu Pahat", "Name_EN": null, "Location": "D\/A Majlis Tempatan Parit Raja, 86400 Batu Pahat, Johor.", "Region": "Johor", "Category": "青年妇女", "PageNumber": 323, "Country": "Malaysia", "latitude": 1.848954, "longitude": 103.075082 }, "geometry": { "type": "Point", "coordinates": [ 103.075082, 1.848954 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "加亨亲善青年会", "Name_ML": "Persatuan Belia Muhibbah Kahang", "Name_EN": null, "Location": "P87, Kahang , 86700 Kahang, Johor.", "Region": "Johor", "Category": "青年妇女", "PageNumber": 323, "Country": "Malaysia", "latitude": 2.2445004, "longitude": 103.58182 }, "geometry": { "type": "Point", "coordinates": [ 103.58182, 2.2445004 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "小哥打青年俱乐部", "Name_ML": "Kelab Belia Kota Kecil", "Name_EN": null, "Location": "147A, Jalan Moi Hiang, Kota Kecil, 81900 Kota Tinggl Johor.", "Region": "Johor", "Category": "青年妇女", "PageNumber": 323, "Country": "Malaysia", "latitude": 1.7391909, "longitude": 103.9058771 }, "geometry": { "type": "Point", "coordinates": [ 103.9058771, 1.7391909 ] } }
+]
+}

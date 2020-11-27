@@ -1,9 +1,0 @@
-{
-"type": "FeatureCollection",
-"name": "Category_5",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "Name_CH": "吉兰丹道北华人联合会 ", "Name_ML": "Persatuan Cina Tumpat", "Name_EN": null, "Location": "310-311, Jalan Besar, 16200 Tumpat Kelantan.", "Longitude": 102.156501, "Latitude": 6.178732, "Region": "Kelantan", "Category": "综合", "PageNumber": "324" }, "geometry": { "type": "Point", "coordinates": [ 102.1565, 6.1787, 102.1565 ] } },
-{ "type": "Feature", "properties": { "Name_CH": "吉兰丹中华大会堂", "Name_ML": "Gabungan Pertubuhan Tiong Hwa Kelantan", "Name_EN": "The Federation Of Chinese Associations Of Kelantan", "Location": "5429, Jalan Kebun Sultan, 15350 Kota Bahru, Kelantan. ", "Longitude": 102.243898, "Latitude": 6.132737, "Region": "Kelantan", "Category": "综合", "PageNumber": "324" }, "geometry": { "type": "Point", "coordinates": [ 102.2439, 6.1327, 102.2439 ] } }
-]
-}

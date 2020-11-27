@@ -1,7 +1,7 @@
 // Function to generate popup
 function popup(feature, layer) {
     var properties = layer.feature.properties
-    layer.bindPopup("<h2>" + properties.Name_EN + "</h2><h3>" + properties.Name_CH + "</h3><h3>" + properties.Name_ML + "</h3>" + "<p><b>Location: </b>" + properties.Location + "</p><p><b>State: </b>" + properties.Region + "</p>")
+    layer.bindPopup("<h2>" + properties.Name_EN + "</h2><h3>" + properties.Name_CH + "</h3><h3>" + properties.Name_ML + "</h3>" + "<p><b>Location: </b>" + properties.Location + "</p><p><b>State: </b>" + properties.Region +"</p><p><b>Page Number: </b>" + properties.PageNumber + "</p>")
 }
 
 // Initialise map
@@ -78,8 +78,6 @@ var icon10 = L.icon({
     iconAnchor: [10, 37],
     popupAnchor: [0, -28]
 });
-
-console.log(sourcepath.concat("cishanfuli.geojson"))
 
 var cishanfuli = new L.GeoJSON.AJAX(sourcepath.concat("cishanfuli.geojson"), {
     pointToLayer: function (geoJsonPoint, latlng) {

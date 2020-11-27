@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "Category_7",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name_CH": "亚罗士打吉华中学", "Name_ML": null, "Name_EN": "Keat Hwa High School", "Location": "550, Jalan Teretai, Off Jalan Pegawal, 05050 Alor Star, Kedah.", "Region": "Kedah", "Category": "独立中学", "PageNumber": 413, "Country": "Malaysia", "latitude": 6.1028765, "longitude": 100.3525964 }, "geometry": { "type": "Point", "coordinates": [ 100.3525964, 6.1028765 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "亚罗士打新民中学", "Name_ML": "Sekolah Menengah Sin Min", "Name_EN": null, "Location": "No.1, Jalan Alor Mengkudu, Mukim Derga, 05400 Alor Setar, Kedah.", "Region": "Kedah", "Category": "独立中学", "PageNumber": 413, "Country": "Malaysia", "latitude": 6.0896063, "longitude": 100.3918446 }, "geometry": { "type": "Point", "coordinates": [ 100.3918446, 6.0896063 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "双溪大年新民中学", "Name_ML": null, "Name_EN": "Sin Min High School", "Location": "Lot 12233, Fasa 2, Taman Keladi, 08000 Sg. Petani, Kedah.", "Region": "Kedah", "Category": "独立中学", "PageNumber": 413, "Country": "Malaysia", "latitude": 5.5906385, "longitude": 100.4815561 }, "geometry": { "type": "Point", "coordinates": [ 100.4815561, 5.5906385 ] } }
+]
+}

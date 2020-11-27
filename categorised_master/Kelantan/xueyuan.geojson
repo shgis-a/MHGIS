@@ -1,8 +1,0 @@
-{
-"type": "FeatureCollection",
-"name": "Category_8",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "Name_CH": "吉兰丹黄氏公会", "Name_ML": "Prsatuan Huang Clan Kelantan ", "Name_EN": "Huang Clan Association Kelantan", "Location": "3180-C (2nd Floor), Jalan Sultan Ibrahim, 15050 Kota Bharu, Kelantan.", "Longitude": 102.241567, "Latitude": 6.118687, "Region": "Kelantan", "Category": "血缘", "PageNumber": "325" }, "geometry": { "type": "Point", "coordinates": [ 102.2416, 6.1187, 102.2416 ] } }
-]
-}

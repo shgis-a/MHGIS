@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "region_1",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name_CH": "吉隆坡中华独立中学", "Name_ML": null, "Name_EN": "Chong Hwa Independent High School", "Location": "Jalan St. Thomas, 3 1\/2 Miles, Off Jalan Ipoh, 51100 Kuala Lumpur.", "Region": "Kuala Lumpur", "Category": "独立中学", "PageNumber": 414, "Country": "Malaysia", "latitude": 3.1896787, "longitude": 101.6871476 }, "geometry": { "type": "Point", "coordinates": [ 101.6871476, 3.1896787 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "吉隆坡坤成女子中学", "Name_ML": null, "Name_EN": "Kuen Cheng Girls' High School", "Location": "Jalan Syed Putra, 50460 Kuala Lumpur.", "Region": "Kuala Lumpur", "Category": "独立中学", "PageNumber": 414, "Country": "Malaysia", "latitude": 3.1311944, "longitude": 101.6915405 }, "geometry": { "type": "Point", "coordinates": [ 101.6915405, 3.1311944 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "吉隆坡尊孔独立中学", "Name_ML": null, "Name_EN": "Confucian Private Secondary School", "Location": "Lorong Hang Jebat, 50150 Kuala Lumpur.", "Region": "Kuala Lumpur", "Category": "独立中学", "PageNumber": 414, "Country": "Malaysia", "latitude": 3.1436888, "longitude": 101.699841 }, "geometry": { "type": "Point", "coordinates": [ 101.699841, 3.1436888 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "吉隆坡循人中学", "Name_ML": null, "Name_EN": "Tsun Jalan High School", "Location": "6, Jalan Loke Yew, 55200 Kuala Lumpur.", "Region": "Kuala Lumpur", "Category": "独立中学", "PageNumber": 414, "Country": "Malaysia", "latitude": 3.1352042, "longitude": 101.7062957 }, "geometry": { "type": "Point", "coordinates": [ 101.7062957, 3.1352042 ] } }
+]
+}

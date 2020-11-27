@@ -1,8 +1,0 @@
-{
-"type": "FeatureCollection",
-"name": "Category_1",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "Name_CH": "吉兰丹中华独立中学", "Name_ML": null, "Name_EN": "Chung Hwa High School", "Location": "Kok Lanas, 16450 Ketereh, Kota Bharu, Kelantan.", "Longitude": 102.246164, "Latitude": 5.911687, "Region": "Kelantan", "Category": "独立中学", "PageNumber": "416" }, "geometry": { "type": "Point", "coordinates": [ 102.2462, 5.9117, 102.2462 ] } }
-]
-}
