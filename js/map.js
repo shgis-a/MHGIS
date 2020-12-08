@@ -13,7 +13,7 @@ var streetmap = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}
 }).addTo(mainmap);
 
 // Load GeoJSON file
-var points = new L.GeoJSON.AJAX("./json/myhg_master.geojson")
+var points = new L.GeoJSON.AJAX("./json/myhg_master.json")
 
 points.on('data:loaded', function () {
     var markers = new L.markerClusterGroup();
