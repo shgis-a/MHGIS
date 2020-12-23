@@ -1,9 +1,0 @@
-{
-"type": "FeatureCollection",
-"name": "Category_7",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "Name_CH": "玻璃市篮球总会", "Name_ML": "Persatuan Bola Keranjang Negeri Perlis", "Name_EN": "Perlis Basketball Association", "Location": "158, Taman Utara, Jejawi, 02600 Arau, Perlis.", "Longitude": 100.2824483, "Latitude": 6.4105653, "Region": "Perlis", "Category": "体育联谊", "PageNumber": "39" }, "geometry": { "type": "Point", "coordinates": [ 100.2824, 6.4106, 100.2824 ] } },
-{ "type": "Feature", "properties": { "Name_CH": "玻璃市州琼谊社", "Name_ML": "Kelab Kheng Yee The Perlis", "Name_EN": null, "Location": "Hotel Federel, 01000 Kangar, Perlis.", "Longitude": 100.197633, "Latitude": 6.439058, "Region": "Perlis", "Category": "体育联谊", "PageNumber": "39" }, "geometry": { "type": "Point", "coordinates": [ 100.1976, 6.4391, 100.1976 ] } }
-]
-}
