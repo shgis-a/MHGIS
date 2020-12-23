@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "Category_4",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name_CH": "森美兰中华大会堂", "Name_ML": "Dewan Perhimpunan China Negeri Sembilan", "Name_EN": "Negeri Sembilan Chinese Assembly Hall", "Location": "96 (2nd FloorlJalan Temiang, 70200 Seremban, Negeri Sembilan.", "Region": "Negeri Sembilan", "Category": "综合", "PageNumber": 225, "Country": "Malaysia", "latitude": 2.7447639, "longitude": 101.93976 }, "geometry": { "type": "Point", "coordinates": [ 101.93976, 2.7447639 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "森美兰华人公会", "Name_ML": "Persatuan Tiong Hua Negeri Sembilan", "Name_EN": "Negeri Sembilan Chinese Association", "Location": "96(atas) Jalan Tem iang, 70200 Seremban, Negeri Sembilan.", "Region": "Negeri Sembilan", "Category": "综合", "PageNumber": 225, "Country": "Malaysia", "latitude": 2.7447639, "longitude": 101.93976 }, "geometry": { "type": "Point", "coordinates": [ 101.93976, 2.7447639 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "森美兰晏斗华人公会", "Name_ML": "Persatuan Cina Rantau Negeri Sembilan ", "Name_EN": "Rantau Chinese Association Negeri Sembilan", "Location": "Lot 3713 \/172-173, Tingkat 1, Taman Pasir Mas, 71200 Rantau, Negeri Sembilan.", "Region": "Negeri Sembilan", "Category": "综合", "PageNumber": 225, "Country": "Malaysia", "latitude": 2.589196, "longitude": 101.9594685 }, "geometry": { "type": "Point", "coordinates": [ 101.9594685, 2.589196 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "马口华团联合会", "Name_ML": "Gabungan Persatuan Tiong Hua Bahau Negeri Sembilan", "Name_EN": null, "Location": "47, Tingkat 2, Jalan D ato5 Jem pol Jalan Besar, 72100 Bahau, Negeri Sembilan.", "Region": "Negeri Sembilan", "Category": "综合", "PageNumber": 225, "Country": "Malaysia", "latitude": 2.8103574, "longitude": 102.4022214 }, "geometry": { "type": "Point", "coordinates": [ 102.4022214, 2.8103574 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "淡边浮罗士邦华人公会", "Name_ML": "Persatuan Cina Tampin Dan Pulau Sebang Neger Sembilan", "Name_EN": null, "Location": "80A,(1st Flr), Kg. Baru, 73000 Tampin, Negeri Sembilan.", "Region": "Negeri Sembilan", "Category": "综合", "PageNumber": 225, "Country": "Malaysia", "latitude": 2.480013, "longitude": 102.2321311 }, "geometry": { "type": "Point", "coordinates": [ 102.2321311, 2.480013 ] } }
+]
+}

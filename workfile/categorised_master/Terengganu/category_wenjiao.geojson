@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "Category_1",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name_CH": "登嘉楼华校教师公会", "Name_ML": "Persatuan Guru-Guru Cina Terengganu", "Name_EN": "Terengganu Chinese Teachers Association", "Location": "A62, Taman Tasek, Bukit Payung. 21400 Kuala Terengganu, Terengganu.", "Region": "Terengganu", "Category": "文教", "PageNumber": 334, "Country": "Malaysia", "latitude": 5.2440617, "longitude": 103.0959677 }, "geometry": { "type": "Point", "coordinates": [ 103.0959677, 5.2440617 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "登嘉楼锺灵校友会", "Name_ML": null, "Name_EN": "Persatuan Alumni Chung Ling Terengganu", "Location": "69 Tingkat 3, Jalan Tok Lam, 20100 Kuala Terengganu, Terengganu.", "Region": "Terengganu", "Category": "文教", "PageNumber": 334, "Country": "Malaysia", "latitude": 5.3362374, "longitude": 103.1392811 }, "geometry": { "type": "Point", "coordinates": [ 103.1392811, 5.3362374 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "龙运五星新村校友会", "Name_ML": null, "Name_EN": "Persatuan Bekas Murid Murid SJKIC)Sin Chone Dungun", "Location": "SJK (C) Sin Chine Kg. Batu, 23000 Dungun, Terengganu.", "Region": "Terengganu", "Category": "文教", "PageNumber": 334, "Country": "Malaysia", "latitude": 4.7139713, "longitude": 103.4165386 }, "geometry": { "type": "Point", "coordinates": [ 103.4165386, 4.7139713 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "登嘉楼华校董联会", "Name_ML": null, "Name_EN": "Terengganu Chinese School Committee And Teachers Association", "Location": "K 121, Jalan Masjid, 24000 Kemaman, Terengganu.", "Region": "Terengganu", "Category": "文教", "PageNumber": 334, "Country": "Malaysia", "latitude": 4.3165347, "longitude": 103.2326565 }, "geometry": { "type": "Point", "coordinates": [ 103.2326565, 4.3165347 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "龙运光华校友会", "Name_ML": null, "Name_EN": "Kwang Hwa School Old Boys Association Dungun", "Location": "Kwang Hwa Jalan Tamb, 23000 Dungun, Terengganu.", "Region": "Terengganu", "Category": "文教", "PageNumber": 334, "Country": "Malaysia", "latitude": 4.7765409, "longitude": 103.4242717 }, "geometry": { "type": "Point", "coordinates": [ 103.4242717, 4.7765409 ] } }
+]
+}

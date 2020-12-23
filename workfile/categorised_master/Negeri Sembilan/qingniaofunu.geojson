@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "Category_5",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name_CH": "淡边友爱青年俱乐部 ", "Name_ML": "Kelab Belia Yu Ai Tampin Tampin", "Name_EN": null, "Location": "Yu Ai Youth Club, Kg. Baru, 73000 Tampin, Negeri Sembilan", "Region": "Negeri Sembilan", "Category": "青年妇女", "PageNumber": 252, "Country": "Malaysia", "latitude": 2.480013, "longitude": 102.2321311 }, "geometry": { "type": "Point", "coordinates": [ 102.2321311, 2.480013 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "森州乡联青年会 ", "Name_ML": "Persatuan Belia Xiang Hui Negeri Sembilan", "Name_EN": null, "Location": "96 Jingkat 2 Jalan Temiang,70200 Seremban,Negeri Sembilan.", "Region": "Negeri Sembilan", "Category": "青年妇女", "PageNumber": 252, "Country": "Malaysia", "latitude": 2.7333155, "longitude": 101.9378673 }, "geometry": { "type": "Point", "coordinates": [ 101.9378673, 2.7333155 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "巴銮马六甲青年会 ", "Name_ML": null, "Name_EN": "Batang Melaka Youth Club ", "Location": "12, Jalan Besar Batang Melaka, Tampin, Negeri Sembilan", "Region": "Negeri Sembilan", "Category": "青年妇女", "PageNumber": 252, "Country": "Malaysia", "latitude": 2.4660612, "longitude": 102.2313393 }, "geometry": { "type": "Point", "coordinates": [ 102.2313393, 2.4660612 ] } }
+]
+}

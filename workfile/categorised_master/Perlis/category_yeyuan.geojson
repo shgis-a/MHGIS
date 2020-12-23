@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "Category_0",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name_CH": "玻璃市港口鱼商船主公会", "Name_ML": "Persatuan Peniaga Ikan Dan Pengusaha Bot Kuala Perlis", "Name_EN": null, "Location": "No.19, Taman Sentosa, 02000 Kuala Perlis, Perlis.", "Region": "Perlis", "Category": "业缘", "PageNumber": 37, "Country": "Malaysia", "latitude": 6.399483, "longitude": 100.1359339 }, "geometry": { "type": "Point", "coordinates": [ 100.1359339, 6.399483 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "玻璃市中华工商总会", "Name_ML": null, "Name_EN": "Perlis Chinese Chamber of Commerce and Industry", "Location": "274, Jalan Kangar-Alor Setarjingkat 1, Taman Mutiara, 01000 Kangar, Perlis.", "Region": "Perlis", "Category": "业缘", "PageNumber": 37, "Country": "Malaysia", "latitude": 6.4361422, "longitude": 100.1886573 }, "geometry": { "type": "Point", "coordinates": [ 100.1886573, 6.4361422 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "玻州小贩商业公会", "Name_ML": "Persatuan Penjaja-Penjaja & Penjual-Penjual Negeri Perlis", "Name_EN": null, "Location": "10, Jalan Jubli Perak, 01000 Kangar, Perlis.", "Region": "Perlis", "Category": "业缘", "PageNumber": 37, "Country": "Malaysia", "latitude": 6.4350982, "longitude": 100.19184 }, "geometry": { "type": "Point", "coordinates": [ 100.19184, 6.4350982 ] } }
+]
+}

@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "Category_4",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name_CH": "彭亨文冬华人大会堂", "Name_ML": "Dewan Perhimpunan Cina Bentong Pahang", "Name_EN": "Chinese Town Hall Bentong Pahang", "Location": "Jalan Chui Yin, 28700 Bentong, Pahang.", "Region": "Pahang", "Category": "综合", "PageNumber": 339, "Country": "Malaysia", "latitude": 3.5231645, "longitude": 101.9069826 }, "geometry": { "type": "Point", "coordinates": [ 101.9069826, 3.5231645 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "彭亨淡马鲁属华人社团联合会", "Name_ML": "Pertubuhan Gabungan Persatuan-Persatuan Tionghua Daerah Temerloh Negeri Pahang Darul Makmur", "Name_EN": null, "Location": "23-A, Jalan Zabidin, 28400 Mentakab, Pahang.", "Region": "Pahang", "Category": "综合", "PageNumber": 339, "Country": "Malaysia", "latitude": 3.4853178, "longitude": 102.347638 }, "geometry": { "type": "Point", "coordinates": [ 102.347638, 3.4853178 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "直凉华夏大会堂", "Name_ML": "Persatuan Hwa Siah Triang", "Name_EN": null, "Location": "42, Jalan Teo Joo, 28300 Triang, Pahang.", "Region": "Pahang", "Category": "综合", "PageNumber": 339, "Country": "Malaysia", "latitude": 3.2479673, "longitude": 102.4178032 }, "geometry": { "type": "Point", "coordinates": [ 102.4178032, 3.2479673 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "彭亨华人社团联合会", "Name_ML": "Gabungan Persatuan China Pahang", "Name_EN": null, "Location": "65-67, Tingkat2, Jalan Besar, 25000 Kuantan, Pahang.", "Region": "Pahang", "Category": "综合", "PageNumber": 339, "Country": "Malaysia", "latitude": 3.8064667, "longitude": 103.3290221 }, "geometry": { "type": "Point", "coordinates": [ 103.3290221, 3.8064667 ] } }
+]
+}

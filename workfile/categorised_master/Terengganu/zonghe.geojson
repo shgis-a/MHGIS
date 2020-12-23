@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Category_4",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name_CH": "登嘉楼中华大会堂", "Name_ML": "Dewan Perhimpunan Tiong Hwa Terngganu", "Name_EN": null, "Location": "44T,Jalan Air Jernih, 20300 Kuala Terngganu, Terengganu", "Region": "Terengganu", "Category": "综合", "PageNumber": 332, "Country": "Malaysia", "latitude": 5.3272504, "longitude": 103.1353246 }, "geometry": { "type": "Point", "coordinates": [ 103.1353246, 5.3272504 ] } }
+]
+}

@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "Category_6",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name_CH": "双溪兰青年体育娱乐俱乐部", "Name_ML": "Kelab Sukan & Rekreasi Pemuda Sg. Raun", "Name_EN": null, "Location": "1, Sungai Raun, 27500 Raub, Pahang.", "Region": "Pahang", "Category": "体育联谊", "PageNumber": 347, "Country": "Malaysia", "latitude": 3.793532, "longitude": 101.857465 }, "geometry": { "type": "Point", "coordinates": [ 101.857465, 3.793532 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "文冬安乐花园友谊俱乐部", "Name_ML": "Kelab Persahabatan Taman Desa Damai Bentong", "Name_EN": null, "Location": "P-22, Tkt Atas, Jalan 34, Taman Desa Damai, 28700 Bentong, Pahang.", "Region": "Pahang", "Category": "体育联谊", "PageNumber": 347, "Country": "Malaysia", "latitude": 3.571325, "longitude": 101.890804 }, "geometry": { "type": "Point", "coordinates": [ 101.890804, 3.571325 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "庆余俱乐部", "Name_ML": "Kelab Rekreasi Pekebun-Pekebun Kg. Telemong", "Name_EN": null, "Location": "93, Jalan Besar, Telemong, 28620 Karak, Pahang.", "Region": "Pahang", "Category": "体育联谊", "PageNumber": 347, "Country": "Malaysia", "latitude": 3.2931544, "longitude": 102.0884817 }, "geometry": { "type": "Point", "coordinates": [ 102.0884817, 3.2931544 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "百乐县乒乓公会", "Name_ML": "Persatuan Ping Pong Daerah Bera", "Name_EN": null, "Location": "d\/a 42A, Kampung Baru, 28380 Kemayan, Pahang.", "Region": "Pahang", "Category": "体育联谊", "PageNumber": 347, "Country": "Malaysia", "latitude": 3.2469747, "longitude": 102.4164884 }, "geometry": { "type": "Point", "coordinates": [ 102.4164884, 3.2469747 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "文明俱乐部", "Name_ML": "Boon Meng Club", "Name_EN": null, "Location": "24-B, Jalan Besar, 28200 Mengkarak, Pahang.", "Region": "Pahang", "Category": "体育联谊", "PageNumber": 347, "Country": "Malaysia", "latitude": 3.329508, "longitude": 102.419312 }, "geometry": { "type": "Point", "coordinates": [ 102.419312, 3.329508 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "金马扬酸柑园居民委员会", "Name_ML": "J\/K Penghuni-Penghuni Kampung Limau Kemayan", "Name_EN": null, "Location": "19, Kg Limau, 28380 Kemayan, Pahang.", "Region": "Pahang", "Category": "体育联谊", "PageNumber": 347, "Country": "Malaysia", "latitude": 3.0626836, "longitude": 102.5757028 }, "geometry": { "type": "Point", "coordinates": [ 102.5757028, 3.0626836 ] } }
+]
+}

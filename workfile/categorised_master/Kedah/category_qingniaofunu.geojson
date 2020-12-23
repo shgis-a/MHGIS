@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Category_1",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name_CH": "马来西亚青年运动(青运)吉打州", "Name_ML": "Pengerakan Pemuda Malaysia Cawangan Negeri Kedah", "Name_EN": "Young Malaysians Movement (YMM) Kedah", "Location": "499, Tingkat Alas, Jalan Kenanga 13, Taman Sri Ampang, 05050 Alor Setar, Kedah.", "Region": "Kedah", "Category": "青年妇女", "PageNumber": 61, "Country": "Malaysia", "latitude": 6.1078054, "longitude": 100.3383778 }, "geometry": { "type": "Point", "coordinates": [ 100.3383778, 6.1078054 ] } }
+]
+}

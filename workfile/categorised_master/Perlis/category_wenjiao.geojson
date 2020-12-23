@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "Category_2",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name_CH": "玻璃市华校董事联合会", "Name_ML": "Persatuan Lembaga2 Pengurus Sekolan China Perlis", "Name_EN": null, "Location": "C\/O SRJK(C) Khoon Aik, Jalan Raja Syed Alwi, 01000 Kangar, Perlis.", "Region": "Perlis", "Category": "文教", "PageNumber": 38, "Country": "Malaysia", "latitude": 6.4293425, "longitude": 100.1966063 }, "geometry": { "type": "Point", "coordinates": [ 100.1966063, 6.4293425 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "群益学校校友会", "Name_ML": "Persatuan Murid-Murid Tua Khoon Aik", "Name_EN": null, "Location": "1, Jalan Seri Satuz Taman Perlis, 01000 Kangar, Perlis.", "Region": "Perlis", "Category": "文教", "PageNumber": 38, "Country": "Malaysia", "latitude": 6.4278857, "longitude": 100.1973266 }, "geometry": { "type": "Point", "coordinates": [ 100.1973266, 6.4278857 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "玻璃市华校教师会", "Name_ML": "Persatuan Guru-Guru Sekolah Cina Perlis", "Name_EN": "The Perlis Chinese School Teachers Association", "Location": "SJK(C) Kok Aik, 02500 Mata Ayer, Perlis.", "Region": "Perlis", "Category": "文教", "PageNumber": 38, "Country": "Malaysia", "latitude": 6.4729163, "longitude": 100.2584516 }, "geometry": { "type": "Point", "coordinates": [ 100.2584516, 6.4729163 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "华益学校校友会", "Name_ML": "Persatuan Murid-Murid Tua Hwa Aik", "Name_EN": null, "Location": "Sekolah Hwa Aik, Arauz Perlis.", "Region": "Perlis", "Category": "文教", "PageNumber": 38, "Country": "Malaysia", "latitude": 6.4269488, "longitude": 100.2738723 }, "geometry": { "type": "Point", "coordinates": [ 100.2738723, 6.4269488 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "玻中校友会", "Name_ML": "Persatuan Murid-Murid Tua SMJK Perlis", "Name_EN": null, "Location": "2, Jalan Masjid, 02100 Padang Besar, Perlis.", "Region": "Perlis", "Category": "文教", "PageNumber": 38, "Country": "Malaysia", "latitude": 6.6607538, "longitude": 100.3203013 }, "geometry": { "type": "Point", "coordinates": [ 100.3203013, 6.6607538 ] } }
+]
+}

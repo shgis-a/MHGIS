@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "Category_4",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name_CH": "吉打州华人大会堂", "Name_ML": "Dewan Perhimpunan Cina Keda", "Name_EN": "Kedah Chinese Assembly Hall", "Location": "8, Jalan Tanjung Bendahara, 05300 Alor Setae Kedah.", "Region": "Kedah", "Category": "综合", "PageNumber": 41, "Country": "Malaysia", "latitude": 6.1013326, "longitude": 100.3732432 }, "geometry": { "type": "Point", "coordinates": [ 100.3732432, 6.1013326 ] } },
+{ "type": "Feature", "properties": { "Name_CH": "双溪大年华人注册社团联合会", "Name_ML": "Gabungan Persatuan Orang-Orang China", "Name_EN": "Sungai Petani Kedah", "Location": "21 Jalan Merbok, 08000 Sungai Petani, Kedah.", "Region": "Kedah", "Category": "综合", "PageNumber": 41, "Country": "Malaysia", "latitude": 5.6404689, "longitude": 100.486279 }, "geometry": { "type": "Point", "coordinates": [ 100.486279, 5.6404689 ] } }
+]
+}
