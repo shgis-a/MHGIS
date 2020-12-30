@@ -12,9 +12,7 @@
 	<script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
 	<link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
 
-	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-	<script src="semantic/dist/semantic.min.js"></script>
 
 	<link rel="stylesheet" href="./css/main.css">
 </head>
@@ -23,11 +21,50 @@
 	<div class="cont">
 		<header></header>
 		<div class="content">
-			<div class="sidebar"></div>
+			<div class="sidebar">
+				<ul>
+					<li id="state_filter"> <span class="parent">Filter by State</span><span class="collapse">collapse</span>
+						<ul class="filter_options">
+							<li> <input class="filter" id="Johor" type="checkbox" checked>Johor 柔佛</li>
+							<li> <input class="filter" id="Kedah" type="checkbox" checked>Kedah 吉打</li>
+							<li> <input class="filter" id="Kelantan" type="checkbox" checked>Kelantan 吉兰丹</li>
+							<li> <input class="filter" id="Malacca" type="checkbox" checked>Malacca 马六甲</li>
+							<li> <input class="filter" id="NegeriSembilan" type="checkbox" checked>Negri Sembilan 森美兰</li>
+							<li> <input class="filter" id="Pahang" type="checkbox" checked>Pahang 彭亨</li>
+							<li> <input class="filter" id="Penang" type="checkbox" checked>Penang 槟城</li>
+							<li> <input class="filter" id="Perak" type="checkbox" checked>Perak 霹雳</li>
+							<li> <input class="filter" id="Perlis" type="checkbox" checked>Perlis 玻璃市</li>
+							<li> <input class="filter" id="Sabah" type="checkbox" checked>Sabah 沙巴</li>
+							<li> <input class="filter" id="Sarawak" type="checkbox" checked>Sarawak 砂拉越</li>
+							<li> <input class="filter" id="Selangor" type="checkbox" checked>Selangor 雪兰莪</li>
+							<li> <input class="filter" id="Terengganu" type="checkbox" checked>Terengganu 登嘉楼</li>
+							<li> <input class="filter" id="KualaLumpur" type="checkbox" checked>Kuala Lumpur 吉隆坡</li>
+							<li> <input class="filter" id="Labuan" type="checkbox" checked>Labuan 纳闽</li>
+							<li> <input class="filter" id="Putrajaya" type="checkbox" checked>Putrajaya 布城</li>
+						</ul>
+					</li>
+					<li id="category_filter"> <input type="checkbox" checked><i>Register of Chinese Associations</i> Dataset <br>《马来西亚华团总名册》数据集<span class="collapse">collapse</span>
+						<ul class="filter_options">
+							<li> <input class="filter" id="宗教" type="checkbox" checked>Religious Associations 宗教</li>
+							<li> <input class="filter" id="地缘" type="checkbox" checked>Geographical Clan Associations 地缘</li>
+							<li> <input class="filter" id="综合" type="checkbox" checked>Multifunctional Associations 综合</li>
+							<li> <input class="filter" id="青年妇女" type="checkbox" checked>Female Youth Assications 青年妇女</li>
+							<li> <input class="filter" id="文教" type="checkbox" checked>Cultural Education Assiciations 文教</li>
+							<li> <input class="filter" id="体育联谊" type="checkbox" checked>Sports Associations 体育联谊</li>
+							<li> <input class="filter" id="慈善福利" type="checkbox" checked>Charitable Associations 慈善福利</li>
+							<li> <input class="filter" id="独立中学" type="checkbox" checked>Independent Secondary School 独立中学</li>
+							<li> <input class="filter" id="血缘" type="checkbox" checked>Geneological Clan Associations 血缘</li>
+							<li> <input class="filter" id="业缘" type="checkbox" checked>Vocational Association 业缘</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 			<div id="map"></div>
 		</div>
 	</div>
 
 
 	<script src="./js/main.js"></script>
-</body></html>
+</body>
+
+</html>

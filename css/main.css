@@ -2,6 +2,21 @@ body {
 	margin: 0;
 }
 
+li > #text {
+	padding: 5px 0;
+}
+
+[type="checkbox"] {
+	margin: 0 5px;
+}
+
+.collapse {
+	color: gray;
+	font-style: italic;
+	font-size: 14px;
+	padding-left: 5px;
+}
+
 .cont {
 	display: flex;
 	flex-flow: column nowrap;
@@ -27,11 +42,11 @@ header {
 }
 
 .sidebar {
-	flex-grow: 1;
+	flex: 1;
 	min-width: 250px;
 	background-color: #ffc78e;
 }
 
 #map {
-	flex-grow: 3;
+	flex: 3;
 }
