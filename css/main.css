@@ -29,18 +29,6 @@ header {
 	background-color: #ffb4b4;
 }
 
-.content {
-	flex: 1;
-	flex-grow: 1;
-	flex-shrink: 1;
-	flex-basis: auto;
-	background-color: #faf3ca;
-	width: 100vw;
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: stretch;
-}
-
 .sidebar {
 	flex: 1;
 	min-width: 250px;
@@ -49,4 +37,18 @@ header {
 
 #map {
 	flex: 3;
+}
+
+.alert {
+	margin: 5px;
+}
+
+#tabone {
+	background-color: #fbb4ae;
+	font-weight: bold;
+}
+
+h2 {
+	margin: 10px 10px 30px 10px;
+	font-size: 20px;
 }

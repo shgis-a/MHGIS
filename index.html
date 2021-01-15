@@ -1,18 +1,37 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
-	<title>Home - Temples of Sinkawang</title>
+	<title>MHGIS</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link rel="stylesheet" href="./css/normalize.css">
 
-	<script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
-	<link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+	<!-- favicon -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
+	<!-- Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+
+	<!-- jquery -->
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- Leaflet styled layer control-->
+	<link rel="stylesheet" href="./css/styledLayerControl.css" />
+	<script src="./js/styledLayerControl.js"></script>
+
+	<!-- Leaflet sidebar -->
+	<link rel="stylesheet" href="./css/leaflet-sidebar.css" />
+	<script src="./js/leaflet-sidebar.js"></script>
+
+	<!-- Leaflet.AJAX -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js" integrity="sha256-rVeyUZMfAHhQJ7hvWaHrKknTDdqGcn1gxBBJA++E4z8=" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" href="./css/main.css">
 </head>
@@ -20,51 +39,61 @@
 <body>
 	<div class="cont">
 		<header></header>
-		<div class="content">
-			<div class="sidebar">
-				<ul>
-					<li id="state_filter"> <span class="parent">Filter by State</span><span class="collapse">collapse</span>
-						<ul class="filter_options">
-							<li> <input class="filter" id="Johor" type="checkbox" checked>Johor 柔佛</li>
-							<li> <input class="filter" id="Kedah" type="checkbox" checked>Kedah 吉打</li>
-							<li> <input class="filter" id="Kelantan" type="checkbox" checked>Kelantan 吉兰丹</li>
-							<li> <input class="filter" id="Malacca" type="checkbox" checked>Malacca 马六甲</li>
-							<li> <input class="filter" id="NegeriSembilan" type="checkbox" checked>Negri Sembilan 森美兰</li>
-							<li> <input class="filter" id="Pahang" type="checkbox" checked>Pahang 彭亨</li>
-							<li> <input class="filter" id="Penang" type="checkbox" checked>Penang 槟城</li>
-							<li> <input class="filter" id="Perak" type="checkbox" checked>Perak 霹雳</li>
-							<li> <input class="filter" id="Perlis" type="checkbox" checked>Perlis 玻璃市</li>
-							<li> <input class="filter" id="Sabah" type="checkbox" checked>Sabah 沙巴</li>
-							<li> <input class="filter" id="Sarawak" type="checkbox" checked>Sarawak 砂拉越</li>
-							<li> <input class="filter" id="Selangor" type="checkbox" checked>Selangor 雪兰莪</li>
-							<li> <input class="filter" id="Terengganu" type="checkbox" checked>Terengganu 登嘉楼</li>
-							<li> <input class="filter" id="KualaLumpur" type="checkbox" checked>Kuala Lumpur 吉隆坡</li>
-							<li> <input class="filter" id="Labuan" type="checkbox" checked>Labuan 纳闽</li>
-							<li> <input class="filter" id="Putrajaya" type="checkbox" checked>Putrajaya 布城</li>
-						</ul>
-					</li>
-					<li id="category_filter"> <input type="checkbox" checked><i>Register of Chinese Associations</i> Dataset <br>《马来西亚华团总名册》数据集<span class="collapse">collapse</span>
-						<ul class="filter_options">
-							<li> <input class="filter" id="宗教" type="checkbox" checked>Religious Associations 宗教</li>
-							<li> <input class="filter" id="地缘" type="checkbox" checked>Geographical Clan Associations 地缘</li>
-							<li> <input class="filter" id="综合" type="checkbox" checked>Multifunctional Associations 综合</li>
-							<li> <input class="filter" id="青年妇女" type="checkbox" checked>Female Youth Assications 青年妇女</li>
-							<li> <input class="filter" id="文教" type="checkbox" checked>Cultural Education Assiciations 文教</li>
-							<li> <input class="filter" id="体育联谊" type="checkbox" checked>Sports Associations 体育联谊</li>
-							<li> <input class="filter" id="慈善福利" type="checkbox" checked>Charitable Associations 慈善福利</li>
-							<li> <input class="filter" id="独立中学" type="checkbox" checked>Independent Secondary School 独立中学</li>
-							<li> <input class="filter" id="血缘" type="checkbox" checked>Geneological Clan Associations 血缘</li>
-							<li> <input class="filter" id="业缘" type="checkbox" checked>Vocational Association 业缘</li>
-						</ul>
-					</li>
+		<!-- optionally define the sidebar content via HTML markup -->
+		<div id="sidebar" class="leaflet-sidebar collapsed">
+
+			<!-- nav tabs -->
+			<div class="leaflet-sidebar-tabs">
+				<!-- top aligned tabs -->
+				<ul role="tablist">
+					<li><a href="#home" role="tab"><i class="fa fa-bars active"></i></a></li>
+					<li><a href="#roster" role="tab" id="tabone">团</a></li>
+				</ul>
+
+				<!-- bottom aligned tabs -->
+				<ul role="tablist">
+					<li><a href="https://github.com/nickpeihl/leaflet-sidebar-v2"><i class="fa fa-github"></i></a></li>
 				</ul>
 			</div>
-			<div id="map"></div>
+
+			<!-- panel content -->
+			<div class="leaflet-sidebar-content">
+				<div class="leaflet-sidebar-pane" id="home">
+					<h1 class="leaflet-sidebar-header">
+						Malaysian Historical GIS
+						<span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+					</h1>
+					<div class="alert alert-warning alert-dismissible fade show" role="alert"><a href="./zh_index.html">简体中文版</a></div>
+
+					<h2>Welcome to MHGIS!</h2>
+					<p> This is a tool to explore data from different spatial data sets about Malaysia.</p>
+					<p> Each color on this current map represents one data set which you can explore by clicking on the content tab with the same color. </p>
+					<p></p>
+
+				</div>
+
+				<div class="leaflet-sidebar-pane" id="roster">
+					<h1 class="leaflet-sidebar-header">
+						Roster of Malaysian Chinese Associations
+						<span class="leaflet-sidebar-close"></span>
+					</h1>
+					<h2>
+						(马来西亚华团总名册)
+					</h2>
+					<p>
+						The autopan behviour is responsive as well.
+						Try opening and closing the sidebar from this pane!
+					</p>
+				</div>
+
+				<div class="leaflet-sidebar-pane" id="messages">
+					<h1 class="leaflet-sidebar-header">Messages<span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+				</div>
+			</div>
 		</div>
+		<div id="map"></div>
 	</div>
 
 
 	<script src="./js/main.js"></script>
-</body>
-
-</html>
+</body></html>
