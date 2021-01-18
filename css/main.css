@@ -11,6 +11,7 @@ li > #text {
 }
 
 .collapse {
+	display: inline-block;
 	color: gray;
 	font-style: italic;
 	font-size: 14px;
@@ -51,4 +52,12 @@ header {
 h2 {
 	margin: 10px 10px 30px 10px;
 	font-size: 20px;
+}
+
+li > #text {
+	padding: 5px 0;
+}
+
+[type="checkbox"] {
+	margin: 0 5px;
 }
