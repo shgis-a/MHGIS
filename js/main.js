@@ -70,7 +70,10 @@ function load_roster(renderer) {
 		roster_layers.clearLayers()
 		data.forEach(function (item, index) {
 
-			if (roster_buffer[item["UID"]] > 0) {} else {
+			var text_string = "<h2>" + item.Name_EN + "</h2><p>" + item.Name_CH + "</p><p>" + item.Name_ML + "</p>" + "<p><b>Location: </b>" + item.Location + "</p><p><b>State: </b>" + item.Region + "</p>" + "</p><p><b>Category: </b>" + item.Category + "</p>" + "<p> <b>Source page number: </b>" + item.PageNumber + "</p>"
+
+
+			if (!(roster_buffer[item["UID"]] > 0)) {
 				latlng = [item.latitude, item.longitude]
 				item["UID"] = L.circleMarker(latlng, {
 					renderer: renderer,
@@ -79,10 +82,11 @@ function load_roster(renderer) {
 					weight: 1,
 					color: "#000000",
 					opacity: 0.2
-				}).on("click", function () {
-					console.log(item)
+				}).bindPopup(text_string, {
+					maxWidth: 300,
+					closeOnClick: false,
+					keepInView: true
 				})
-
 				roster_layers.addLayer(item["UID"])
 			}
 		})
