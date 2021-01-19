@@ -65,12 +65,15 @@ roster_layers = L.layerGroup().addTo(map)
 highlight_layer = L.layerGroup().addTo(map)
 roster_database = {}
 
-function load_roster(renderer, color) {
-	// Function to load selected roster
+
+
+function load_default(renderer) {
+	// init map to default state
 
 	$.getJSON("./json/MHGIS Masterlist.json", function (data) {
 
 		roster_layers.clearLayers()
+		highlight_layer.clearLayers()
 		$("#cardsCont").empty()
 
 		data.forEach(function (item, index) {
@@ -89,6 +92,85 @@ function load_roster(renderer, color) {
 					weight: 1,
 					color: "#000000",
 					opacity: 0.2
+				}).bindPopup(popup_text, {
+					maxWidth: 300,
+					closeOnClick: false,
+					keepInView: true
+				})
+				roster_layers.addLayer(pointer)
+			}
+
+			var card_text = "<div class='card' id='" + UID + "'> <ul>" + "<li>" + item.Name_EN + "</li><li>" + item.Name_CH + "</li><li>" + item.Name_ML + "</li><li>Location: " + item.Location + "</li><li>State: " + item.Region + "</li><li> Category: " + item.Category + "</li><li> Source page number" + item.PageNumber + "</li></ul></div>"
+
+			$("#cardsCont").append(card_text)
+		})
+	})
+}
+
+
+function roster_fill_color(category) {
+	switch (category) {
+		case "宗教":
+			return "#a6cee3"
+			break;
+		case "地缘":
+			return "#1f78b4"
+			break;
+		case "综合":
+			return "#b2df8a"
+			break;
+		case "青年妇女":
+			return "#33a02c"
+			break;
+		case "文教":
+			return "#fb9a99"
+			break;
+		case "体育联谊":
+			return "#e31a1c"
+			break;
+		case "慈善福利":
+			return "#fdbf6f"
+			break;
+		case "独立中学":
+			return "#ff7f00"
+			break;
+		case "血缘":
+			return "#cab2d6"
+			break;
+		case "业缘":
+			return "#6a3d9a"
+			break;
+		default:
+			return "#ffffff"
+	}
+}
+
+function load_roster(renderer, color) {
+	// Function to load selected roster
+
+	$.getJSON("./json/MHGIS Masterlist.json", function (data) {
+
+		roster_layers.clearLayers()
+		highlight_layer.clearLayers()
+		$("#cardsCont").empty()
+
+		data.forEach(function (item, index) {
+
+			var popup_text = "<h2>" + item.Name_EN + "</h2><p>" + item.Name_CH + "</p><p>" + item.Name_ML + "</p>" + "<p><b>Location: </b>" + item.Location + "</p><p><b>State: </b>" + item.Region + "</p>" + "</p><p><b>Category: </b>" + item.Category + "</p>" + "<p> <b>Source page number: </b>" + item.PageNumber + "</p>"
+
+			UID = item["UID"]
+
+			if (!(roster_buffer[item["UID"]] > 0)) {
+				latlng = [item.latitude, item.longitude]
+				var pointer = item["UID"]
+				pointer = L.circleMarker(latlng, {
+					renderer: renderer,
+					radius: 5,
+					fillColor: roster_fill_color(item.Category),
+					fillOpacity: 0.7,
+					weight: 1,
+					color: "#000000",
+					opacity: 0.3
 				}).bindPopup(popup_text, {
 					maxWidth: 300,
 					closeOnClick: false,
@@ -133,7 +215,7 @@ function load_roster(renderer, color) {
 						keepInView: true
 					})
 
-					map.flyTo(latlng)
+					map.flyTo(latlng, 13)
 
 					highlight_layer.addLayer(point)
 				}
@@ -160,12 +242,12 @@ $(document).ready(function () {
 	});
 
 	//load layers
-	load_roster(renderer);
+	load_default(renderer);
 	sidebar.on('content', function (e) {
 
 		console.log(e.id)
 		if (e.id == "home") {
-			map.addLayer(roster_layers)
+			load_default(renderer)
 
 		} else if (e.id == "roster") {
 			load_roster(renderer)
