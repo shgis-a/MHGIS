@@ -62,34 +62,84 @@ function filter_state(key, operation) {
 }
 
 roster_layers = L.layerGroup().addTo(map)
+highlight_layer = L.layerGroup().addTo(map)
+roster_database = {}
 
-function load_roster(renderer) {
+function load_roster(renderer, color) {
+	// Function to load selected roster
 
 	$.getJSON("./json/MHGIS Masterlist.json", function (data) {
 
 		roster_layers.clearLayers()
+		$("#cardsCont").empty()
+
 		data.forEach(function (item, index) {
 
-			var text_string = "<h2>" + item.Name_EN + "</h2><p>" + item.Name_CH + "</p><p>" + item.Name_ML + "</p>" + "<p><b>Location: </b>" + item.Location + "</p><p><b>State: </b>" + item.Region + "</p>" + "</p><p><b>Category: </b>" + item.Category + "</p>" + "<p> <b>Source page number: </b>" + item.PageNumber + "</p>"
+			var popup_text = "<h2>" + item.Name_EN + "</h2><p>" + item.Name_CH + "</p><p>" + item.Name_ML + "</p>" + "<p><b>Location: </b>" + item.Location + "</p><p><b>State: </b>" + item.Region + "</p>" + "</p><p><b>Category: </b>" + item.Category + "</p>" + "<p> <b>Source page number: </b>" + item.PageNumber + "</p>"
 
+			UID = item["UID"]
 
 			if (!(roster_buffer[item["UID"]] > 0)) {
 				latlng = [item.latitude, item.longitude]
-				item["UID"] = L.circleMarker(latlng, {
+				var pointer = item["UID"]
+				pointer = L.circleMarker(latlng, {
 					renderer: renderer,
 					radius: 5,
 					fillColor: "#fbb4ae",
 					weight: 1,
 					color: "#000000",
 					opacity: 0.2
-				}).bindPopup(text_string, {
+				}).bindPopup(popup_text, {
 					maxWidth: 300,
 					closeOnClick: false,
 					keepInView: true
 				})
-				roster_layers.addLayer(item["UID"])
+				roster_layers.addLayer(pointer)
 			}
+
+			var card_text = "<div class='card' id='" + UID + "'> <ul>" + "<li>" + item.Name_EN + "</li><li>" + item.Name_CH + "</li><li>" + item.Name_ML + "</li><li>Location: " + item.Location + "</li><li>State: " + item.Region + "</li><li> Category: " + item.Category + "</li><li> Source page number" + item.PageNumber + "</li></ul></div>"
+
+			$("#cardsCont").append(card_text)
 		})
+
+		// Selecting points from cards
+		var active_card = $(".card")
+
+		$(".card").on('click', function () {
+			highlight_layer.clearLayers()
+			active_card.css("background-color", "#fff3cb")
+			active_card = $(this)
+			active_card.css("background-color", "#ff7671")
+
+			var id = active_card.attr("id")
+			data.forEach(function (item) {
+
+				var popup_text = "<h2>" + item.Name_EN + "</h2><p>" + item.Name_CH + "</p><p>" + item.Name_ML + "</p>" + "<p><b>Location: </b>" + item.Location + "</p><p><b>State: </b>" + item.Region + "</p>" + "</p><p><b>Category: </b>" + item.Category + "</p>" + "<p> <b>Source page number: </b>" + item.PageNumber + "</p>"
+
+
+				if (item["UID"] == id) {
+					latlng = [item.latitude, item.longitude]
+					var point = L.circleMarker(latlng, {
+						renderer: renderer,
+						radius: 10,
+						fillColor: "#fff500",
+						fillOpacity: 1,
+						weight: 3,
+						color: "#ff0e0e",
+						opacity: 1
+					}).bindPopup(popup_text, {
+						maxWidth: 300,
+						closeOnClick: false,
+						keepInView: true
+					})
+
+					map.flyTo(latlng)
+
+					highlight_layer.addLayer(point)
+				}
+			})
+		})
+
 	})
 }
 
@@ -134,8 +184,8 @@ $(document).ready(function () {
 		}
 	})
 
+	// Filter button
 	$("#filter").on('click', function () {
 		load_roster(renderer)
 	})
-
 })
