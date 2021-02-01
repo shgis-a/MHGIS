@@ -23,14 +23,14 @@
   {
     "Name": "正福德宮",
     "Notes": "",
-    "Address": "Jalan Aman, Taman Sembrong Baru, 83700 Yong Peng",
+    "Address": "Jalan Aman, Taman Sembrong Baru, 83700 Yong Peng, Johor",
     "State": "Johor",
     "UID": "A004"
   },
   {
     "Name": "佛教圓滿蕯迦中心",
     "Notes": "",
-    "Address": "Jalan Madu 1, Taman Sembrong Baru, 83700 Yong Peng, Johor",
+    "Address": "Jalan Madu 1, Taman Sembrong Baru, 83700 Yong Peng, Johor, Johor",
     "State": "Johor",
     "UID": "A005"
   },
@@ -58,7 +58,7 @@
   {
     "Name": "弥陀之家东林寺",
     "Notes": "",
-    "Address": "No 18, Jalan Pertama 4, Pusat Perdagangan Danga Utama,",
+    "Address": "No 18, Jalan Pertama 4, Pusat Perdagangan Danga Utama, Johor",
     "State": "Johor",
     "UID": "A009"
   },
@@ -72,7 +72,7 @@
   {
     "Name": "金刚寺",
     "Notes": "",
-    "Address": "No. 2, Jalan Temenggong 9, Taman Ungku Tun Aminah, 81300 Skudai",
+    "Address": "No. 2, Jalan Temenggong 9, Taman Ungku Tun Aminah, 81300 Skudai, Johor",
     "State": "Johor",
     "UID": "A011"
   },
@@ -114,14 +114,14 @@
   {
     "Name": "慈善堂",
     "Notes": "",
-    "Address": "Near 56, Jalan meng Seng, Taman Selatan, 83700, Yong Peng,",
+    "Address": "Near 56, Jalan meng Seng, Taman Selatan, 83700, Yong Peng, Johor",
     "State": "Johor",
     "UID": "A017"
   },
   {
     "Name": "璧山宮 / 水尾聖娘",
     "Notes": "",
-    "Address": "Kebun Bahru",
+    "Address": "Kebun Bahru, Johor",
     "State": "Johor",
     "UID": "A018"
   },
@@ -163,14 +163,14 @@
   {
     "Name": "昔加末余文牙華光宮",
     "Notes": "求財很靈驗，廟建在橡膠園裡面",
-    "Address": "3, Jalan Muar, Kampong TanjongSengkawang, 85000 Segamat,",
+    "Address": "3, Jalan Muar, Kampong TanjongSengkawang, 85000 Segamat, Johor",
     "State": "Johor",
     "UID": "A024"
   },
   {
     "Name": "青雲岩",
     "Notes": "",
-    "Address": "5, Jalan Panglima, Taman Bendahara, 85000 Segamat",
+    "Address": "5, Jalan Panglima, Taman Bendahara, 85000 Segamat, Johor",
     "State": "Johor",
     "UID": "A025"
   },
@@ -212,14 +212,14 @@
   {
     "Name": "青雲岩廟",
     "Notes": "",
-    "Address": "11/A , Jalan Muat , Kampong Abdullah, 85000 Segamat",
+    "Address": "11/A , Jalan Muat , Kampong Abdullah, 85000 Segamat, Johor",
     "State": "Johor",
     "UID": "A031"
   },
   {
     "Name": "(聖王廟) Sheng Wang Temple",
     "Notes": "",
-    "Address": "11-B, Jalan Muar, Kampung Chabong, 8500 Segamat,",
+    "Address": "11-B, Jalan Muar, Kampung Chabong, 8500 Segamat, Johor",
     "State": "Johor",
     "UID": "A032"
   },
@@ -247,14 +247,14 @@
   {
     "Name": "得教會濟賢善社",
     "Notes": "",
-    "Address": "No : 318, Jalan Banjaran 7,Kawasan Kempas Banjaran,81200 Johor Bahru",
+    "Address": "No : 318, Jalan Banjaran 7,Kawasan Kempas Banjaran,81200 Johor Bahru, Johor",
     "State": "Johor",
     "UID": "A036"
   },
   {
     "Name": "城隍殿 Sin Ong Tien",
     "Notes": "",
-    "Address": "Lot 4881, Jalan Banjaran 2, Kempas Baru, 81200, Johor Bahru.",
+    "Address": "Lot 4881, Jalan Banjaran 2, Kempas Baru, 81200, Johor Bahru, Johor.",
     "State": "Johor",
     "UID": "A037"
   },
@@ -268,14 +268,14 @@
   {
     "Name": "廣福廟Kempas Banjaran",
     "Notes": "",
-    "Address": "Jalan Banjaran 3, Kawasan Kempas Banjaran, 81200 Johor Bahru",
+    "Address": "Jalan Banjaran 3, Kawasan Kempas Banjaran, 81200 Johor Bahru, Johor",
     "State": "Johor",
     "UID": "A039"
   },
   {
     "Name": "濟公廟",
     "Notes": "",
-    "Address": "Lot 135960,Jalan Hang Tuah 31, Taman Skudai Baru, 81300",
+    "Address": "Lot 135960,Jalan Hang Tuah 31, Taman Skudai Baru, 81300, Johor",
     "State": "Johor",
     "UID": "A040"
   },
@@ -296,49 +296,49 @@
   {
     "Name": "柔佛古廟",
     "Notes": "",
-    "Address": "Lot 653, Jalan Trus, Bandar Johor Bahru, 80000 Johor Bahru",
+    "Address": "Lot 653, Jalan Trus, Bandar Johor Bahru, 80000 Johor Bahru, Johor",
     "State": "Johor",
     "UID": "A043"
   },
   {
     "Name": "淡杯天後宮",
     "Notes": "",
-    "Address": "7, Jalan Mempelam, Kawasan Perumahan Tampoi, 81200, Johor Bahru.",
+    "Address": "7, Jalan Mempelam, Kawasan Perumahan Tampoi, 81200, Johor Bahru, Johor",
     "State": "Johor",
     "UID": "A044"
   },
   {
     "Name": "新山聖蓮宮",
     "Notes": "",
-    "Address": "Taman Sri Tebrau, Jalan Cokmar 5",
+    "Address": "Taman Sri Tebrau, Jalan Cokmar 5, Johor",
     "State": "Johor",
     "UID": "A045"
   },
   {
     "Name": "天后宮",
     "Notes": "",
-    "Address": "Jalan Keris, Sri Tebrau",
+    "Address": "Jalan Keris, Sri Tebrau, Johor",
     "State": "Johor",
     "UID": "A046"
   },
   {
     "Name": "善和堂",
     "Notes": "",
-    "Address": "No 9, Jalan Tekun, Taman Maju Jaya, 80400 Johor Bahru",
+    "Address": "No 9, Jalan Tekun, Taman Maju Jaya, 80400 Johor Bahru, Johor",
     "State": "Johor",
     "UID": "A047"
   },
   {
     "Name": "壹仟間大伯公廟",
     "Notes": "",
-    "Address": "Jalan Persiaran Tanjung, Taman Cempaka, 81200 Johor Bahru.",
+    "Address": "Jalan Persiaran Tanjung, Taman Cempaka, 81200 Johor Bahru, Johor",
     "State": "Johor",
     "UID": "A048"
   },
   {
     "Name": "南海宮 – 40年歷史",
     "Notes": "",
-    "Address": "Bukit Indah, 81200 Johor Bahru",
+    "Address": "Bukit Indah, 81200 Johor Bahru, Johor",
     "State": "Johor",
     "UID": "A049"
   },
@@ -366,7 +366,7 @@
   {
     "Name": "林氏宗祠天後宮",
     "Notes": "",
-    "Address": "3, Jalan Fatimah, Kampung Sateh, 83000 Batu Pahat,",
+    "Address": "3, Jalan Fatimah, Kampung Sateh, 83000 Batu Pahat, Johor",
     "State": "Johor",
     "UID": "A053"
   },
@@ -408,14 +408,14 @@
   {
     "Name": "青雲寺南海觀音廟",
     "Notes": "",
-    "Address": "Batu 4, Jalan Kluang, Parit Iman, Batu Pahat",
+    "Address": "Batu 4, Jalan Kluang, Parit Iman, Batu Pahat, Johor",
     "State": "Johor",
     "UID": "A059"
   },
   {
     "Name": "南山駕雲殿",
     "Notes": "",
-    "Address": "Batu 5, Jalan Kluang, Johor, 83000 Batu Pahat",
+    "Address": "Batu 5, Jalan Kluang, Johor, 83000 Batu Pahat, Johor",
     "State": "Johor",
     "UID": "A060"
   },
@@ -457,7 +457,7 @@
   {
     "Name": "觀音寺",
     "Notes": "",
-    "Address": "Kampung Sungai Buntu",
+    "Address": "Kampung Sungai Buntu, Johor",
     "State": "Johor",
     "UID": "A066"
   },
@@ -471,14 +471,14 @@
   {
     "Name": "鳳山宮",
     "Notes": "",
-    "Address": "Ma-Zu Temple , 345 , jalan Kurau 1, Kampung Sungai Rengit, 81600 Bandar Penawar",
+    "Address": "Ma-Zu Temple , 345 , jalan Kurau 1, Kampung Sungai Rengit, 81600 Bandar Penawar, Johor",
     "State": "Johor",
     "UID": "A068"
   },
   {
     "Name": "沈氏族廟",
     "Notes": "",
-    "Address": "Unnam Road, Kempung Sungai Rengi , 81600 Bandar Penawar",
+    "Address": "Unnam Road, Kempung Sungai Rengi , 81600 Bandar Penawar, Johor",
     "State": "Johor",
     "UID": "A069"
   },
@@ -513,7 +513,7 @@
   {
     "Name": "8間廟",
     "Notes": "",
-    "Address": "8 Chinnese Temple Village , 81900 bandar penawar",
+    "Address": "8 Chinnese Temple Village , 81900 bandar penawar, Johor",
     "State": "Johor",
     "UID": "A074"
   },
@@ -527,7 +527,7 @@
   {
     "Name": "洪仙大帝廟",
     "Notes": "",
-    "Address": "106, Jalan Seelong 5, Kampung Baru Seelong, 81400, Senai, JB",
+    "Address": "106, Jalan Seelong 5, Kampung Baru Seelong, 81400, Senai, Johor Bahru, , Johor",
     "State": "Johor",
     "UID": "A076"
   },
@@ -548,7 +548,7 @@
   {
     "Name": "三清玉皇大帝",
     "Notes": "",
-    "Address": "No : 8, Jalan Saleng, Kampung Baru Saleng, 81400 Senai",
+    "Address": "No : 8, Jalan Saleng, Kampung Baru Saleng, 81400 Senai, Johor",
     "State": "Johor",
     "UID": "A079"
   },
@@ -667,14 +667,14 @@
   {
     "Name": "萬孚協天宮",
     "Notes": "",
-    "Address": "Kampung Baru Ban Foo, Johor, 81800 Ulu Tiram",
+    "Address": "Kampung Baru Ban Foo, Johor, 81800 Ulu Tiram, Johor",
     "State": "Johor",
     "UID": "A096"
   },
   {
     "Name": "法雨禪寺FA YI TEMPLE",
     "Notes": "",
-    "Address": "Lot 380 Batu 13/4, Jalan Sungai Tiram",
+    "Address": "Lot 380 Batu 13/4, Jalan Sungai Tiram, Johor",
     "State": "Johor",
     "UID": "A097"
   },
@@ -688,7 +688,7 @@
   {
     "Name": "淨業精舍 pure Karma Temple",
     "Notes": "",
-    "Address": "Taman Peindustrian Cemerlang , 81800 Ulu Tiram",
+    "Address": "Taman Peindustrian Cemerlang , 81800 Ulu Tiram, Johor",
     "State": "Johor",
     "UID": "A099"
   },
@@ -758,7 +758,7 @@
   {
     "Name": "玉皇協天大帝",
     "Notes": "",
-    "Address": "Johor, Kulai, Jalan Sekolah Cina  81000",
+    "Address": "Johor, Kulai, Jalan Sekolah Cina  81000, Johor",
     "State": "Johor",
     "UID": "A109"
   },
@@ -842,7 +842,7 @@
   {
     "Name": "善才爷Nam Thien Temple",
     "Notes": "",
-    "Address": "Jalan Dato Koh Thian Peng, Parit Unas, Johor, 84150 Muar",
+    "Address": "Jalan Dato Koh Thian Peng, Parit Unas, Johor, 84150 Muar, Johor",
     "State": "Johor",
     "UID": "A121"
   },
@@ -905,14 +905,14 @@
   {
     "Name": "麻坡慧海净宗学会",
     "Notes": "",
-    "Address": "No.5 Jalan Dato' Haji Kosai 3, Taman Dato' Haji Kosai, Jalan Bakri,",
+    "Address": "No.5 Jalan Dato' Haji Kosai 3, Taman Dato' Haji Kosai, Jalan Bakri, Johor",
     "State": "Johor",
     "UID": "A130"
   },
   {
     "Name": "麻坡天亭堂白衣娘娘",
     "Notes": "",
-    "Address": "Jalan Indah 13, Taman Indah, Johor, 84000 Muar town",
+    "Address": "Jalan Indah 13, Taman Indah, Johor, 84000 Muar town, Johor",
     "State": "Johor",
     "UID": "A131"
   },
@@ -968,7 +968,7 @@
   {
     "Name": "麻坡天亭堂白衣娘娘",
     "Notes": "",
-    "Address": "Jalan Indah 13, Taman Indah, Johor, 84000 Muar town",
+    "Address": "Jalan Indah 13, Taman Indah, Johor, 84000 Muar town, Johor",
     "State": "Johor",
     "UID": "A139"
   },
@@ -1052,7 +1052,7 @@
   {
     "Name": "比亞南佛寺",
     "Notes": "",
-    "Address": "Tangkak, Unnamed Road, Kampung Tanjong Batu 15, 84900 Tangkak Joh",
+    "Address": "Tangkak, Unnamed Road, Kampung Tanjong Batu 15, 84900 Tangkak Joh, Johor",
     "State": "Johor",
     "UID": "A151"
   },
@@ -1325,14 +1325,14 @@
   {
     "Name": "大學城關帝廟 Guan Ti Temple Taman U",
     "Notes": "",
-    "Address": "PTD ： 62501, Jalan Kejayaan 8, Taman Universiti, 81300 Skudai",
+    "Address": "PTD ： 62501, Jalan Kejayaan 8, Taman Universiti, 81300 Skudai, Johor",
     "State": "Johor",
     "UID": "A190"
   },
   {
     "Name": "二郎神廟",
     "Notes": "",
-    "Address": "Jalan Kebangsaan 29, Taman Universiti, 81300 Skudai",
+    "Address": "Jalan Kebangsaan 29, Taman Universiti, 81300 Skudai, Johor",
     "State": "Johor",
     "UID": "A191"
   },
@@ -1346,14 +1346,14 @@
   {
     "Name": "拿督公廟",
     "Notes": "",
-    "Address": "Jalan Tun Teja, Skudai 81300 Johor Bahru",
+    "Address": "Jalan Tun Teja, Skudai 81300 Johor Bahru, Johor",
     "State": "Johor",
     "UID": "A193"
   },
   {
     "Name": "洪仙大帝",
     "Notes": "",
-    "Address": "60-55 , Jalan Tun Teja, Skudai 81300 Johor Bahru",
+    "Address": "60-55 , Jalan Tun Teja, Skudai 81300 Johor Bahru, Johor",
     "State": "Johor",
     "UID": "A194"
   },
@@ -1423,7 +1423,7 @@
   {
     "Name": "弥陀之家东林寺",
     "Notes": "",
-    "Address": "No 18, Jalan Pertama 4, Pusat Perdagangan Danga Utama,",
+    "Address": "No 18, Jalan Pertama 4, Pusat Perdagangan Danga Utama, Johor",
     "State": "Johor",
     "UID": "A204"
   },
@@ -1437,7 +1437,7 @@
   {
     "Name": "金刚寺",
     "Notes": "",
-    "Address": "No. 2, Jalan Temenggong 9, Taman Ungku Tun Aminah, 81300 Skudai",
+    "Address": "No. 2, Jalan Temenggong 9, Taman Ungku Tun Aminah, 81300 Skudai, Johor",
     "State": "Johor",
     "UID": "A206"
   },
@@ -1514,14 +1514,14 @@
   {
     "Name": "而南伯公廟",
     "Notes": "70年歷史",
-    "Address": "458- 463, Lorong C-2, Taman Seri, Damanasara , 81500 Pekan Nenas",
+    "Address": "458- 463, Lorong C-2, Taman Seri, Damanasara , 81500 Pekan Nenas, Johor",
     "State": "Johor",
     "UID": "A217"
   },
   {
     "Name": "中國佈道會北干那那聖道堂",
     "Notes": "",
-    "Address": "Lorong B-2, Pekan Nenas , 81500 Pekan Nenas",
+    "Address": "Lorong B-2, Pekan Nenas , 81500 Pekan Nenas, Johor",
     "State": "Johor",
     "UID": "A218"
   },
@@ -1570,14 +1570,14 @@
   {
     "Name": "Thekchen Choling Kota Tinggi大乘禅寺哥打丁宜禅修中心",
     "Notes": "",
-    "Address": "Lot 691 kampung Tai Hong",
+    "Address": "Lot 691 kampung Tai Hong, Johor",
     "State": "Johor",
     "UID": "A225"
   },
   {
     "Name": "天聖宮 – kota tinggi",
     "Notes": "",
-    "Address": "kampung Tai Hong",
+    "Address": "kampung Tai Hong, Johor",
     "State": "Johor",
     "UID": "A226"
   },
@@ -1794,7 +1794,7 @@
   {
     "Name": "青龙宫 Selandar Cheng Leong Keng",
     "Notes": "淡边青龙宫位于森甲交界之小镇-普罗士邦，一九六十三年建。",
-    "Address": "Pekan Selandar, 77500 Selandar, Malacca",
+    "Address": "Pekan Selandar, 77500 Selandar, Melaka",
     "State": "Melaka",
     "UID": "A257"
   },
@@ -1822,7 +1822,7 @@
   {
     "Name": "宁宜苏拜城堡（Kota Bukit Supai Kuala Linggi / Fort Supai)",
     "Notes": "",
-    "Address": "Jalan Kampung Teluk Perun, Kampung Kuala Linggi, Ku",
+    "Address": "Jalan Kampung Teluk Perun, Kampung Kuala Linggi, Melaka",
     "State": "Melaka",
     "UID": "A261"
   },

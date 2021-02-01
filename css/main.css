@@ -45,7 +45,12 @@ header {
 }
 
 #tabone {
-	background-color: #fbb4ae;
+	background-color: #66c2a5;
+	font-weight: bold;
+}
+
+#tabtwo {
+	background-color: #fc8d62;
 	font-weight: bold;
 }
 

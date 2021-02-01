@@ -1,3 +1,4 @@
+// Init map
 var map = L.map('map', {
 	preferCanvas: true
 }).setView([4.2, 108.00], 6)
@@ -6,15 +7,206 @@ L.tileLayer('https://api.mapbox.com/styles/v1/shgis-kennethdean/ckj4dgeskcfpi19q
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// Filter
+// init renderer
+var renderer = L.canvas({
+	padding: 0.5
+});
+
+// Init shared layers
+highlight_layer = L.layerGroup().addTo(map)
+
+function load_default() {
+	// Function which loads the map layers under "home" tab
+
+	// Clear all layers and cards
+	roster_layers.clearLayers()
+	highlight_layer.clearLayers()
+	temple_layers.clearLayers()
+	highlight_layer.clearLayers()
+	$("#cardsContRoster").empty()
+
+
+	// Load the roster dataset
+	$.getJSON("./json/MHGIS Masterlist.json", function (data) {
+
+		// Iterate through each point...
+		data.forEach(function (item, index) {
+
+			// Load popup to a buffer variable
+			var popup_text = "<h2>" + item.Name_EN + "</h2><p>" + item.Name_CH + "</p><p>" + item.Name_ML + "</p>" + "<p><b>Location: </b>" + item.Location + "</p><p><b>State: </b>" + item.Region + "</p>" + "</p><p><b>Category: </b>" + item.Category + "</p>" + "<p> <b>Source page number: </b>" + item.PageNumber + "</p>"
+
+			UID = item["UID"]
+
+			// Draw the point and attach the popup text
+			latlng = [item.latitude, item.longitude]
+			var pointer = item["UID"]
+			pointer = L.circleMarker(latlng, {
+				renderer: renderer,
+				radius: 5,
+				fillColor: "#66c2a5",
+				weight: 1,
+				color: "#000000",
+				opacity: 0.3
+			}).bindPopup(popup_text, {
+				maxWidth: 300,
+				closeOnClick: false,
+				keepInView: true
+			})
+
+			// Add the point to the layer group
+			roster_layers.addLayer(pointer)
+		})
+	})
+
+	// Load the temple dataset
+	$.getJSON("./json/temple_georefed.json", function (data) {
+
+		// Iterate through each point...
+		data.forEach(function (item, index) {
+
+			// Load popup to a buffer variable
+			var popup_text = "<h2>" + item.Name + "</h2><p><b>Notes: </b>" + item.Notes + "</p>" + "</p><p><b>State: </b>" + item.State + "</p><p><b>Address: </b>" + item.Address + "</p>"
+
+			UID = item["UID"]
+
+			// Draw the point and attach the popup text
+			latlng = [item.Latitude, item.Longitude]
+			var pointer = item["UID"]
+			pointer = L.circleMarker(latlng, {
+				renderer: renderer,
+				radius: 5,
+				fillColor: "#fc8d62",
+				weight: 1,
+				color: "#000000",
+				opacity: 0.3
+			}).bindPopup(popup_text, {
+				maxWidth: 300,
+				closeOnClick: false,
+				keepInView: true
+			})
+
+			// Add the point to the layer group
+			temple_layers.addLayer(pointer)
+		})
+	})
+}
+
+function load_roster() {
+	// Function to load roster layer when changing tab to "roster"
+
+	// This allows the collaspe buttons to work
+	$('span.collapse').on('click', function () {
+		$(this).parent().find('ul').slideToggle();
+	});
+
+	// If there is change in the filter form, update the filter buffer
+	$("input").change(function () {
+		if ($(this).is(":checked")) {
+			filter_state($(this).attr('id'), 1)
+		} else {
+			filter_state($(this).attr('id'), 2)
+		}
+	})
+
+	// This allows the filter button to work.
+	$("#filter").on('click', function () {
+		load_roster(renderer)
+	})
+
+	// Load the roster dataset
+	$.getJSON("./json/MHGIS Masterlist.json", function (data) {
+
+		// Clear all layers and cards
+		temple_layers.clearLayers()
+		roster_layers.clearLayers()
+		highlight_layer.clearLayers()
+		$("#cardsContRoster").empty()
+		$("#cardsContTemple").empty()
+
+		// Iterate through each point...
+		data.forEach(function (item, index) {
+
+			// Load popup to a buffer variable
+			var popup_text = "<h2>" + item.Name_EN + "</h2><p>" + item.Name_CH + "</p><p>" + item.Name_ML + "</p>" + "<p><b>Location: </b>" + item.Location + "</p><p><b>State: </b>" + item.Region + "</p>" + "</p><p><b>Category: </b>" + item.Category + "</p>" + "<p> <b>Source page number: </b>" + item.PageNumber + "</p>"
+
+			UID = item["UID"]
+
+			// Check if the point needs to be filtered out
+			if (!(roster_buffer[item["UID"]] > 0)) {
+
+				// Draw the point and attach the popup text
+				latlng = [item.latitude, item.longitude]
+				var pointer = item["UID"]
+				pointer = L.circleMarker(latlng, {
+					renderer: renderer,
+					radius: 5,
+					fillColor: roster_fill_color(item.Category),
+					fillOpacity: 0.7,
+					weight: 1,
+					color: "#000000",
+					opacity: 0.3
+				}).bindPopup(popup_text, {
+					maxWidth: 300,
+					closeOnClick: false,
+					keepInView: true
+				})
+				roster_layers.addLayer(pointer)
+			}
+
+			// Write card text for visible points
+			var card_text = "<div class='card' id='" + UID + "'> <ul>" + "<li>" + item.Name_EN + "</li><li>" + item.Name_CH + "</li><li>" + item.Name_ML + "</li><li>Location: " + item.Location + "</li><li>State: " + item.Region + "</li><li> Category: " + item.Category + "</li><li> Source page number: " + item.PageNumber + "</li></ul></div>"
+
+			// Add the card to the document
+			$("#cardsContRoster").append(card_text)
+		})
+
+		// Selecting points from cards
+		var active_card = $(".card")
+
+		// Zoom to point and highlight point if a card is clicked.
+		$(".card").on('click', function () {
+			highlight_layer.clearLayers()
+
+			// Change beackground color of active card
+			active_card.css("background-color", "#fff3cb")
+			active_card = $(this)
+			active_card.css("background-color", "#ff7671")
+
+			var id = active_card.attr("id")
+
+			// Iterate through data to find selected point
+			data.forEach(function (item) {
+				if (item["UID"] == id) {
+					latlng = [item.latitude, item.longitude]
+					var point = L.circleMarker(latlng, {
+						renderer: renderer,
+						radius: 10,
+						fillColor: "#fff500",
+						fillOpacity: 1,
+						weight: 3,
+						color: "#ff0e0e",
+						opacity: 1
+					})
+
+					// Fly to point
+					map.flyTo(latlng, 13)
+
+					// Highlight point
+					highlight_layer.addLayer(point)
+				}
+			})
+		})
+	})
+}
+
+// Roster tab helper functions below here
+
 var roster_buffer = {}
-
-// Load points as circle markers
-
-roster_layers = L.layerGroup()
+roster_layers = L.layerGroup().addTo(map)
+roster_database = {}
 
 function filter_state(key, operation) {
-	// Helper function to identify what entries to fade out (de-selected). Takes three arguments; Firstly, "key" is the field you want to filter. "Operation" has two options: "1" removes items from the list (i.e. un-fades points) and "2" add items to the list (i.e. fades out points)
+	// Helper function to identify what entries to fade out by updating roster_buffer. Takes three arguments; Firstly, "key" is the field you want to filter. "Operation" has two options: "1" removes items from the list (i.e. un-fades points) and "2" add items to the list (i.e. fades out points)
 
 	// Input validation
 	valid_inputs_state = ["Johor", "Kedah", "Kelantan", "Malacca", "NegeriSembilan", "Pahang", "Penang", "Perak", "Perlis", "Sabah", "独立中学", "Sarawak", "Selangor", "Terengganu", "KualaLumpur", "Labuan", "Putrajaya"];
@@ -23,6 +215,7 @@ function filter_state(key, operation) {
 
 	category = ""
 
+	// Check if the key's category (and later use the category to tell if we need to filter a point)
 	if (valid_inputs_state.includes(key)) {
 		category = "Region"
 	} else if (valid_inputs_category.includes(key)) {
@@ -33,6 +226,7 @@ function filter_state(key, operation) {
 	}
 
 	if (operation == 1) {
+		// Operation 1 happens when someone checks a previously unchecked box. The following code removes points from roster_layers, allowing them to be shown on the map
 		$.getJSON("./json/MHGIS Masterlist.json", function (data) {
 			data.forEach(function (entry, index) {
 				if (entry[category] == key) {
@@ -46,6 +240,7 @@ function filter_state(key, operation) {
 			})
 		})
 	} else if (operation == 2) {
+		// Operation 2 happens when someone unchecks a previously checked box. The following code add points to roster_layers, allowing them to be shown on the map
 		$.getJSON("./json/MHGIS Masterlist.json", function (data) {
 			data.forEach(function (entry, index) {
 				if (entry[category] == key) {
@@ -61,54 +256,10 @@ function filter_state(key, operation) {
 	}
 }
 
-roster_layers = L.layerGroup().addTo(map)
-highlight_layer = L.layerGroup().addTo(map)
-roster_database = {}
-
-
-
-function load_default(renderer) {
-	// init map to default state
-
-	$.getJSON("./json/MHGIS Masterlist.json", function (data) {
-
-		roster_layers.clearLayers()
-		highlight_layer.clearLayers()
-		$("#cardsCont").empty()
-
-		data.forEach(function (item, index) {
-
-			var popup_text = "<h2>" + item.Name_EN + "</h2><p>" + item.Name_CH + "</p><p>" + item.Name_ML + "</p>" + "<p><b>Location: </b>" + item.Location + "</p><p><b>State: </b>" + item.Region + "</p>" + "</p><p><b>Category: </b>" + item.Category + "</p>" + "<p> <b>Source page number: </b>" + item.PageNumber + "</p>"
-
-			UID = item["UID"]
-
-			if (!(roster_buffer[item["UID"]] > 0)) {
-				latlng = [item.latitude, item.longitude]
-				var pointer = item["UID"]
-				pointer = L.circleMarker(latlng, {
-					renderer: renderer,
-					radius: 5,
-					fillColor: "#fbb4ae",
-					weight: 1,
-					color: "#000000",
-					opacity: 0.2
-				}).bindPopup(popup_text, {
-					maxWidth: 300,
-					closeOnClick: false,
-					keepInView: true
-				})
-				roster_layers.addLayer(pointer)
-			}
-
-			var card_text = "<div class='card' id='" + UID + "'> <ul>" + "<li>" + item.Name_EN + "</li><li>" + item.Name_CH + "</li><li>" + item.Name_ML + "</li><li>Location: " + item.Location + "</li><li>State: " + item.Region + "</li><li> Category: " + item.Category + "</li><li> Source page number" + item.PageNumber + "</li></ul></div>"
-
-			$("#cardsCont").append(card_text)
-		})
-	})
-}
-
-
 function roster_fill_color(category) {
+
+	// Helper function to find out what color a point in the roster tab should be by accepting a category
+
 	switch (category) {
 		case "宗教":
 			return "#a6cee3"
@@ -145,62 +296,70 @@ function roster_fill_color(category) {
 	}
 }
 
-function load_roster(renderer, color) {
-	// Function to load selected roster
+function load_temple() {
+	// Function to load roster layer when changing tab to "temple"
 
-	$.getJSON("./json/MHGIS Masterlist.json", function (data) {
+	temple_layers.clearLayers()
+	roster_layers.clearLayers()
+	highlight_layer.clearLayers()
+	$("#cardsContRoster").empty()
+	$("#cardsContTemple").empty()
 
-		roster_layers.clearLayers()
-		highlight_layer.clearLayers()
-		$("#cardsCont").empty()
+	// Load the temple dataset
+	$.getJSON("./json/temple_georefed.json", function (data) {
 
+		// Iterate through each point...
 		data.forEach(function (item, index) {
 
-			var popup_text = "<h2>" + item.Name_EN + "</h2><p>" + item.Name_CH + "</p><p>" + item.Name_ML + "</p>" + "<p><b>Location: </b>" + item.Location + "</p><p><b>State: </b>" + item.Region + "</p>" + "</p><p><b>Category: </b>" + item.Category + "</p>" + "<p> <b>Source page number: </b>" + item.PageNumber + "</p>"
+			// Load popup to a buffer variable
+			var popup_text = "<h2>" + item.Name + "</h2><p><b>Notes: </b>" + item.Notes + "</p>" + "</p><p><b>State: </b>" + item.State + "</p><p><b>Address: </b>" + item.Address + "</p>"
 
 			UID = item["UID"]
 
-			if (!(roster_buffer[item["UID"]] > 0)) {
-				latlng = [item.latitude, item.longitude]
-				var pointer = item["UID"]
-				pointer = L.circleMarker(latlng, {
-					renderer: renderer,
-					radius: 5,
-					fillColor: roster_fill_color(item.Category),
-					fillOpacity: 0.7,
-					weight: 1,
-					color: "#000000",
-					opacity: 0.3
-				}).bindPopup(popup_text, {
-					maxWidth: 300,
-					closeOnClick: false,
-					keepInView: true
-				})
-				roster_layers.addLayer(pointer)
-			}
+			// Draw the point and attach the popup text
+			latlng = [item.Latitude, item.Longitude]
+			var pointer = item["UID"]
+			pointer = L.circleMarker(latlng, {
+				renderer: renderer,
+				radius: 5,
+				fillColor: "#fc8d62",
+				weight: 1,
+				color: "#000000",
+				opacity: 0.3
+			}).bindPopup(popup_text, {
+				maxWidth: 300,
+				closeOnClick: false,
+				keepInView: true
+			})
 
-			var card_text = "<div class='card' id='" + UID + "'> <ul>" + "<li>" + item.Name_EN + "</li><li>" + item.Name_CH + "</li><li>" + item.Name_ML + "</li><li>Location: " + item.Location + "</li><li>State: " + item.Region + "</li><li> Category: " + item.Category + "</li><li> Source page number" + item.PageNumber + "</li></ul></div>"
+			// Add the point to the layer group
+			temple_layers.addLayer(pointer)
 
-			$("#cardsCont").append(card_text)
+			// Write card text for visible points
+			var card_text = "<div class='card' id='" + UID + "'> <ul>" + "<li>" + item.Name + "</li><li>Notes: " + item.Notes + "</li><li>State: " + item.State + "</li><li>Address:" + item.Address + "</li></ul></div>"
+
+			// Add the card to the document
+			$("#cardsContTemple").append(card_text)
 		})
 
 		// Selecting points from cards
 		var active_card = $(".card")
 
+		// Zoom to point and highlight point if a card is clicked.
 		$(".card").on('click', function () {
 			highlight_layer.clearLayers()
+
+			// Change beackground color of active card
 			active_card.css("background-color", "#fff3cb")
 			active_card = $(this)
 			active_card.css("background-color", "#ff7671")
 
 			var id = active_card.attr("id")
+
+			// Iterate through data to find selected point
 			data.forEach(function (item) {
-
-				var popup_text = "<h2>" + item.Name_EN + "</h2><p>" + item.Name_CH + "</p><p>" + item.Name_ML + "</p>" + "<p><b>Location: </b>" + item.Location + "</p><p><b>State: </b>" + item.Region + "</p>" + "</p><p><b>Category: </b>" + item.Category + "</p>" + "<p> <b>Source page number: </b>" + item.PageNumber + "</p>"
-
-
 				if (item["UID"] == id) {
-					latlng = [item.latitude, item.longitude]
+					latlng = [item.Latitude, item.Longitude]
 					var point = L.circleMarker(latlng, {
 						renderer: renderer,
 						radius: 10,
@@ -209,22 +368,23 @@ function load_roster(renderer, color) {
 						weight: 3,
 						color: "#ff0e0e",
 						opacity: 1
-					}).bindPopup(popup_text, {
-						maxWidth: 300,
-						closeOnClick: false,
-						keepInView: true
 					})
 
+					// Fly to point
 					map.flyTo(latlng, 13)
 
+					// Highlight point
 					highlight_layer.addLayer(point)
 				}
 			})
 		})
-
 	})
 }
 
+
+// Temple tab helper functions below here
+
+temple_layers = L.layerGroup().addTo(map)
 $(document).ready(function () {
 
 	//Open sidebar to intro page
@@ -235,39 +395,21 @@ $(document).ready(function () {
 		position: 'left', // left or right
 	}).addTo(map);
 
+	// Default tab: home
 	sidebar.open('home');
 
-	var renderer = L.canvas({
-		padding: 0.5
-	});
+	// Load default layer
+	load_default();
 
-	//load layers
-	load_default(renderer);
+	// Change layers on tab change
 	sidebar.on('content', function (e) {
-
-		console.log(e.id)
 		if (e.id == "home") {
-			load_default(renderer)
-
+			load_default()
 		} else if (e.id == "roster") {
-			load_roster(renderer)
-		}
-	})
-	// Collaspe button
-	$('span.collapse').on('click', function () {
-		$(this).parent().find('ul').slideToggle();
-	});
-
-	$("input").change(function () {
-		if ($(this).is(":checked")) {
-			filter_state($(this).attr('id'), 1)
-		} else {
-			filter_state($(this).attr('id'), 2)
+			load_roster()
+		} else if (e.id == "temple") {
+			load_temple()
 		}
 	})
 
-	// Filter button
-	$("#filter").on('click', function () {
-		load_roster(renderer)
-	})
 })
