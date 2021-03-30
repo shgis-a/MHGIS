@@ -311,9 +311,6 @@ function load_temple() {
 		// Iterate through each point...
 		data.forEach(function (item, index) {
 
-			// Load popup to a buffer variable
-			var popup_text = "<h2>" + item.Name + "</h2><p><b>Notes: </b>" + item.Notes + "</p>" + "</p><p><b>State: </b>" + item.State + "</p><p><b>Address: </b>" + item.Address + "</p>"
-
 			UID = item["UID"]
 
 			// Draw the point and attach the popup text
@@ -326,20 +323,149 @@ function load_temple() {
 				weight: 1,
 				color: "#000000",
 				opacity: 0.3
-			}).bindPopup(popup_text, {
-				maxWidth: 300,
-				closeOnClick: false,
-				keepInView: true
 			})
 
 			// Add the point to the layer group
 			temple_layers.addLayer(pointer)
 
+			var img_text = ""
+			if (item.img == "Yes") {
+				img_text = "<li class='img_text' num='" + item.no_img + "'><b>There are images assocaited with this temple. Click here to view them.</b></li>"
+			}
+
+
 			// Write card text for visible points
-			var card_text = "<div class='card' id='" + UID + "'> <ul>" + "<li>" + item.Name + "</li><li>Notes: " + item.Notes + "</li><li>State: " + item.State + "</li><li>Address:" + item.Address + "</li></ul></div>"
+			var card_text = "<div class='card' id='" + UID + "'> <ul>" + "<li>" + item.Name + "</li><li>Notes: " + item.Notes + "</li><li>State: " + item.State + "</li><li>Address:" + item.Address + "</li>" + img_text + "</ul><div class='gallery'></div></div>"
 
 			// Add the card to the document
 			$("#cardsContTemple").append(card_text)
+		})
+
+		$(".img_text").click(function () {
+
+			$(".gallery").empty()
+
+			var uid = $(this).parent().parent().attr('id')
+			var gallery = $(this).parent().parent().find(".gallery")
+			var num_img = $(this).attr("num")
+
+			for (var i = 1; i <= num_img; i++) {
+
+				var formattedNumber = ("0" + i).slice(-2);
+
+				var dir = "./" + "temple_img" + "/" + uid + "/" + formattedNumber + ".jpg"
+
+				htmlcode = "<div class='image row'><div class='img-wrapper'><a href='" + dir + "'><img src='" + dir + "'><div class='img-overlay'><i class='fa fa-plus-circle' aria-hidden='true'></i></div></a></div></div>"
+
+				gallery.append(htmlcode)
+			}
+
+			// gallery lightbox
+			// Gallery image hover
+			$(".img-wrapper").hover(
+				function () {
+					$(this).find(".img-overlay").animate({
+						opacity: 1
+					}, 600);
+				},
+				function () {
+					$(this).find(".img-overlay").animate({
+						opacity: 0
+					}, 600);
+				}
+			);
+
+			// Lightbox
+			var $overlay = $('<div id="overlay"></div>');
+			var $image = $("<img>");
+			var $prevButton = $('<div id="prevButton"><i class="fa fa-chevron-left"></i></div>');
+			var $nextButton = $('<div id="nextButton"><i class="fa fa-chevron-right"></i></div>');
+			var $exitButton = $('<div id="exitButton"><i class="fa fa-times"></i></div>');
+
+			// Add overlay
+			$overlay.append($image).prepend($prevButton).append($nextButton).append($exitButton);
+			gallery.after($overlay);
+
+			// Hide overlay on default
+			$overlay.hide();
+
+			// When an image is clicked
+			$(".img-overlay").click(function (event) {
+				// Prevents default behavior
+				event.preventDefault();
+
+				// Adds href attribute to variable
+				var imageLocation = $(this).parent().attr("href");
+				// Add the image src to $image
+				$image.attr("src", imageLocation);
+				// Fade in the overlay
+				$overlay.fadeIn("slow");
+			});
+
+			// When the overlay is clicked
+			$overlay.click(function () {
+				// Fade out the overlay
+				$(this).fadeOut("slow");
+			});
+
+			// keyboard navigation
+			$(document).keydown(function (e) {
+				if (e.keyCode == 37) {
+					// Left
+					$prevButton.click()
+				} else if (e.keyCode == 39) {
+					// Right
+					$nextButton.click()
+				} else if (e.keyCode == 27) {
+					$exitButton.click()
+				}
+			})
+
+			// When next button is clicked
+			$nextButton.click(function (event) {
+				// Hide the current image
+				$("#overlay img").hide();
+				// Overlay image location
+				var $currentImgSrc = $("#overlay img").attr("src");
+				// Image with matching location of the overlay image
+				var $currentImg = $(".gallery img[src='" + $currentImgSrc + "']");
+				// Finds the next image
+				var $nextImg = $($currentImg.closest(".image").next().find("img"));
+				// All of the images in the gallery
+				var $images = $(".gallery img");
+				// If there is a next image
+				if ($nextImg.length > 0) {
+					// Fade in the next image
+					$("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
+				} else {
+					// Otherwise fade in the first image
+					$("#overlay img").attr("src", $($images[0]).attr("src")).fadeIn(800);
+				}
+				// Prevents overlay from being hidden
+				event.stopPropagation();
+			});
+
+			// When previous button is clicked
+			$prevButton.click(function (event) {
+				// Hide the current image
+				$("#overlay img").hide();
+				// Overlay image location
+				var $currentImgSrc = $("#overlay img").attr("src");
+				// Image with matching location of the overlay image
+				var $currentImg = $('#gallery img[src="' + $currentImgSrc + '"]');
+				// Finds the next image
+				var $nextImg = $($currentImg.closest(".image").prev().find("img"));
+				// Fade in the next image
+				$("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
+				// Prevents overlay from being hidden
+				event.stopPropagation();
+			});
+
+			// When the exit button is clicked
+			$exitButton.click(function () {
+				// Fade out the overlay
+				$("#overlay").fadeOut("slow");
+			});
 		})
 
 		// Selecting points from cards

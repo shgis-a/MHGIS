@@ -1,9 +1,0 @@
-{
-"type": "FeatureCollection",
-"name": "Category_2",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "Name_CH": "登嘉楼杜氏贞义祠", "Name_ML": "Persatuan Toh Si Cheng She Terengganu", "Name_EN": null, "Location": "235-C Tingkat 2, Jalan Kampong Cina, 20100 Kuala Terengganu, Terengganu", "Longitude": 103.135043, "Latitude": 5.329163, "Region": "Terengganu", "Category": "血缘", "PageNumber": "333" }, "geometry": { "type": "Point", "coordinates": [ 103.135, 5.3292, 103.135 ] } },
-{ "type": "Feature", "properties": { "Name_CH": "登嘉楼龙岗亲义会", "Name_ML": "Pers Lung Kong Terengganu", "Name_EN": "Lung Kong Associatio Terengganu", "Location": "145 Jalan Bandar Kualar Terengganu, Terengganu", "Longitude": 103.132341, "Latitude": 5.319595, "Region": "Terengganu", "Category": "血缘", "PageNumber": "333" }, "geometry": { "type": "Point", "coordinates": [ 103.1323, 5.3196, 103.1323 ] } }
-]
-}
