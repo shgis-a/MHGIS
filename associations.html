@@ -33,36 +33,27 @@
 	<!-- Leaflet.AJAX -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js" integrity="sha256-rVeyUZMfAHhQJ7hvWaHrKknTDdqGcn1gxBBJA++E4z8=" crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/associations.css">
 </head>
 
 <body>
 	<div class="cont">
 		<div class="cont2">
-			<div class="sidebar">
+			<div class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
 				<div class="sidebar-title">
-					<p>Available Datasets:</p>
-					<p>资料集:</p>
+					<p>MHGIS</p>
 				</div>
-				<a href="./associations.html" class="active"><span class="calligraphy">团</span><span class="sidebar-text">Associations</span><svg height="25" width="25">
-					</svg></a>
-				<a href="#"><span class="calligraphy">庙</span><span class="sidebar-text">Temples</span><svg height="25" width="25">
-					</svg>
-				</a>
+				<a href="./index.html"><span class="calligraphy">家</span><span class="sidebar-text">Home</span></a>
+				<a href="./associations.html" class="active"><span class="calligraphy">团</span><span class="sidebar-text">Associations</span></a>
+				<a href="#"><span class="calligraphy">庙</span><span class="sidebar-text">Temples</span> </a>
 			</div>
-
 			<div class="main">
 				<div id="map"></div>
-				<div class="title">
-					<h1> Welcome to the Malaysian Historical GIS project!</h1>
-					<h3>Here, you can explore spatial datasets about Malaysia, with a particular emphasis on Malaysia's Ethnic Chinese community.</h3>
-
-				</div>
 			</div>
+			<div class="rightbar"></div>
 		</div>
 	</div>
 
-	<script src="./js/index.js"></script>
-</body>
-
-</html>
+	<script src="./js/associations.js"></script>
+</body></html>

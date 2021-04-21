@@ -3,8 +3,7 @@ function intervalAnimation(map, layers) {
 	var keys = Object.keys(layersVar);
 	var selectedLayer = layersVar[keys[Math.floor(keys.length * Math.random())]]
 	selectedLayer.openPopup();
-	//calling flyto or panto repeatedly is bugged
-	//map.flyTo(selectedLayer._latlng, 10)
+	map.flyTo(selectedLayer._latlng, 10)
 
 }
 
@@ -50,7 +49,7 @@ $(document).ready(function () {
 			}).bindPopup(popup_text, {
 				maxWidth: 300,
 				closeOnClick: false,
-				keepInView: true
+				keepInView: false
 			})
 
 			// Add the point to the layer group
@@ -82,7 +81,7 @@ $(document).ready(function () {
 			}).bindPopup(popup_text, {
 				maxWidth: 300,
 				closeOnClick: false,
-				keepInView: true
+				keepInView: false
 			})
 
 			// Add the point to the layer group
