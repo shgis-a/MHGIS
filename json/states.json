@@ -1,0 +1,12 @@
+{
+	"state_name": "Federal Territory",
+	"code": "FT",
+	"districts": [
+		{"district_name": "Kuala Lumpur",
+		"code": "FT-1"},
+		{"district_name": "Labuan",
+		"code": "FT-2"},
+		{"district_name": "Putrajaya",
+		"code": "FT-3"},
+	]
+}

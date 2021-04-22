@@ -1,0 +1,489 @@
+[{
+	"state_name": "Johor",
+	"code": "MY01",
+	"territories": [{
+		"territory_name": "Batu Pahat",
+		"code": "MY0101"
+	}, {
+		"territory_name": "Johor Bahru",
+		"code": "MY0102"
+	}, {
+		"territory_name": "Kluang",
+		"code": "MY0103"
+	}, {
+		"territory_name": "Kota Tinggi",
+		"code": "MY0104"
+	}, {
+		"territory_name": "Kulaijaya",
+		"code": "MY0105"
+	}, {
+		"territory_name": "Ledang",
+		"code": "MY0106"
+	}, {
+		"territory_name": "Mersing",
+		"code": "MY0107"
+	}, {
+		"territory_name": "Muar",
+		"code": "MY0108"
+	}, {
+		"territory_name": "Pontian",
+		"code": "MY0109"
+	}, {
+		"territory_name": "Segamat",
+		"code": "MY0110"
+	}]
+}, {
+	"state_name": "Kedah",
+	"code": "MY02",
+	"territories": [{
+		"territory_name": "Baling",
+		"code": "MY0201"
+	}, {
+		"territory_name": "Bandar Baharu",
+		"code": "MY0202"
+	}, {
+		"territory_name": "Kota Setar",
+		"code": "MY0203"
+	}, {
+		"territory_name": "Kuala Muda",
+		"code": "MY0204"
+	}, {
+		"territory_name": "Kubang Pasu",
+		"code": "MY0205"
+	}, {
+		"territory_name": "Kulim",
+		"code": "MY0206"
+	}, {
+		"territory_name": "Langkawi",
+		"code": "MY0207"
+	}, {
+		"territory_name": "Padang Terap",
+		"code": "MY0208"
+	}, {
+		"territory_name": "Pendang",
+		"code": "MY0209"
+	}, {
+		"territory_name": "Pokok Sena",
+		"code": "MY0210"
+	}, {
+		"territory_name": "Sik",
+		"code": "MY0211"
+	}, {
+		"territory_name": "Yan",
+		"code": "MY0212"
+	}]
+}, {
+	"state_name": "Kelantan",
+	"code": "MY03",
+	"territories": [{
+		"territory_name": "Bachok",
+		"code": "MY0301"
+	}, {
+		"territory_name": "Gua Musang",
+		"code": "MY0302"
+	}, {
+		"territory_name": "Jeli",
+		"code": "MY0303"
+	}, {
+		"territory_name": "Kota Bharu",
+		"code": "MY0304"
+	}, {
+		"territory_name": "Kuala Krai",
+		"code": "MY0305"
+	}, {
+		"territory_name": "Machang",
+		"code": "MY0306"
+	}, {
+		"territory_name": "Pasir Mas",
+		"code": "MY0307"
+	}, {
+		"territory_name": "Pasir Puteh",
+		"code": "MY0308"
+	}, {
+		"territory_name": "Tanah Merah",
+		"code": "MY0309"
+	}, {
+		"territory_name": "Tumpat",
+		"code": "MY0310"
+	}]
+}, {
+	"state_name": "Federal Territory",
+	"code": "MY04",
+	"territories": [{
+		"territory_name": "Labuan",
+		"code": "MY0501"
+	}, {
+		"territory_name": "Putrajaya",
+		"code": "MY1601"
+	}, {
+		"territory_name": "Kuala Lumpur",
+		"code": "MY0401"
+	}]
+}, {
+	"state_name": "Malacca",
+	"code": "MY06",
+	"territories": [{
+		"territory_name": "Alor Gajah",
+		"code": "MY0601"
+	}, {
+		"territory_name": "Jasin",
+		"code": "MY0602"
+	}, {
+		"territory_name": "Malacca Tengah",
+		"code": "MY0603"
+	}]
+}, {
+	"state_name": "Negeri Sembilan",
+	"code": "MY07",
+	"territories": [{
+		"territory_name": "Jelebu",
+		"code": "MY0701"
+	}, {
+		"territory_name": "Jempol",
+		"code": "MY0702"
+	}, {
+		"territory_name": "Kuala Pilah",
+		"code": "MY0703"
+	}, {
+		"territory_name": "Port Dickson",
+		"code": "MY0704"
+	}, {
+		"territory_name": "Rembau",
+		"code": "MY0705"
+	}, {
+		"territory_name": "Seremban",
+		"code": "MY0706"
+	}, {
+		"territory_name": "Tampin",
+		"code": "MY0707"
+	}]
+}, {
+	"state_name": "Pahang",
+	"code": "MY08",
+	"territories": [{
+		"territory_name": "Bentong",
+		"code": "MY0801"
+	}, {
+		"territory_name": "Bera",
+		"code": "MY0802"
+	}, {
+		"territory_name": "Cameron Highlands",
+		"code": "MY0803"
+	}, {
+		"territory_name": "Jerantut",
+		"code": "MY0804"
+	}, {
+		"territory_name": "Kuantan",
+		"code": "MY0805"
+	}, {
+		"territory_name": "Lipis",
+		"code": "MY0806"
+	}, {
+		"territory_name": "Maran",
+		"code": "MY0807"
+	}, {
+		"territory_name": "Pekan",
+		"code": "MY0808"
+	}, {
+		"territory_name": "Raub",
+		"code": "MY0809"
+	}, {
+		"territory_name": "Rompin",
+		"code": "MY0810"
+	}, {
+		"territory_name": "Temerloh",
+		"code": "MY0811"
+	}]
+}, {
+	"state_name": "Perak",
+	"code": "MY09",
+	"territories": [{
+		"territory_name": "Batang Padang",
+		"code": "MY0901"
+	}, {
+		"territory_name": "Hilir Perak",
+		"code": "MY0902"
+	}, {
+		"territory_name": "Kampar",
+		"code": "MY0904"
+	}, {
+		"territory_name": "Kerian",
+		"code": "MY0905"
+	}, {
+		"territory_name": "Kinta",
+		"code": "MY0906"
+	}, {
+		"territory_name": "Kuala Kangsar",
+		"code": "MY0907"
+	}, {
+		"territory_name": "Larut Dan Matang",
+		"code": "MY0908"
+	}, {
+		"territory_name": "Manjung (Dinding)",
+		"code": "MY0909"
+	}, {
+		"territory_name": "Perak Tengah",
+		"code": "MY0910"
+	}, {
+		"territory_name": "Ulu Perak",
+		"code": "MY0903"
+	}]
+}, {
+	"state_name": "Perlis",
+	"code": "MY10",
+	"territories": [{
+		"territory_name": "Perlis",
+		"code": "MY1001"
+	}]
+}, {
+	"state_name": "Penang",
+	"code": "MY11",
+	"territories": [{
+		"territory_name": "Barat Daya",
+		"code": "MY1101"
+	}, {
+		"territory_name": "S.P. Tengah",
+		"code": "MY1103"
+	}, {
+		"territory_name": "S.P. Utara",
+		"code": "MY1104"
+	}, {
+		"territory_name": "S.P.Selatan",
+		"code": "MY1102"
+	}, {
+		"territory_name": "Timur Laut",
+		"code": "MY1105"
+	}]
+}, {
+	"state_name": "Sabah",
+	"code": "MY12",
+	"territories": [{
+		"territory_name": "Beaufort",
+		"code": "MY1201"
+	}, {
+		"territory_name": "Beluran",
+		"code": "MY1202"
+	}, {
+		"territory_name": "Keningau",
+		"code": "MY1203"
+	}, {
+		"territory_name": "Kinabatangan",
+		"code": "MY1204"
+	}, {
+		"territory_name": "Kota Belud",
+		"code": "MY1205"
+	}, {
+		"territory_name": "Kota Kinabalu",
+		"code": "MY1206"
+	}, {
+		"territory_name": "Kota Marudu",
+		"code": "MY1207"
+	}, {
+		"territory_name": "Kuala Penyu",
+		"code": "MY1208"
+	}, {
+		"territory_name": "Kudat",
+		"code": "MY1209"
+	}, {
+		"territory_name": "Kunak",
+		"code": "MY1210"
+	}, {
+		"territory_name": "Lahad Datu",
+		"code": "MY1211"
+	}, {
+		"territory_name": "Nabawan",
+		"code": "MY1212"
+	}, {
+		"territory_name": "Papar",
+		"code": "MY1213"
+	}, {
+		"territory_name": "Penampang",
+		"code": "MY1214"
+	}, {
+		"territory_name": "Pitas",
+		"code": "MY1215"
+	}, {
+		"territory_name": "Putatan",
+		"code": "MY1216"
+	}, {
+		"territory_name": "Ranau",
+		"code": "MY1217"
+	}, {
+		"territory_name": "Sandakan",
+		"code": "MY1218"
+	}, {
+		"territory_name": "Semporna",
+		"code": "MY1219"
+	}, {
+		"territory_name": "Sipitang",
+		"code": "MY1220"
+	}, {
+		"territory_name": "Tambunan",
+		"code": "MY1221"
+	}, {
+		"territory_name": "Tawau",
+		"code": "MY1222"
+	}, {
+		"territory_name": "Tenom",
+		"code": "MY1223"
+	}, {
+		"territory_name": "Tongod",
+		"code": "MY1224"
+	}, {
+		"territory_name": "Tuaran",
+		"code": "MY1225"
+	}]
+}, {
+	"state_name": "Sarawak",
+	"code": "MY13",
+	"territories": [{
+		"territory_name": "Asajaya",
+		"code": "MY1301"
+	}, {
+		"territory_name": "Bau",
+		"code": "MY1302"
+	}, {
+		"territory_name": "Belaga",
+		"code": "MY1303"
+	}, {
+		"territory_name": "Betong",
+		"code": "MY1304"
+	}, {
+		"territory_name": "Bintulu",
+		"code": "MY1305"
+	}, {
+		"territory_name": "Dalat",
+		"code": "MY1306"
+	}, {
+		"territory_name": "Daro",
+		"code": "MY1307"
+	}, {
+		"territory_name": "Julau",
+		"code": "MY1308"
+	}, {
+		"territory_name": "Kanowit",
+		"code": "MY1309"
+	}, {
+		"territory_name": "Kapit",
+		"code": "MY1310"
+	}, {
+		"territory_name": "Kuching",
+		"code": "MY1311"
+	}, {
+		"territory_name": "Lawas",
+		"code": "MY1312"
+	}, {
+		"territory_name": "Limbang",
+		"code": "MY1313"
+	}, {
+		"territory_name": "Lubok Antu",
+		"code": "MY1314"
+	}, {
+		"territory_name": "Lundu",
+		"code": "MY1315"
+	}, {
+		"territory_name": "Marudi",
+		"code": "MY1316"
+	}, {
+		"territory_name": "Matu",
+		"code": "MY1317"
+	}, {
+		"territory_name": "Meradong",
+		"code": "MY1318"
+	}, {
+		"territory_name": "Miri",
+		"code": "MY1319"
+	}, {
+		"territory_name": "Mukah",
+		"code": "MY1320"
+	}, {
+		"territory_name": "Pakan",
+		"code": "MY1321"
+	}, {
+		"territory_name": "Samarahan",
+		"code": "MY1322"
+	}, {
+		"territory_name": "Saratok",
+		"code": "MY1323"
+	}, {
+		"territory_name": "Sarikei",
+		"code": "MY1324"
+	}, {
+		"territory_name": "Selangau",
+		"code": "MY1325"
+	}, {
+		"territory_name": "Serian",
+		"code": "MY1326"
+	}, {
+		"territory_name": "Sibu",
+		"code": "MY1327"
+	}, {
+		"territory_name": "Simunjan",
+		"code": "MY1328"
+	}, {
+		"territory_name": "Song",
+		"code": "MY1329"
+	}, {
+		"territory_name": "Sri Aman",
+		"code": "MY1330"
+	}, {
+		"territory_name": "Tatau",
+		"code": "MY1331"
+	}]
+}, {
+	"state_name": "Terengganu",
+	"code": "MY15",
+	"territories": [{
+		"territory_name": "Besut",
+		"code": "MY1501"
+	}, {
+		"territory_name": "Dungun",
+		"code": "MY1502"
+	}, {
+		"territory_name": "Hulu Terengganu",
+		"code": "MY1503"
+	}, {
+		"territory_name": "Kemaman",
+		"code": "MY1504"
+	}, {
+		"territory_name": "Kuala Terengganu",
+		"code": "MY1505"
+	}, {
+		"territory_name": "Marang",
+		"code": "MY1506"
+	}, {
+		"territory_name": "Setiu",
+		"code": "MY1507"
+	}]
+}, {
+	"state_name": "Selangor",
+	"code": "MY17",
+	"territories": [{
+		"territory_name": "Gombak",
+		"code": "MY1701"
+	}, {
+		"territory_name": "Klang",
+		"code": "MY1704"
+	}, {
+		"territory_name": "Kuala Langat",
+		"code": "MY1705"
+	}, {
+		"territory_name": "Kuala Selangor",
+		"code": "MY1706"
+	}, {
+		"territory_name": "Petaling",
+		"code": "MY1707"
+	}, {
+		"territory_name": "Sabak Bernam",
+		"code": "MY1708"
+	}, {
+		"territory_name": "Sepang",
+		"code": "MY1709"
+	}, {
+		"territory_name": "Ulu Langat",
+		"code": "MY1702"
+	}, {
+		"territory_name": "Ulu Selangor",
+		"code": "MY1703"
+	}]
+}]

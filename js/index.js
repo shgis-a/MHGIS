@@ -3,7 +3,10 @@ function intervalAnimation(map, layers) {
 	var keys = Object.keys(layersVar);
 	var selectedLayer = layersVar[keys[Math.floor(keys.length * Math.random())]]
 	selectedLayer.openPopup();
-	map.flyTo(selectedLayer._latlng, 10)
+	map.flyTo(selectedLayer._latlng, 13, {
+		animate: true,
+		duration: 1.5
+	})
 
 }
 
@@ -87,11 +90,12 @@ $(document).ready(function () {
 			// Add the point to the layer group
 			layers.addLayer(pointer)
 		})
+
+		intervalAnimation(map, layers);
 	})
 
 	// Animation every 4 seconds
 	const interval = setInterval(function () {
 		intervalAnimation(map, layers);
-	}, 4000);
-
+	}, 5000);
 })

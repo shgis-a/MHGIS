@@ -1,0 +1,145 @@
+﻿OBJECTID *,Shape *,admin2Name_en,admin2Pcode,admin2RefName,admin2AltName1_en,admin2AltName2_en,admin1Name_en,admin1Pcode,admin0Name_en,admin0Pcode,date,validOn,validTo,Shape_Length,Shape_Area
+1,Polygon ZM,Alor Gajah,MY0601,<Null>,<Null>,<Null>,Malacca,MY06,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.217152,0.054501
+2,Polygon ZM,Asajaya,MY1301,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.604365,0.010494
+3,Polygon ZM,Bachok,MY0301,<Null>,<Null>,<Null>,Kelantan,MY03,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.850443,0.022898
+4,Polygon ZM,Baling,MY0201,<Null>,<Null>,<Null>,Kedah,MY02,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.46921,0.125286
+5,Polygon ZM,Bandar Baharu,MY0202,<Null>,<Null>,<Null>,Kedah,MY02,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.933445,0.022073
+6,Polygon ZM,Barat Daya,MY1101,<Null>,<Null>,<Null>,Penang,MY11,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.9823,0.015145
+7,Polygon ZM,Batang Padang,MY0901,<Null>,<Null>,<Null>,Perak,MY09,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.652094,0.223732
+8,Polygon ZM,Batu Pahat,MY0101,<Null>,<Null>,<Null>,Johor,MY01,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.856647,0.161041
+9,Polygon ZM,Bau,MY1302,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.249607,0.076524
+10,Polygon ZM,Beaufort,MY1201,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.948622,0.13657
+11,Polygon ZM,Belaga,MY1303,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,7.662039,1.590535
+12,Polygon ZM,Beluran,MY1202,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,7.022044,0.675567
+13,Polygon ZM,Bentong,MY0801,<Null>,<Null>,<Null>,Pahang,MY08,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.15838,0.147713
+14,Polygon ZM,Bera,MY0802,<Null>,<Null>,<Null>,Pahang,MY08,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.193996,0.178283
+15,Polygon ZM,Besut,MY1501,<Null>,<Null>,<Null>,Terengganu,MY15,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.406582,0.095774
+16,Polygon ZM,Betong,MY1304,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.233126,0.188259
+17,Polygon ZM,Bintulu,MY1305,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,4.420746,0.576656
+18,Polygon ZM,Cameron Highlands,MY0803,<Null>,<Null>,<Null>,Pahang,MY08,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.105697,0.05765
+19,Polygon ZM,Dalat,MY1306,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.418855,0.085975
+20,Polygon ZM,Daro,MY1307,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,4.88384,0.183823
+21,Polygon ZM,Dungun,MY1502,<Null>,<Null>,<Null>,Terengganu,MY15,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.463592,0.219613
+22,Polygon ZM,Gombak,MY1701,<Null>,<Null>,<Null>,Selangor,MY17,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.322455,0.051452
+23,Polygon ZM,Gua Musang,MY0302,<Null>,<Null>,<Null>,Kelantan,MY03,Malaysia,MY,2/12/2020,11/2/2021,<Null>,4.827679,0.665931
+24,Polygon ZM,Hilir Perak,MY0902,<Null>,<Null>,<Null>,Perak,MY09,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.483515,0.145464
+25,Polygon ZM,Hulu Terengganu,MY1503,<Null>,<Null>,<Null>,Terengganu,MY15,Malaysia,MY,2/12/2020,11/2/2021,<Null>,3.08549,0.316419
+26,Polygon ZM,Jasin,MY0602,<Null>,<Null>,<Null>,Malacca,MY06,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.477217,0.056806
+27,Polygon ZM,Jelebu,MY0701,<Null>,<Null>,<Null>,Negeri Sembilan,MY07,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.607905,0.110271
+28,Polygon ZM,Jeli,MY0303,<Null>,<Null>,<Null>,Kelantan,MY03,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.618166,0.116721
+29,Polygon ZM,Jempol,MY0702,<Null>,<Null>,<Null>,Negeri Sembilan,MY07,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.916396,0.126464
+30,Polygon ZM,Jerantut,MY0804,<Null>,<Null>,<Null>,Pahang,MY08,Malaysia,MY,2/12/2020,11/2/2021,<Null>,4.37747,0.589941
+31,Polygon ZM,Johor Bahru,MY0102,<Null>,<Null>,<Null>,Johor,MY01,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.828889,0.080165
+32,Polygon ZM,Julau,MY1308,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.730319,0.134289
+33,Polygon ZM,Kampar,MY0904,<Null>,<Null>,<Null>,Perak,MY09,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.247729,0.059793
+34,Polygon ZM,Kanowit,MY1309,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.974216,0.175987
+35,Polygon ZM,Kapit,MY1310,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,7.07459,1.280847
+36,Polygon ZM,Kemaman,MY1504,<Null>,<Null>,<Null>,Terengganu,MY15,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.626214,0.204839
+37,Polygon ZM,Keningau,MY1203,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.39901,0.255792
+38,Polygon ZM,Kerian,MY0905,<Null>,<Null>,<Null>,Perak,MY09,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.968711,0.07616
+39,Polygon ZM,Kinabatangan,MY1204,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,5.897119,0.621302
+40,Polygon ZM,Kinta,MY0906,<Null>,<Null>,<Null>,Perak,MY09,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.754173,0.159985
+41,Polygon ZM,Klang,MY1704,<Null>,<Null>,<Null>,Selangor,MY17,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.954744,0.050157
+42,Polygon ZM,Kluang,MY0103,<Null>,<Null>,<Null>,Johor,MY01,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.360992,0.233585
+43,Polygon ZM,Kota Belud,MY1205,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.086746,0.109647
+44,Polygon ZM,Kota Bharu,MY0304,<Null>,<Null>,<Null>,Kelantan,MY03,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.013321,0.032946
+45,Polygon ZM,Kota Kinabalu,MY1206,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.860531,0.030107
+46,Polygon ZM,Kota Marudu,MY1207,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.163416,0.142667
+47,Polygon ZM,Kota Setar,MY0203,<Null>,<Null>,<Null>,Kedah,MY02,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.944448,0.030366
+48,Polygon ZM,Kota Tinggi,MY0104,<Null>,<Null>,<Null>,Johor,MY01,Malaysia,MY,2/12/2020,11/2/2021,<Null>,3.152794,0.278306
+49,Polygon ZM,Kuala Kangsar,MY0907,<Null>,<Null>,<Null>,Perak,MY09,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.552861,0.207957
+50,Polygon ZM,Kuala Krai,MY0305,<Null>,<Null>,<Null>,Kelantan,MY03,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.084701,0.185897
+51,Polygon ZM,Kuala Langat,MY1705,<Null>,<Null>,<Null>,Selangor,MY17,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.965997,0.06785
+52,Polygon ZM,Kuala Muda,MY0204,<Null>,<Null>,<Null>,Kedah,MY02,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.242795,0.075157
+53,Polygon ZM,Kuala Penyu,MY1208,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.794903,0.038552
+54,Polygon ZM,Kuala Pilah,MY0703,<Null>,<Null>,<Null>,Negeri Sembilan,MY07,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.3476,0.078348
+55,Polygon ZM,Kuala Selangor,MY1706,<Null>,<Null>,<Null>,Selangor,MY17,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.417629,0.096401
+56,Polygon ZM,Kuala Terengganu,MY1505,<Null>,<Null>,<Null>,Terengganu,MY15,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.046889,0.046393
+57,Polygon ZM,Kuantan,MY0805,<Null>,<Null>,<Null>,Pahang,MY08,Malaysia,MY,2/12/2020,11/2/2021,<Null>,3.185074,0.245748
+58,Polygon ZM,Kubang Pasu,MY0205,<Null>,<Null>,<Null>,Kedah,MY02,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.44021,0.077598
+59,Polygon ZM,Kuching,MY1311,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,5.129454,0.143797
+60,Polygon ZM,Kudat,MY1209,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,5.388722,0.108204
+61,Polygon ZM,Kulaijaya,MY0105,<Null>,<Null>,<Null>,Johor,MY01,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.073953,0.061542
+62,Polygon ZM,Kulim,MY0206,<Null>,<Null>,<Null>,Kedah,MY02,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.364834,0.064414
+63,Polygon ZM,Kunak,MY1210,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.117347,0.089774
+64,Polygon ZM,Lahad Datu,MY1211,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,5.610262,0.528156
+65,Polygon ZM,Langkawi,MY0207,<Null>,<Null>,<Null>,Kedah,MY02,Malaysia,MY,2/12/2020,11/2/2021,<Null>,3.496179,0.039189
+66,Polygon ZM,Larut Dan Matang,MY0908,<Null>,<Null>,<Null>,Perak,MY09,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.938901,0.106734
+67,Polygon ZM,Lawas,MY1312,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,3.23356,0.298206
+68,Polygon ZM,Ledang,MY0106,<Null>,<Null>,<Null>,Johor,MY01,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.402204,0.077518
+69,Polygon ZM,Limbang,MY1313,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,3.436954,0.328248
+70,Polygon ZM,Lipis,MY0806,<Null>,<Null>,<Null>,Pahang,MY08,Malaysia,MY,2/12/2020,11/2/2021,<Null>,3.881762,0.443086
+71,Polygon ZM,Lubok Antu,MY1314,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.658895,0.114945
+72,Polygon ZM,Lundu,MY1315,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.515048,0.145
+73,Polygon ZM,Machang,MY0306,<Null>,<Null>,<Null>,Kelantan,MY03,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.168621,0.043011
+74,Polygon ZM,Manjung (Dinding),MY0909,<Null>,<Null>,<Null>,Perak,MY09,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.445259,0.087511
+75,Polygon ZM,Maran,MY0807,<Null>,<Null>,<Null>,Pahang,MY08,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.95827,0.163974
+76,Polygon ZM,Marang,MY1506,<Null>,<Null>,<Null>,Terengganu,MY15,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.447201,0.054062
+77,Polygon ZM,Marudi,MY1316,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,7.207833,1.799896
+78,Polygon ZM,Matu,MY1317,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.603257,0.132821
+79,Polygon ZM,Malacca Tengah,MY0603,<Null>,<Null>,<Null>,Malacca,MY06,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.056653,0.023175
+80,Polygon ZM,Meradong,MY1318,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.778628,0.036739
+81,Polygon ZM,Mersing,MY0107,<Null>,<Null>,<Null>,Johor,MY01,Malaysia,MY,2/12/2020,11/2/2021,<Null>,5.393424,0.243371
+82,Polygon ZM,Miri,MY1319,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,3.814082,0.374313
+83,Polygon ZM,Muar,MY0108,<Null>,<Null>,<Null>,Johor,MY01,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.617172,0.113092
+84,Polygon ZM,Mukah,MY1320,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.112676,0.200092
+85,Polygon ZM,Nabawan,MY1212,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,4.133958,0.498228
+86,Polygon ZM,Padang Terap,MY0208,<Null>,<Null>,<Null>,Kedah,MY02,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.785713,0.110289
+87,Polygon ZM,Pakan,MY1321,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.531997,0.10352
+88,Polygon ZM,Papar,MY1213,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.57845,0.100708
+89,Polygon ZM,Pasir Mas,MY0307,<Null>,<Null>,<Null>,Kelantan,MY03,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.23235,0.04847
+90,Polygon ZM,Pasir Puteh,MY0308,<Null>,<Null>,<Null>,Kelantan,MY03,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.926459,0.032932
+91,Polygon ZM,Pekan,MY0808,<Null>,<Null>,<Null>,Pahang,MY08,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.866281,0.308597
+92,Polygon ZM,Penampang,MY1214,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.85722,0.037382
+93,Polygon ZM,Pendang,MY0209,<Null>,<Null>,<Null>,Kedah,MY02,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.020942,0.052699
+94,Polygon ZM,Perak Tengah,MY0910,<Null>,<Null>,<Null>,Perak,MY09,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.950052,0.102785
+95,Polygon ZM,Perlis,MY1001,<Null>,<Null>,<Null>,Perlis,MY10,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.36159,0.06732
+96,Polygon ZM,Petaling,MY1707,<Null>,<Null>,<Null>,Selangor,MY17,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.064401,0.038043
+97,Polygon ZM,Pitas,MY1215,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.353807,0.128892
+98,Polygon ZM,Pokok Sena,MY0210,<Null>,<Null>,<Null>,Kedah,MY02,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.776564,0.023622
+99,Polygon ZM,Pontian,MY0109,<Null>,<Null>,<Null>,Johor,MY01,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.613273,0.073915
+100,Polygon ZM,Port Dickson,MY0704,<Null>,<Null>,<Null>,Negeri Sembilan,MY07,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.392769,0.045941
+101,Polygon ZM,Putatan,MY1216,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.287438,0.002134
+102,Polygon ZM,Ranau,MY1217,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.724668,0.294609
+103,Polygon ZM,Raub,MY0809,<Null>,<Null>,<Null>,Pahang,MY08,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.421526,0.186307
+104,Polygon ZM,Rembau,MY0705,<Null>,<Null>,<Null>,Negeri Sembilan,MY07,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.88955,0.031995
+105,Polygon ZM,Rompin,MY0810,<Null>,<Null>,<Null>,Pahang,MY08,Malaysia,MY,2/12/2020,11/2/2021,<Null>,3.724993,0.41261
+106,Polygon ZM,S.P. Tengah,MY1103,<Null>,<Null>,<Null>,Penang,MY11,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.61898,0.019343
+107,Polygon ZM,S.P. Utara,MY1104,<Null>,<Null>,<Null>,Penang,MY11,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.809345,0.022636
+108,Polygon ZM,S.P.Selatan,MY1102,<Null>,<Null>,<Null>,Penang,MY11,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.718031,0.01918
+109,Polygon ZM,Sabak Bernam,MY1708,<Null>,<Null>,<Null>,Selangor,MY17,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.898931,0.080118
+110,Polygon ZM,Samarahan,MY1322,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.962648,0.035726
+111,Polygon ZM,Sandakan,MY1218,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,5.160897,0.185537
+112,Polygon ZM,Saratok,MY1323,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.612686,0.114568
+113,Polygon ZM,Sarikei,MY1324,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.971091,0.061601
+114,Polygon ZM,Segamat,MY0110,<Null>,<Null>,<Null>,Johor,MY01,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.594423,0.233776
+115,Polygon ZM,Selangau,MY1325,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,3.30237,0.305542
+116,Polygon ZM,Semporna,MY1219,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,5.45566,0.093197
+117,Polygon ZM,Sepang,MY1709,<Null>,<Null>,<Null>,Selangor,MY17,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.456429,0.043866
+118,Polygon ZM,Seremban,MY0706,<Null>,<Null>,<Null>,Negeri Sembilan,MY07,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.375103,0.079686
+119,Polygon ZM,Serian,MY1326,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.957432,0.173325
+120,Polygon ZM,Setiu,MY1507,<Null>,<Null>,<Null>,Terengganu,MY15,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.603343,0.114187
+121,Polygon ZM,Sibu,MY1327,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.800888,0.162185
+122,Polygon ZM,Sik,MY0211,<Null>,<Null>,<Null>,Kedah,MY02,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.313048,0.136445
+123,Polygon ZM,Simunjan,MY1328,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.05375,0.178404
+124,Polygon ZM,Sipitang,MY1220,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.919106,0.226045
+125,Polygon ZM,Song,MY1329,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,3.470461,0.327893
+126,Polygon ZM,Sri Aman,MY1330,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,3.461034,0.34356
+127,Polygon ZM,Tambunan,MY1221,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.521648,0.115075
+128,Polygon ZM,Tampin,MY0707,<Null>,<Null>,<Null>,Negeri Sembilan,MY07,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.261095,0.069711
+129,Polygon ZM,Tanah Merah,MY0309,<Null>,<Null>,<Null>,Kelantan,MY03,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.340807,0.069853
+130,Polygon ZM,Tatau,MY1331,<Null>,<Null>,<Null>,Sarawak,MY13,Malaysia,MY,2/12/2020,11/2/2021,<Null>,4.757781,0.401427
+131,Polygon ZM,Tawau,MY1222,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,6.301624,0.484792
+132,Polygon ZM,Temerloh,MY0811,<Null>,<Null>,<Null>,Pahang,MY08,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.976631,0.185261
+133,Polygon ZM,Tenom,MY1223,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,2.441043,0.18753
+134,Polygon ZM,Timur Laut,MY1105,<Null>,<Null>,<Null>,Penang,MY11,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.497817,0.009919
+135,Polygon ZM,Tongod,MY1224,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,4.907956,0.839565
+136,Polygon ZM,Tuaran,MY1225,<Null>,<Null>,<Null>,Sabah,MY12,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.627953,0.098007
+137,Polygon ZM,Tumpat,MY0310,<Null>,<Null>,<Null>,Kelantan,MY03,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.941919,0.015866
+138,Polygon ZM,Ulu Langat,MY1702,<Null>,<Null>,<Null>,Selangor,MY17,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.143863,0.06797
+139,Polygon ZM,Ulu Perak,MY0903,<Null>,<Null>,<Null>,Perak,MY09,Malaysia,MY,2/12/2020,11/2/2021,<Null>,4.096984,0.536993
+140,Polygon ZM,Ulu Selangor,MY1703,<Null>,<Null>,<Null>,Selangor,MY17,Malaysia,MY,2/12/2020,11/2/2021,<Null>,1.806512,0.140974
+141,Polygon ZM,Labuan,MY0501,<Null>,<Null>,<Null>,Federal Territory,MY04,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.624558,0.007395
+142,Polygon ZM,Putrajaya,MY1601,<Null>,<Null>,<Null>,Federal Territory,MY04,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.268241,0.005021
+143,Polygon ZM,Kuala Lumpur,MY0401,<Null>,<Null>,<Null>,Federal Territory,MY04,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.641683,0.022126
+144,Polygon ZM,Yan,MY0212,<Null>,<Null>,<Null>,Kedah,MY02,Malaysia,MY,2/12/2020,11/2/2021,<Null>,0.813802,0.020238

@@ -1,0 +1,67 @@
+ul {
+	list-style-type: none;
+	padding-left: 5px;
+}
+
+.swatch {
+	height: 10px;
+	width: 10px;
+	margin-right: 5px;
+	border: 1px solid black;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.rightbar h3 {
+	text-align: center;
+	margin-top: 15px;
+	font-weight: bold;
+}
+
+#one {
+	background-color: rgba(166, 206, 227, 0.7);
+}
+
+#two {
+	background-color: rgba(31, 120, 180, 0.7);
+}
+
+#three {
+	background-color: rgba(178, 223, 138, 0.7);
+}
+
+#four {
+	background-color: rgba(51, 160, 44, 0.7);
+}
+
+#five {
+	background-color: rgba(251, 154, 153, 0.7);
+}
+
+#six {
+	background-color: rgba(227, 26, 28, 0.7);
+}
+
+#seven {
+	background-color: rgba(253, 191, 111, 0.7);
+}
+
+#eight {
+	background-color: rgba(255, 127, 0, 0.7);
+}
+
+#nine {
+	background-color: rgba(202, 178, 214, 0.7);
+}
+
+#ten {
+	background-color: rgba(106, 61, 154, 0.7);
+}
+
+input {
+	margin-right: 5px;
+}
+
+details li {
+	margin-left: 30px;
+}
