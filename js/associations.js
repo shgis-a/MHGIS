@@ -107,21 +107,76 @@ var sidebar = L.control.sidebar({
 // Load filter page territory checboxes
 $.getJSON("./json/MYterritories.json", function (data) {
 	for (var row in data) {
-
-
 		var htmlhead = "<li><details>"
-		var summary = "<summary><input class='filter' id='" + data[row]["state_code"] + "' type='checkbox' checked>" + data[row]["state_name"] + "</summary>"
+		var summary = "<summary><input class='state-filter' id='" + data[row]["code"] + "' type='checkbox' checked>" + data[row]["state_name"] + "</summary>"
 		var terrhead = "<ul>"
-
 		var terrbody = ""
-
 		for (var terr in data[row]["territories"]) {
-			var terrentry = "<li><input class='filter' id='" + data[row]["territories"][terr]["code"] + "' type='checkbox' checked>" + data[row]["territories"][terr]["territory_name"] + "</li>"
+			var terrentry = "<li><input class='terr-filter' id='" + data[row]["territories"][terr]["code"] + "' type='checkbox' checked>" + data[row]["territories"][terr]["territory_name"] + "</li>"
 			terrbody = terrbody + terrentry
 		}
 		var terrend = "</ul>"
 		var htmlend = "</li></details>"
-
 		$(".filter_states").append(htmlhead + summary + terrhead + terrbody + terrend + htmlend)
 	}
+
+	// Intemediate checkboxes
+	$('input[type="checkbox"]').change(function (e) {
+		checked = $(this).prop("checked")
+		container = $(this).parent()
+
+		if (container.is("li")) {
+			var siblings = container.siblings()
+
+			function checkSiblings(el) {
+
+				all = true;
+
+				var parent = el.parent().parent()
+				el.siblings().each(function () {
+					let returnValue = all = ($(this).children('input[type="checkbox"]').prop("checked") === checked);
+					return returnValue;
+
+				})
+
+				if (all && checked) {
+
+					parent.children("summary").children('input[type="checkbox"]').prop({
+						indeterminate: false,
+						checked: checked
+					});
+
+				} else if (all && !checked) {
+					parent.children("summary").children('input[type="checkbox"]').prop({
+						indeterminate: false,
+						checked: checked
+					});
+				} else {
+					parent.children("summary").children('input[type="checkbox"]').prop({
+						indeterminate: true,
+						checked: false
+					});
+				}
+			}
+
+			checkSiblings(container)
+		} else if (container.is("summary")) {
+			var parent = $(this).parent().parent()
+			if (checked) {
+				parent.children("ul").children("li").each(function (el) {
+					$(this).children('input[type="checkbox"]').prop({
+						indeterminate: false,
+						checked: checked
+					})
+				})
+			} else {
+				parent.children("ul").children("li").each(function (el) {
+					$(this).children('input[type="checkbox"]').prop({
+						indeterminate: false,
+						checked: false
+					})
+				})
+			}
+		}
+	})
 })
