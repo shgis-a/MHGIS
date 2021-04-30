@@ -12,10 +12,7 @@ ul {
 	display: inline-block;
 }
 
-.rightbar h3 {
-	text-align: center;
-	margin-top: 15px;
-	font-weight: bold;
+ont-weight: bold;
 }
 
 #one {
@@ -64,4 +61,13 @@ input {
 
 details li {
 	margin-left: 30px;
+}
+
+.cards-cont div {
+	padding: 10px;
+	margin-top: 5px;
+}
+
+div.active-card {
+	background-color: #fffb9e;
 }

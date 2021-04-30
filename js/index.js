@@ -29,7 +29,7 @@ $(document).ready(function () {
 	var layers = L.layerGroup().addTo(map)
 
 	// Load the associations dataset
-	$.getJSON("./json/MHGIS Masterlist.json", function (data) {
+	$.getJSON("./json/MHGIS Masterlist_processed.json", function (data) {
 
 		// Iterate through each point...
 		data.forEach(function (item, index) {
@@ -40,7 +40,7 @@ $(document).ready(function () {
 			UID = item["UID"]
 
 			// Draw the point and attach the popup text
-			latlng = [item.latitude, item.longitude]
+			latlng = [item.Latitude, item.Longitude]
 			var pointer = item["UID"]
 			pointer = L.circleMarker(latlng, {
 				renderer: renderer,
