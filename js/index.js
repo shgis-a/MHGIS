@@ -90,12 +90,10 @@ $(document).ready(function () {
 			// Add the point to the layer group
 			layers.addLayer(pointer)
 		})
-
-		intervalAnimation(map, layers);
 	})
 
 	// Animation every 4 seconds
 	const interval = setInterval(function () {
 		intervalAnimation(map, layers);
-	}, 5000);
+	}, 5000)
 })
