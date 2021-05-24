@@ -56,7 +56,6 @@
 							<ul role="tablist">
 								<!-- top aligned tabs -->
 								<li><a href="#info" role="tab"><i class="fa fa-info-circle"></i></a></li>
-								<li><a href="#filter" role="tab"><i class="fa fa-filter"></i></a></li>
 								<li><a href="#search" role="tab"><i class="fa fa-search"></i></a></li>
 							</ul>
 
@@ -89,34 +88,13 @@
 									<li><span class="bold">Name: </span><span class="det_name"></span></li>
 									<li><span class="bold">Address: </span><span class="det_address"></span></li>
 									<li><span class="bold">State: </span><span class="det_states"></span></li>
-									<li><span class="bold">UID: </span><span class="det_uid"></span></li>
-									<li><span class="bold">Notes: </span><span class="det_notes"></span></li>
+									<li><span class="bold">Region: </span><span class="det_region"></span></li>
+									<li><span class="bold">Sources: </span>
+										<ul><span class="det_sources"></span></ul>
+									</li>
 								</ul>
 								<div class="gallery"></div>
 							</div>
-
-							<div class="leaflet-sidebar-pane" id="filter">
-								<h1 class="leaflet-sidebar-header">Filter<div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
-								</h1>
-								<p>This page filters out visible data points based on the boxes you have checked.</p>
-
-								<p>State</p>
-								<ul class="filter_states">
-								</ul>
-
-								<p>Category</p>
-								<ul class="filter_options">
-									<li> <input class="filter cat-filter" id="宗教" type="checkbox" checked>
-										<div class="swatch" id="one"></div>Images of temple available
-									</li>
-									<li> <input class="filter cat-filter" id="地缘" type="checkbox" checked>
-										<div class="swatch" id="two"></div>No Images available
-									</li>
-								</ul>
-
-								<button type="button" id="filter-button" class="btn btn-primary btn-lg btn-block">Filter</button>
-							</div>
-
 							<div class="leaflet-sidebar-pane" id="search">
 								<h1 class="leaflet-sidebar-header">Search<div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
 								</h1>

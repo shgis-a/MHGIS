@@ -61,18 +61,17 @@ $(document).ready(function () {
 	})
 
 	// Load the temples dataset
-	$.getJSON("./json/temple_georefed.json", function (data) {
+	$.getJSON("./json/temples_merged.json", function (data) {
 
 		// Iterate through each point...
 		data.forEach(function (item, index) {
 
 			// Load popup to a buffer variable
-			var popup_text = "<p>Dataset: Temples</p><p>" + item.Name + "</p><p><b>Notes: </b>" + item.Notes + "</p>" + "</p><p><b>State: </b>" + item.State + "</p><p><b>Address: </b>" + item.Address + "</p>"
-
+			var popup_text = "<p>Dataset: Temples</p><ul><li>" + item.name_en + "</li><li>" + item.name_zh + "</li><li>Address: " + item.address + "</li><li>State: " + item.state + "</li><li> region: " + item.region + "</li></ul>"
 			UID = item["UID"]
 
 			// Draw the point and attach the popup text
-			latlng = [item.Latitude, item.Longitude]
+			latlng = [item.latitude, item.longitude]
 			var pointer = item["UID"]
 			pointer = L.circleMarker(latlng, {
 				renderer: renderer,
