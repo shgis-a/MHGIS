@@ -61,13 +61,22 @@ $(document).ready(function () {
 	})
 
 	// Load the temples dataset
-	$.getJSON("./json/temples_merged.json", function (data) {
+	$.getJSON("./json/merged_temples.json", function (data) {
 
 		// Iterate through each point...
 		data.forEach(function (item, index) {
 
 			// Load popup to a buffer variable
-			var popup_text = "<p>Dataset: Temples</p><ul><li>" + item.name_en + "</li><li>" + item.name_zh + "</li><li>Address: " + item.address + "</li><li>State: " + item.state + "</li><li> region: " + item.region + "</li></ul>"
+			var popup_text = "<p>Dataset: Temples</p><ul>"
+			var popup_suffix = "</ul>"
+
+			Object.entries(item).forEach(function (line) {
+				var line_buffer = "<li><b>" + line[0] + "</b>:" + line[1] + "</li>"
+				popup_text = popup_text + line_buffer
+			})
+
+			popup_text = popup_text + popup_suffix
+
 			UID = item["UID"]
 
 			// Draw the point and attach the popup text
@@ -90,9 +99,4 @@ $(document).ready(function () {
 			layers.addLayer(pointer)
 		})
 	})
-
-	// Animation every 4 seconds
-	const interval = setInterval(function () {
-		intervalAnimation(map, layers);
-	}, 5000)
 })

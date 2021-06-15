@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis saveUserFull="Reuben Wang" saveDateTime="2021-05-21T20:22:49" saveUser="Reuben" version="3.16.3-Hannover" projectname="">
+<qgis version="3.16.3-Hannover" saveUserFull="Reuben Wang" projectname="" saveUser="Reuben" saveDateTime="2021-06-14T23:21:01">
   <homePath path=""/>
   <title></title>
   <autotransaction active="0"/>
@@ -20,40 +20,48 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties/>
-    <layer-tree-layer expanded="1" source="./temples_merged.csv?type=csv&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=longitude&amp;yField=latitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" id="temples_merged_9cd2f436_e23f_4071_b1a6_c5a20a121673" name="temples_merged" checked="Qt::Checked" patch_size="-1,-1" providerKey="delimitedtext" legend_split_behavior="0" legend_exp="">
+    <layer-tree-layer name="temple_new_georefed" expanded="1" legend_exp="" source="./temple_new_georefed.csv?type=csv&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=lon&amp;yField=lat&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" legend_split_behavior="0" id="temple_new_georefed_a5991932_9d46_4a93_8b6a_1b39cc97fe61" checked="Qt::Checked" providerKey="delimitedtext" patch_size="-1,-1">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" source="./temple_georefed_old.csv?type=csv&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=Longitude&amp;yField=Latitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" id="temple_georefed_old_54e9f0d3_1d8f_4d98_9703_2a37aaf0e851" name="temple_georefed_old" checked="Qt::Unchecked" patch_size="-1,-1" providerKey="delimitedtext" legend_split_behavior="0" legend_exp="">
+    <layer-tree-layer name="temples_merged" expanded="1" legend_exp="" source="./temples_merged.csv?type=csv&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=longitude&amp;yField=latitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" legend_split_behavior="0" id="temples_merged_9059bdfd_97dd_4ff6_80b3_df16998716ea" checked="Qt::Unchecked" providerKey="delimitedtext" patch_size="-1,-1">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" source="./temples_georef.csv?type=csv&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=longitude&amp;yField=latitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" id="temples_georef_29e476f0_89f5_4bc8_8492_f353cbf3e64a" name="temples_georef" checked="Qt::Unchecked" patch_size="-1,-1" providerKey="delimitedtext" legend_split_behavior="0" legend_exp="">
+    <layer-tree-layer name="distance" expanded="1" legend_exp="" source="./distance.csv|layername=distance" legend_split_behavior="0" id="distance_355e9e17_f82c_49f5_a7f6_844085ed3f43" checked="Qt::Checked" providerKey="ogr" patch_size="-1,-1">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=http://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=19&amp;zmin=0" id="OSM_Standard_fccbb562_9c61_40dd_9bfd_dcf6bf823b48" name="OSM Standard" checked="Qt::Checked" patch_size="-1,-1" providerKey="wms" legend_split_behavior="0" legend_exp="">
+    <layer-tree-layer name="temple_georefed_old" expanded="1" legend_exp="" source="./temple_georefed_old.csv?type=csv&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=Longitude&amp;yField=Latitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" legend_split_behavior="0" id="temple_georefed_old_54e9f0d3_1d8f_4d98_9703_2a37aaf0e851" checked="Qt::Unchecked" providerKey="delimitedtext" patch_size="-1,-1">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer name="temples_georef" expanded="1" legend_exp="" source="./temples_georef.csv?type=csv&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=longitude&amp;yField=latitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" legend_split_behavior="0" id="temples_georef_29e476f0_89f5_4bc8_8492_f353cbf3e64a" checked="Qt::Unchecked" providerKey="delimitedtext" patch_size="-1,-1">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer name="OSM Standard" expanded="1" legend_exp="" source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=http://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=19&amp;zmin=0" legend_split_behavior="0" id="OSM_Standard_fccbb562_9c61_40dd_9bfd_dcf6bf823b48" checked="Qt::Checked" providerKey="wms" patch_size="-1,-1">
       <customproperties/>
     </layer-tree-layer>
     <custom-order enabled="0">
       <item>OSM_Standard_fccbb562_9c61_40dd_9bfd_dcf6bf823b48</item>
       <item>temples_georef_29e476f0_89f5_4bc8_8492_f353cbf3e64a</item>
       <item>temple_georefed_old_54e9f0d3_1d8f_4d98_9703_2a37aaf0e851</item>
-      <item>temples_merged_9cd2f436_e23f_4071_b1a6_c5a20a121673</item>
+      <item>temples_merged_9059bdfd_97dd_4ff6_80b3_df16998716ea</item>
+      <item>temple_new_georefed_a5991932_9d46_4a93_8b6a_1b39cc97fe61</item>
     </custom-order>
   </layer-tree-group>
-  <snapping-settings enabled="0" type="1" scaleDependencyMode="0" self-snapping="0" minScale="0" mode="2" unit="1" intersection-snapping="0" maxScale="0" tolerance="12">
+  <snapping-settings scaleDependencyMode="0" maxScale="0" minScale="0" unit="1" mode="2" self-snapping="0" tolerance="12" intersection-snapping="0" enabled="0" type="1">
     <individual-layer-settings>
-      <layer-setting enabled="0" type="1" id="temples_georef_29e476f0_89f5_4bc8_8492_f353cbf3e64a" units="1" minScale="0" maxScale="0" tolerance="12"/>
-      <layer-setting enabled="0" type="1" id="temples_merged_9cd2f436_e23f_4071_b1a6_c5a20a121673" units="1" minScale="0" maxScale="0" tolerance="12"/>
-      <layer-setting enabled="0" type="1" id="temple_georefed_old_54e9f0d3_1d8f_4d98_9703_2a37aaf0e851" units="1" minScale="0" maxScale="0" tolerance="12"/>
+      <layer-setting maxScale="0" minScale="0" units="1" id="temples_georef_29e476f0_89f5_4bc8_8492_f353cbf3e64a" tolerance="12" enabled="0" type="1"/>
+      <layer-setting maxScale="0" minScale="0" units="1" id="temple_georefed_old_54e9f0d3_1d8f_4d98_9703_2a37aaf0e851" tolerance="12" enabled="0" type="1"/>
+      <layer-setting maxScale="0" minScale="0" units="1" id="temples_merged_9059bdfd_97dd_4ff6_80b3_df16998716ea" tolerance="12" enabled="0" type="1"/>
+      <layer-setting maxScale="0" minScale="0" units="1" id="temple_new_georefed_a5991932_9d46_4a93_8b6a_1b39cc97fe61" tolerance="12" enabled="0" type="1"/>
     </individual-layer-settings>
   </snapping-settings>
   <relations/>
   <mapcanvas name="theMapCanvas" annotationsVisible="1">
     <units>meters</units>
     <extent>
-      <xmin>11386598.33039361424744129</xmin>
-      <ymin>62607.4906596883374732</ymin>
-      <xmax>11696553.53756219334900379</xmax>
-      <ymax>318829.83592507685534656</ymax>
+      <xmin>11443051.35856826044619083</xmin>
+      <ymin>84401.12334288662532344</ymin>
+      <xmax>11704576.06461674906313419</xmax>
+      <ymax>300588.72716055816272274</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -74,24 +82,34 @@
   </mapcanvas>
   <projectModels/>
   <legend updateDrawingOrder="true">
-    <legendlayer checked="Qt::Checked" name="temples_merged" drawingOrder="-1" showFeatureCount="0" open="true">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="temples_merged_9cd2f436_e23f_4071_b1a6_c5a20a121673" visible="1"/>
+    <legendlayer name="temple_new_georefed" open="true" drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile visible="1" layerid="temple_new_georefed_a5991932_9d46_4a93_8b6a_1b39cc97fe61" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer checked="Qt::Unchecked" name="temple_georefed_old" drawingOrder="-1" showFeatureCount="0" open="true">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="temple_georefed_old_54e9f0d3_1d8f_4d98_9703_2a37aaf0e851" visible="0"/>
+    <legendlayer name="temples_merged" open="true" drawingOrder="-1" checked="Qt::Unchecked" showFeatureCount="0">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile visible="0" layerid="temples_merged_9059bdfd_97dd_4ff6_80b3_df16998716ea" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer checked="Qt::Unchecked" name="temples_georef" drawingOrder="-1" showFeatureCount="0" open="true">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="temples_georef_29e476f0_89f5_4bc8_8492_f353cbf3e64a" visible="0"/>
+    <legendlayer name="distance" open="true" drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile visible="1" layerid="distance_355e9e17_f82c_49f5_a7f6_844085ed3f43" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer checked="Qt::Checked" name="OSM Standard" drawingOrder="-1" showFeatureCount="0" open="true">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="OSM_Standard_fccbb562_9c61_40dd_9bfd_dcf6bf823b48" visible="1"/>
+    <legendlayer name="temple_georefed_old" open="true" drawingOrder="-1" checked="Qt::Unchecked" showFeatureCount="0">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile visible="0" layerid="temple_georefed_old_54e9f0d3_1d8f_4d98_9703_2a37aaf0e851" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer name="temples_georef" open="true" drawingOrder="-1" checked="Qt::Unchecked" showFeatureCount="0">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile visible="0" layerid="temples_georef_29e476f0_89f5_4bc8_8492_f353cbf3e64a" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer name="OSM Standard" open="true" drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile visible="1" layerid="OSM_Standard_fccbb562_9c61_40dd_9bfd_dcf6bf823b48" isInOverview="0"/>
       </filegroup>
     </legendlayer>
   </legend>
@@ -172,7 +190,7 @@
     <rendermaptile>0</rendermaptile>
     <expressionContextScope/>
   </mapcanvas>
-  <main-annotation-layer type="annotation" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" autoRefreshEnabled="0" autoRefreshTime="0">
+  <main-annotation-layer refreshOnNotifyEnabled="0" autoRefreshTime="0" autoRefreshEnabled="0" refreshOnNotifyMessage="" type="annotation">
     <id>Annotations_75867e0d_fe7f_4b6d_935a_84fc42e6f600</id>
     <datasource></datasource>
     <keywordList>
@@ -221,7 +239,7 @@
     <layerOpacity>1</layerOpacity>
   </main-annotation-layer>
   <projectlayers>
-    <maplayer type="raster" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" minScale="1e+08" styleCategories="AllStyleCategories" autoRefreshEnabled="0" autoRefreshTime="0" hasScaleBasedVisibilityFlag="0" maxScale="0">
+    <maplayer styleCategories="AllStyleCategories" maxScale="0" refreshOnNotifyEnabled="0" autoRefreshTime="0" minScale="1e+08" autoRefreshEnabled="0" hasScaleBasedVisibilityFlag="0" refreshOnNotifyMessage="" type="raster">
       <extent>
         <xmin>-20037508.34278924390673637</xmin>
         <ymin>-20037508.34278925508260727</ymin>
@@ -275,7 +293,7 @@
       </resourceMetadata>
       <provider>wms</provider>
       <noData>
-        <noDataList bandNo="1" useSrcNoData="0"/>
+        <noDataList useSrcNoData="0" bandNo="1"/>
       </noData>
       <map-layer-style-manager current="default">
         <map-layer-style name="default"/>
@@ -285,7 +303,7 @@
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <temporal enabled="0" mode="0" fetchMode="0">
+      <temporal fetchMode="0" mode="0" enabled="0">
         <fixedRange>
           <start></start>
           <end></end>
@@ -296,9 +314,9 @@
       </customproperties>
       <pipe>
         <provider>
-          <resampling enabled="false" maxOversampling="2" zoomedInResamplingMethod="nearestNeighbour" zoomedOutResamplingMethod="nearestNeighbour"/>
+          <resampling zoomedInResamplingMethod="nearestNeighbour" zoomedOutResamplingMethod="nearestNeighbour" maxOversampling="2" enabled="false"/>
         </provider>
-        <rasterrenderer type="singlebandcolordata" band="1" opacity="1" alphaBand="-1" nodataColor="">
+        <rasterrenderer opacity="1" alphaBand="-1" nodataColor="" type="singlebandcolordata" band="1">
           <rasterTransparency/>
           <minMaxOrigin>
             <limits>None</limits>
@@ -309,14 +327,157 @@
             <stdDevFactor>2</stdDevFactor>
           </minMaxOrigin>
         </rasterrenderer>
-        <brightnesscontrast brightness="0" contrast="0" gamma="1"/>
-        <huesaturation colorizeGreen="128" grayscaleMode="0" colorizeOn="0" colorizeStrength="100" colorizeRed="255" colorizeBlue="128" saturation="0"/>
+        <brightnesscontrast contrast="0" gamma="1" brightness="0"/>
+        <huesaturation saturation="0" grayscaleMode="0" colorizeOn="0" colorizeBlue="128" colorizeGreen="128" colorizeRed="255" colorizeStrength="100"/>
         <rasterresampler maxOversampling="2"/>
         <resamplingStage>resamplingFilter</resamplingStage>
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
-    <maplayer minScale="100000000" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" type="vector" simplifyMaxScale="1" autoRefreshEnabled="0" simplifyDrawingHints="1" geometry="Point" wkbType="Point" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" labelsEnabled="0" simplifyLocal="1" maxScale="0" simplifyAlgorithm="0" autoRefreshTime="0" styleCategories="AllStyleCategories" readOnly="0">
+    <maplayer styleCategories="AllStyleCategories" maxScale="0" refreshOnNotifyEnabled="0" autoRefreshTime="0" minScale="1e+08" autoRefreshEnabled="0" geometry="No geometry" wkbType="NoGeometry" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyMessage="" type="vector">
+      <id>distance_355e9e17_f82c_49f5_a7f6_844085ed3f43</id>
+      <datasource>./distance.csv|layername=distance</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>distance</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt></wkt>
+          <proj4></proj4>
+          <srsid>0</srsid>
+          <srid>0</srid>
+          <authid></authid>
+          <description></description>
+          <projectionacronym></projectionacronym>
+          <ellipsoidacronym></ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>true</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <temporal accumulate="0" fixedDuration="0" endField="" startField="" durationUnit="min" startExpression="" durationField="" mode="0" endExpression="" enabled="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <customproperties/>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option value="" type="QString"/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field name="InputID" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="TargetID" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Distance" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias name="" field="InputID" index="0"/>
+        <alias name="" field="TargetID" index="1"/>
+        <alias name="" field="Distance" index="2"/>
+      </aliases>
+      <defaults>
+        <default field="InputID" expression="" applyOnUpdate="0"/>
+        <default field="TargetID" expression="" applyOnUpdate="0"/>
+        <default field="Distance" expression="" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="0" constraints="0" field="InputID" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="TargetID" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="Distance" notnull_strength="0" exp_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint exp="" desc="" field="InputID"/>
+        <constraint exp="" desc="" field="TargetID"/>
+        <constraint exp="" desc="" field="Distance"/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyAlgorithm="0" wkbType="Point" maxScale="0" minScale="100000000" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" labelsEnabled="0" autoRefreshTime="0" type="vector" autoRefreshEnabled="0" simplifyMaxScale="1" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" simplifyDrawingHints="1">
       <extent>
         <xmin>101.67859169999999835</xmin>
         <ymin>1.34414600000000006</ymin>
@@ -381,16 +542,16 @@
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <temporal enabled="0" accumulate="0" mode="0" endField="" durationField="" durationUnit="min" startExpression="" fixedDuration="0" startField="" endExpression="">
+      <temporal accumulate="0" fixedDuration="0" endField="" startField="" durationUnit="min" startExpression="" durationField="" mode="0" endExpression="" enabled="0">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
-      <renderer-v2 type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0">
+      <renderer-v2 forceraster="0" enableorderby="0" symbollevels="0" type="singleSymbol">
         <symbols>
-          <symbol type="marker" alpha="1" name="0" clip_to_extent="1" force_rhr="0">
-            <layer class="SimpleMarker" enabled="1" pass="0" locked="0">
+          <symbol force_rhr="0" alpha="1" name="0" type="marker" clip_to_extent="1">
+            <layer pass="0" class="SimpleMarker" locked="0" enabled="1">
               <prop k="angle" v="0"/>
               <prop k="color" v="114,155,111,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
@@ -411,9 +572,9 @@
               <prop k="vertical_anchor_point" v="1"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" name="name" value=""/>
+                  <Option name="name" value="" type="QString"/>
                   <Option name="properties"/>
-                  <Option type="QString" name="type" value="collection"/>
+                  <Option name="type" value="collection" type="QString"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -426,9 +587,9 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
         <activeChecks type="StringList">
-          <Option type="QString" value=""/>
+          <Option value="" type="QString"/>
         </activeChecks>
         <checkConfiguration/>
       </geometryOptions>
@@ -511,26 +672,26 @@
         <alias name="" field="no_img" index="8"/>
       </aliases>
       <defaults>
-        <default field="Name" applyOnUpdate="0" expression=""/>
-        <default field="Notes" applyOnUpdate="0" expression=""/>
-        <default field="Address" applyOnUpdate="0" expression=""/>
-        <default field="State" applyOnUpdate="0" expression=""/>
-        <default field="UID" applyOnUpdate="0" expression=""/>
-        <default field="Latitude" applyOnUpdate="0" expression=""/>
-        <default field="Longitude" applyOnUpdate="0" expression=""/>
-        <default field="img" applyOnUpdate="0" expression=""/>
-        <default field="no_img" applyOnUpdate="0" expression=""/>
+        <default field="Name" expression="" applyOnUpdate="0"/>
+        <default field="Notes" expression="" applyOnUpdate="0"/>
+        <default field="Address" expression="" applyOnUpdate="0"/>
+        <default field="State" expression="" applyOnUpdate="0"/>
+        <default field="UID" expression="" applyOnUpdate="0"/>
+        <default field="Latitude" expression="" applyOnUpdate="0"/>
+        <default field="Longitude" expression="" applyOnUpdate="0"/>
+        <default field="img" expression="" applyOnUpdate="0"/>
+        <default field="no_img" expression="" applyOnUpdate="0"/>
       </defaults>
       <constraints>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="Name"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="Notes"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="Address"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="State"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="UID"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="Latitude"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="Longitude"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="img"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="no_img"/>
+        <constraint unique_strength="0" constraints="0" field="Name" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="Notes" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="Address" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="State" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="UID" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="Latitude" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="Longitude" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="img" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="no_img" notnull_strength="0" exp_strength="0"/>
       </constraints>
       <constraintExpressions>
         <constraint exp="" desc="" field="Name"/>
@@ -547,7 +708,7 @@
       <attributeactions>
         <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <conditionalstyles>
@@ -569,7 +730,694 @@
       <previewExpression></previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer minScale="100000000" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" type="vector" simplifyMaxScale="1" autoRefreshEnabled="0" simplifyDrawingHints="1" geometry="Point" wkbType="Point" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" labelsEnabled="0" simplifyLocal="1" maxScale="0" simplifyAlgorithm="0" autoRefreshTime="0" styleCategories="AllStyleCategories" readOnly="0">
+    <maplayer simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyAlgorithm="0" wkbType="Point" maxScale="0" minScale="100000000" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" labelsEnabled="0" autoRefreshTime="0" type="vector" autoRefreshEnabled="0" simplifyMaxScale="1" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" simplifyDrawingHints="0">
+      <extent>
+        <xmin>102.53527160000000151</xmin>
+        <ymin>1.35057139999999998</ymin>
+        <xmax>104.27161859999999649</xmax>
+        <ymax>2.54653820000000009</ymax>
+      </extent>
+      <id>temple_new_georefed_a5991932_9d46_4a93_8b6a_1b39cc97fe61</id>
+      <datasource>file:./temple_new_georefed.csv?type=csv&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=lon&amp;yField=lat&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>temple_new_georefed</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["World"],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial miny="0" maxx="0" dimensions="2" maxz="0" crs="" minz="0" minx="0" maxy="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="">delimitedtext</provider>
+      <vectorjoins>
+        <join joinFieldName="UID" cascadedDelete="0" targetFieldName="District_code" editable="1" memoryCache="0" joinLayerId="temples_georef_29e476f0_89f5_4bc8_8492_f353cbf3e64a" upsertOnEdit="0" dynamicForm="1">
+          <joinFieldsSubset>
+            <field name="name_zh"/>
+            <field name="name_en"/>
+            <field name="region"/>
+            <field name="address"/>
+            <field name="state"/>
+            <field name="old"/>
+            <field name="a"/>
+            <field name="b"/>
+            <field name="c"/>
+            <field name="d"/>
+            <field name="e"/>
+            <field name="f"/>
+            <field name="g"/>
+            <field name="h"/>
+            <field name="latitude"/>
+            <field name="longitude"/>
+            <field name="UID"/>
+            <field name="no_img"/>
+          </joinFieldsSubset>
+        </join>
+      </vectorjoins>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <temporal accumulate="0" fixedDuration="0" endField="" startField="" durationUnit="min" startExpression="" durationField="" mode="0" endExpression="" enabled="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 forceraster="0" enableorderby="0" symbollevels="0" type="singleSymbol">
+        <symbols>
+          <symbol force_rhr="0" alpha="1" name="0" type="marker" clip_to_extent="1">
+            <layer pass="0" class="SimpleMarker" locked="0" enabled="1">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="232,113,141,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" value="" type="QString"/>
+                  <Option name="properties"/>
+                  <Option name="type" value="collection" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <property key="dualview/previewExpressions">
+          <value>"Chinese_name"</value>
+        </property>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory maxScaleDenominator="1e+08" spacingUnitScale="3x:0,0,0,0,0,0" penAlpha="255" backgroundColor="#ffffff" showAxis="1" height="15" penWidth="0" backgroundAlpha="255" rotationOffset="270" scaleBasedVisibility="0" sizeScale="3x:0,0,0,0,0,0" barWidth="5" scaleDependency="Area" enabled="0" direction="0" lineSizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up" spacing="5" lineSizeType="MM" penColor="#000000" labelPlacementMethod="XHeight" minimumSize="0" width="15" minScaleDenominator="0" opacity="1" sizeType="MM" spacingUnit="MM">
+          <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          <axisSymbol>
+            <symbol force_rhr="0" alpha="1" name="" type="line" clip_to_extent="1">
+              <layer pass="0" class="SimpleLine" locked="0" enabled="1">
+                <prop k="align_dash_pattern" v="0"/>
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="dash_pattern_offset" v="0"/>
+                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="dash_pattern_offset_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="35,35,35,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0.26"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="ring_filter" v="0"/>
+                <prop k="tweak_dash_pattern_on_corners" v="0"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option name="name" value="" type="QString"/>
+                    <Option name="properties"/>
+                    <Option name="type" value="collection" type="QString"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </axisSymbol>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings placement="0" zIndex="0" showAll="1" linePlacementFlags="18" priority="0" dist="0" obstacle="0">
+        <properties>
+          <Option type="Map">
+            <Option name="name" value="" type="QString"/>
+            <Option name="properties"/>
+            <Option name="type" value="collection" type="QString"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field name="Chinese_name" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Address" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Postal Code" configurationFlags="None">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="District_En" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="District_Zh" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="District_code" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Main_Diety" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Founding_Date" configurationFlags="None">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Steele" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Plaque" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="lat" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="lon" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="temples_georef_name_zh" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="temples_georef_name_en" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="temples_georef_region" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="temples_georef_address" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="temples_georef_state" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="temples_georef_old" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="temples_georef_a" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="temples_georef_b" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="temples_georef_c" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="temples_georef_d" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="temples_georef_e" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="temples_georef_f" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="temples_georef_g" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="temples_georef_h" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="temples_georef_latitude" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="temples_georef_longitude" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="temples_georef_UID" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="temples_georef_no_img" configurationFlags="None">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias name="" field="Chinese_name" index="0"/>
+        <alias name="" field="Address" index="1"/>
+        <alias name="" field="Postal Code" index="2"/>
+        <alias name="" field="District_En" index="3"/>
+        <alias name="" field="District_Zh" index="4"/>
+        <alias name="" field="District_code" index="5"/>
+        <alias name="" field="Main_Diety" index="6"/>
+        <alias name="" field="Founding_Date" index="7"/>
+        <alias name="" field="Steele" index="8"/>
+        <alias name="" field="Plaque" index="9"/>
+        <alias name="" field="lat" index="10"/>
+        <alias name="" field="lon" index="11"/>
+        <alias name="" field="temples_georef_name_zh" index="12"/>
+        <alias name="" field="temples_georef_name_en" index="13"/>
+        <alias name="" field="temples_georef_region" index="14"/>
+        <alias name="" field="temples_georef_address" index="15"/>
+        <alias name="" field="temples_georef_state" index="16"/>
+        <alias name="" field="temples_georef_old" index="17"/>
+        <alias name="" field="temples_georef_a" index="18"/>
+        <alias name="" field="temples_georef_b" index="19"/>
+        <alias name="" field="temples_georef_c" index="20"/>
+        <alias name="" field="temples_georef_d" index="21"/>
+        <alias name="" field="temples_georef_e" index="22"/>
+        <alias name="" field="temples_georef_f" index="23"/>
+        <alias name="" field="temples_georef_g" index="24"/>
+        <alias name="" field="temples_georef_h" index="25"/>
+        <alias name="" field="temples_georef_latitude" index="26"/>
+        <alias name="" field="temples_georef_longitude" index="27"/>
+        <alias name="" field="temples_georef_UID" index="28"/>
+        <alias name="" field="temples_georef_no_img" index="29"/>
+      </aliases>
+      <defaults>
+        <default field="Chinese_name" expression="" applyOnUpdate="0"/>
+        <default field="Address" expression="" applyOnUpdate="0"/>
+        <default field="Postal Code" expression="" applyOnUpdate="0"/>
+        <default field="District_En" expression="" applyOnUpdate="0"/>
+        <default field="District_Zh" expression="" applyOnUpdate="0"/>
+        <default field="District_code" expression="" applyOnUpdate="0"/>
+        <default field="Main_Diety" expression="" applyOnUpdate="0"/>
+        <default field="Founding_Date" expression="" applyOnUpdate="0"/>
+        <default field="Steele" expression="" applyOnUpdate="0"/>
+        <default field="Plaque" expression="" applyOnUpdate="0"/>
+        <default field="lat" expression="" applyOnUpdate="0"/>
+        <default field="lon" expression="" applyOnUpdate="0"/>
+        <default field="temples_georef_name_zh" expression="" applyOnUpdate="0"/>
+        <default field="temples_georef_name_en" expression="" applyOnUpdate="0"/>
+        <default field="temples_georef_region" expression="" applyOnUpdate="0"/>
+        <default field="temples_georef_address" expression="" applyOnUpdate="0"/>
+        <default field="temples_georef_state" expression="" applyOnUpdate="0"/>
+        <default field="temples_georef_old" expression="" applyOnUpdate="0"/>
+        <default field="temples_georef_a" expression="" applyOnUpdate="0"/>
+        <default field="temples_georef_b" expression="" applyOnUpdate="0"/>
+        <default field="temples_georef_c" expression="" applyOnUpdate="0"/>
+        <default field="temples_georef_d" expression="" applyOnUpdate="0"/>
+        <default field="temples_georef_e" expression="" applyOnUpdate="0"/>
+        <default field="temples_georef_f" expression="" applyOnUpdate="0"/>
+        <default field="temples_georef_g" expression="" applyOnUpdate="0"/>
+        <default field="temples_georef_h" expression="" applyOnUpdate="0"/>
+        <default field="temples_georef_latitude" expression="" applyOnUpdate="0"/>
+        <default field="temples_georef_longitude" expression="" applyOnUpdate="0"/>
+        <default field="temples_georef_UID" expression="" applyOnUpdate="0"/>
+        <default field="temples_georef_no_img" expression="" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="0" constraints="0" field="Chinese_name" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="Address" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="Postal Code" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="District_En" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="District_Zh" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="District_code" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="Main_Diety" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="Founding_Date" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="Steele" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="Plaque" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="lat" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="lon" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="temples_georef_name_zh" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="temples_georef_name_en" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="temples_georef_region" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="temples_georef_address" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="temples_georef_state" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="temples_georef_old" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="temples_georef_a" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="temples_georef_b" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="temples_georef_c" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="temples_georef_d" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="temples_georef_e" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="temples_georef_f" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="temples_georef_g" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="temples_georef_h" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="temples_georef_latitude" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="temples_georef_longitude" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="temples_georef_UID" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="temples_georef_no_img" notnull_strength="0" exp_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint exp="" desc="" field="Chinese_name"/>
+        <constraint exp="" desc="" field="Address"/>
+        <constraint exp="" desc="" field="Postal Code"/>
+        <constraint exp="" desc="" field="District_En"/>
+        <constraint exp="" desc="" field="District_Zh"/>
+        <constraint exp="" desc="" field="District_code"/>
+        <constraint exp="" desc="" field="Main_Diety"/>
+        <constraint exp="" desc="" field="Founding_Date"/>
+        <constraint exp="" desc="" field="Steele"/>
+        <constraint exp="" desc="" field="Plaque"/>
+        <constraint exp="" desc="" field="lat"/>
+        <constraint exp="" desc="" field="lon"/>
+        <constraint exp="" desc="" field="temples_georef_name_zh"/>
+        <constraint exp="" desc="" field="temples_georef_name_en"/>
+        <constraint exp="" desc="" field="temples_georef_region"/>
+        <constraint exp="" desc="" field="temples_georef_address"/>
+        <constraint exp="" desc="" field="temples_georef_state"/>
+        <constraint exp="" desc="" field="temples_georef_old"/>
+        <constraint exp="" desc="" field="temples_georef_a"/>
+        <constraint exp="" desc="" field="temples_georef_b"/>
+        <constraint exp="" desc="" field="temples_georef_c"/>
+        <constraint exp="" desc="" field="temples_georef_d"/>
+        <constraint exp="" desc="" field="temples_georef_e"/>
+        <constraint exp="" desc="" field="temples_georef_f"/>
+        <constraint exp="" desc="" field="temples_georef_g"/>
+        <constraint exp="" desc="" field="temples_georef_h"/>
+        <constraint exp="" desc="" field="temples_georef_latitude"/>
+        <constraint exp="" desc="" field="temples_georef_longitude"/>
+        <constraint exp="" desc="" field="temples_georef_UID"/>
+        <constraint exp="" desc="" field="temples_georef_no_img"/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column hidden="0" name="Chinese_name" width="-1" type="field"/>
+          <column hidden="0" name="Address" width="-1" type="field"/>
+          <column hidden="0" name="Postal Code" width="-1" type="field"/>
+          <column hidden="0" name="District_En" width="-1" type="field"/>
+          <column hidden="0" name="District_Zh" width="-1" type="field"/>
+          <column hidden="0" name="District_code" width="-1" type="field"/>
+          <column hidden="0" name="Main_Diety" width="-1" type="field"/>
+          <column hidden="0" name="Founding_Date" width="-1" type="field"/>
+          <column hidden="0" name="Steele" width="-1" type="field"/>
+          <column hidden="0" name="Plaque" width="-1" type="field"/>
+          <column hidden="0" name="lat" width="-1" type="field"/>
+          <column hidden="0" name="lon" width="-1" type="field"/>
+          <column hidden="1" width="-1" type="actions"/>
+          <column hidden="0" name="temples_georef_name_zh" width="-1" type="field"/>
+          <column hidden="0" name="temples_georef_name_en" width="-1" type="field"/>
+          <column hidden="0" name="temples_georef_region" width="-1" type="field"/>
+          <column hidden="0" name="temples_georef_address" width="-1" type="field"/>
+          <column hidden="0" name="temples_georef_state" width="-1" type="field"/>
+          <column hidden="0" name="temples_georef_old" width="-1" type="field"/>
+          <column hidden="0" name="temples_georef_a" width="-1" type="field"/>
+          <column hidden="0" name="temples_georef_b" width="-1" type="field"/>
+          <column hidden="0" name="temples_georef_c" width="-1" type="field"/>
+          <column hidden="0" name="temples_georef_d" width="-1" type="field"/>
+          <column hidden="0" name="temples_georef_e" width="-1" type="field"/>
+          <column hidden="0" name="temples_georef_f" width="-1" type="field"/>
+          <column hidden="0" name="temples_georef_g" width="-1" type="field"/>
+          <column hidden="0" name="temples_georef_h" width="-1" type="field"/>
+          <column hidden="0" name="temples_georef_latitude" width="-1" type="field"/>
+          <column hidden="0" name="temples_georef_longitude" width="-1" type="field"/>
+          <column hidden="0" name="temples_georef_UID" width="-1" type="field"/>
+          <column hidden="0" name="temples_georef_no_img" width="-1" type="field"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field name="Address" editable="1"/>
+        <field name="Chinese_name" editable="1"/>
+        <field name="District_En" editable="1"/>
+        <field name="District_Zh" editable="1"/>
+        <field name="District_code" editable="1"/>
+        <field name="Founding_Date" editable="1"/>
+        <field name="Main_Diety" editable="1"/>
+        <field name="Plaque" editable="1"/>
+        <field name="Postal Code" editable="1"/>
+        <field name="Steele" editable="1"/>
+        <field name="lat" editable="1"/>
+        <field name="lon" editable="1"/>
+        <field name="temples_georef_UID" editable="0"/>
+        <field name="temples_georef_a" editable="0"/>
+        <field name="temples_georef_address" editable="0"/>
+        <field name="temples_georef_b" editable="0"/>
+        <field name="temples_georef_c" editable="0"/>
+        <field name="temples_georef_d" editable="0"/>
+        <field name="temples_georef_e" editable="0"/>
+        <field name="temples_georef_f" editable="0"/>
+        <field name="temples_georef_g" editable="0"/>
+        <field name="temples_georef_h" editable="0"/>
+        <field name="temples_georef_latitude" editable="0"/>
+        <field name="temples_georef_longitude" editable="0"/>
+        <field name="temples_georef_name_en" editable="0"/>
+        <field name="temples_georef_name_zh" editable="0"/>
+        <field name="temples_georef_no_img" editable="0"/>
+        <field name="temples_georef_old" editable="0"/>
+        <field name="temples_georef_region" editable="0"/>
+        <field name="temples_georef_state" editable="0"/>
+      </editable>
+      <labelOnTop>
+        <field name="Address" labelOnTop="0"/>
+        <field name="Chinese_name" labelOnTop="0"/>
+        <field name="District_En" labelOnTop="0"/>
+        <field name="District_Zh" labelOnTop="0"/>
+        <field name="District_code" labelOnTop="0"/>
+        <field name="Founding_Date" labelOnTop="0"/>
+        <field name="Main_Diety" labelOnTop="0"/>
+        <field name="Plaque" labelOnTop="0"/>
+        <field name="Postal Code" labelOnTop="0"/>
+        <field name="Steele" labelOnTop="0"/>
+        <field name="lat" labelOnTop="0"/>
+        <field name="lon" labelOnTop="0"/>
+        <field name="temples_georef_UID" labelOnTop="0"/>
+        <field name="temples_georef_a" labelOnTop="0"/>
+        <field name="temples_georef_address" labelOnTop="0"/>
+        <field name="temples_georef_b" labelOnTop="0"/>
+        <field name="temples_georef_c" labelOnTop="0"/>
+        <field name="temples_georef_d" labelOnTop="0"/>
+        <field name="temples_georef_e" labelOnTop="0"/>
+        <field name="temples_georef_f" labelOnTop="0"/>
+        <field name="temples_georef_g" labelOnTop="0"/>
+        <field name="temples_georef_h" labelOnTop="0"/>
+        <field name="temples_georef_latitude" labelOnTop="0"/>
+        <field name="temples_georef_longitude" labelOnTop="0"/>
+        <field name="temples_georef_name_en" labelOnTop="0"/>
+        <field name="temples_georef_name_zh" labelOnTop="0"/>
+        <field name="temples_georef_no_img" labelOnTop="0"/>
+        <field name="temples_georef_old" labelOnTop="0"/>
+        <field name="temples_georef_region" labelOnTop="0"/>
+        <field name="temples_georef_state" labelOnTop="0"/>
+      </labelOnTop>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression>"Chinese_name"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyAlgorithm="0" wkbType="Point" maxScale="0" minScale="100000000" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" labelsEnabled="0" autoRefreshTime="0" type="vector" autoRefreshEnabled="0" simplifyMaxScale="1" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" simplifyDrawingHints="1">
       <extent>
         <xmin>100.26003900000000613</xmin>
         <ymin>1.72557859999999996</ymin>
@@ -634,16 +1482,16 @@
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <temporal enabled="0" accumulate="0" mode="0" endField="" durationField="" durationUnit="min" startExpression="" fixedDuration="0" startField="" endExpression="">
+      <temporal accumulate="0" fixedDuration="0" endField="" startField="" durationUnit="min" startExpression="" durationField="" mode="0" endExpression="" enabled="0">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
-      <renderer-v2 type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0">
+      <renderer-v2 forceraster="0" enableorderby="0" symbollevels="0" type="singleSymbol">
         <symbols>
-          <symbol type="marker" alpha="1" name="0" clip_to_extent="1" force_rhr="0">
-            <layer class="SimpleMarker" enabled="1" pass="0" locked="0">
+          <symbol force_rhr="0" alpha="1" name="0" type="marker" clip_to_extent="1">
+            <layer pass="0" class="SimpleMarker" locked="0" enabled="1">
               <prop k="angle" v="0"/>
               <prop k="color" v="196,60,57,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
@@ -664,9 +1512,9 @@
               <prop k="vertical_anchor_point" v="1"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" name="name" value=""/>
+                  <Option name="name" value="" type="QString"/>
                   <Option name="properties"/>
-                  <Option type="QString" name="type" value="collection"/>
+                  <Option name="type" value="collection" type="QString"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -679,9 +1527,9 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
         <activeChecks type="StringList">
-          <Option type="QString" value=""/>
+          <Option value="" type="QString"/>
         </activeChecks>
         <checkConfiguration/>
       </geometryOptions>
@@ -836,44 +1684,44 @@
         <alias name="" field="no_img" index="17"/>
       </aliases>
       <defaults>
-        <default field="name_zh" applyOnUpdate="0" expression=""/>
-        <default field="name_en" applyOnUpdate="0" expression=""/>
-        <default field="region" applyOnUpdate="0" expression=""/>
-        <default field="address" applyOnUpdate="0" expression=""/>
-        <default field="state" applyOnUpdate="0" expression=""/>
-        <default field="old" applyOnUpdate="0" expression=""/>
-        <default field="a" applyOnUpdate="0" expression=""/>
-        <default field="b" applyOnUpdate="0" expression=""/>
-        <default field="c" applyOnUpdate="0" expression=""/>
-        <default field="d" applyOnUpdate="0" expression=""/>
-        <default field="e" applyOnUpdate="0" expression=""/>
-        <default field="f" applyOnUpdate="0" expression=""/>
-        <default field="g" applyOnUpdate="0" expression=""/>
-        <default field="h" applyOnUpdate="0" expression=""/>
-        <default field="latitude" applyOnUpdate="0" expression=""/>
-        <default field="longitude" applyOnUpdate="0" expression=""/>
-        <default field="UID" applyOnUpdate="0" expression=""/>
-        <default field="no_img" applyOnUpdate="0" expression=""/>
+        <default field="name_zh" expression="" applyOnUpdate="0"/>
+        <default field="name_en" expression="" applyOnUpdate="0"/>
+        <default field="region" expression="" applyOnUpdate="0"/>
+        <default field="address" expression="" applyOnUpdate="0"/>
+        <default field="state" expression="" applyOnUpdate="0"/>
+        <default field="old" expression="" applyOnUpdate="0"/>
+        <default field="a" expression="" applyOnUpdate="0"/>
+        <default field="b" expression="" applyOnUpdate="0"/>
+        <default field="c" expression="" applyOnUpdate="0"/>
+        <default field="d" expression="" applyOnUpdate="0"/>
+        <default field="e" expression="" applyOnUpdate="0"/>
+        <default field="f" expression="" applyOnUpdate="0"/>
+        <default field="g" expression="" applyOnUpdate="0"/>
+        <default field="h" expression="" applyOnUpdate="0"/>
+        <default field="latitude" expression="" applyOnUpdate="0"/>
+        <default field="longitude" expression="" applyOnUpdate="0"/>
+        <default field="UID" expression="" applyOnUpdate="0"/>
+        <default field="no_img" expression="" applyOnUpdate="0"/>
       </defaults>
       <constraints>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="name_zh"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="name_en"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="region"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="address"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="state"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="old"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="a"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="b"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="c"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="d"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="e"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="f"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="g"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="h"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="latitude"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="longitude"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="UID"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="no_img"/>
+        <constraint unique_strength="0" constraints="0" field="name_zh" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="name_en" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="region" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="address" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="state" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="old" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="a" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="b" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="c" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="d" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="e" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="f" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="g" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="h" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="latitude" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="longitude" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="UID" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="no_img" notnull_strength="0" exp_strength="0"/>
       </constraints>
       <constraintExpressions>
         <constraint exp="" desc="" field="name_zh"/>
@@ -899,7 +1747,7 @@
       <attributeactions>
         <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <conditionalstyles>
@@ -921,14 +1769,14 @@
       <previewExpression></previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer minScale="100000000" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" type="vector" simplifyMaxScale="1" autoRefreshEnabled="0" simplifyDrawingHints="1" geometry="Point" wkbType="Point" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" labelsEnabled="0" simplifyLocal="1" maxScale="0" simplifyAlgorithm="0" autoRefreshTime="0" styleCategories="AllStyleCategories" readOnly="0">
+    <maplayer simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyAlgorithm="0" wkbType="Point" maxScale="0" minScale="100000000" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" labelsEnabled="0" autoRefreshTime="0" type="vector" autoRefreshEnabled="0" simplifyMaxScale="1" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" simplifyDrawingHints="1">
       <extent>
-        <xmin>1.34414600000000006</xmin>
-        <ymin>1.72557859999999996</ymin>
-        <xmax>103.91208779999999479</xmax>
-        <ymax>104.26171170000000643</ymax>
+        <xmin>100.26003900000000613</xmin>
+        <ymin>1.34414600000000006</ymin>
+        <xmax>104.26171170000000643</xmax>
+        <ymax>6.36444209999999977</ymax>
       </extent>
-      <id>temples_merged_9cd2f436_e23f_4071_b1a6_c5a20a121673</id>
+      <id>temples_merged_9059bdfd_97dd_4ff6_80b3_df16998716ea</id>
       <datasource>file:./temples_merged.csv?type=csv&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=longitude&amp;yField=latitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</datasource>
       <keywordList>
         <value></value>
@@ -986,18 +1834,18 @@
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <temporal enabled="0" accumulate="0" mode="0" endField="" durationField="" durationUnit="min" startExpression="" fixedDuration="0" startField="" endExpression="">
+      <temporal accumulate="0" fixedDuration="0" endField="" startField="" durationUnit="min" startExpression="" durationField="" mode="0" endExpression="" enabled="0">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
-      <renderer-v2 type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0">
+      <renderer-v2 forceraster="0" enableorderby="0" symbollevels="0" type="singleSymbol">
         <symbols>
-          <symbol type="marker" alpha="1" name="0" clip_to_extent="1" force_rhr="0">
-            <layer class="SimpleMarker" enabled="1" pass="0" locked="0">
+          <symbol force_rhr="0" alpha="1" name="0" type="marker" clip_to_extent="1">
+            <layer pass="0" class="SimpleMarker" locked="0" enabled="1">
               <prop k="angle" v="0"/>
-              <prop k="color" v="125,139,143,255"/>
+              <prop k="color" v="141,90,153,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
@@ -1016,9 +1864,9 @@
               <prop k="vertical_anchor_point" v="1"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" name="name" value=""/>
+                  <Option name="name" value="" type="QString"/>
                   <Option name="properties"/>
-                  <Option type="QString" name="type" value="collection"/>
+                  <Option name="type" value="collection" type="QString"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -1031,9 +1879,9 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
         <activeChecks type="StringList">
-          <Option type="QString" value=""/>
+          <Option value="" type="QString"/>
         </activeChecks>
         <checkConfiguration/>
       </geometryOptions>
@@ -1047,6 +1895,13 @@
             </config>
           </editWidget>
         </field>
+        <field name="District_code" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
         <field name="name_en" configurationFlags="None">
           <editWidget type="">
             <config>
@@ -1054,7 +1909,14 @@
             </config>
           </editWidget>
         </field>
-        <field name="region" configurationFlags="None">
+        <field name="distinct_en" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="district_zh" configurationFlags="None">
           <editWidget type="">
             <config>
               <Option/>
@@ -1076,6 +1938,13 @@
           </editWidget>
         </field>
         <field name="old" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="old_2" configurationFlags="None">
           <editWidget type="">
             <config>
               <Option/>
@@ -1169,71 +2038,83 @@
       </fieldConfiguration>
       <aliases>
         <alias name="" field="name_zh" index="0"/>
-        <alias name="" field="name_en" index="1"/>
-        <alias name="" field="region" index="2"/>
-        <alias name="" field="address" index="3"/>
-        <alias name="" field="state" index="4"/>
-        <alias name="" field="old" index="5"/>
-        <alias name="" field="a" index="6"/>
-        <alias name="" field="b" index="7"/>
-        <alias name="" field="c" index="8"/>
-        <alias name="" field="d" index="9"/>
-        <alias name="" field="e" index="10"/>
-        <alias name="" field="f" index="11"/>
-        <alias name="" field="g" index="12"/>
-        <alias name="" field="h" index="13"/>
-        <alias name="" field="latitude" index="14"/>
-        <alias name="" field="longitude" index="15"/>
-        <alias name="" field="UID" index="16"/>
-        <alias name="" field="no_img" index="17"/>
+        <alias name="" field="District_code" index="1"/>
+        <alias name="" field="name_en" index="2"/>
+        <alias name="" field="distinct_en" index="3"/>
+        <alias name="" field="district_zh" index="4"/>
+        <alias name="" field="address" index="5"/>
+        <alias name="" field="state" index="6"/>
+        <alias name="" field="old" index="7"/>
+        <alias name="" field="old_2" index="8"/>
+        <alias name="" field="a" index="9"/>
+        <alias name="" field="b" index="10"/>
+        <alias name="" field="c" index="11"/>
+        <alias name="" field="d" index="12"/>
+        <alias name="" field="e" index="13"/>
+        <alias name="" field="f" index="14"/>
+        <alias name="" field="g" index="15"/>
+        <alias name="" field="h" index="16"/>
+        <alias name="" field="latitude" index="17"/>
+        <alias name="" field="longitude" index="18"/>
+        <alias name="" field="UID" index="19"/>
+        <alias name="" field="no_img" index="20"/>
       </aliases>
       <defaults>
-        <default field="name_zh" applyOnUpdate="0" expression=""/>
-        <default field="name_en" applyOnUpdate="0" expression=""/>
-        <default field="region" applyOnUpdate="0" expression=""/>
-        <default field="address" applyOnUpdate="0" expression=""/>
-        <default field="state" applyOnUpdate="0" expression=""/>
-        <default field="old" applyOnUpdate="0" expression=""/>
-        <default field="a" applyOnUpdate="0" expression=""/>
-        <default field="b" applyOnUpdate="0" expression=""/>
-        <default field="c" applyOnUpdate="0" expression=""/>
-        <default field="d" applyOnUpdate="0" expression=""/>
-        <default field="e" applyOnUpdate="0" expression=""/>
-        <default field="f" applyOnUpdate="0" expression=""/>
-        <default field="g" applyOnUpdate="0" expression=""/>
-        <default field="h" applyOnUpdate="0" expression=""/>
-        <default field="latitude" applyOnUpdate="0" expression=""/>
-        <default field="longitude" applyOnUpdate="0" expression=""/>
-        <default field="UID" applyOnUpdate="0" expression=""/>
-        <default field="no_img" applyOnUpdate="0" expression=""/>
+        <default field="name_zh" expression="" applyOnUpdate="0"/>
+        <default field="District_code" expression="" applyOnUpdate="0"/>
+        <default field="name_en" expression="" applyOnUpdate="0"/>
+        <default field="distinct_en" expression="" applyOnUpdate="0"/>
+        <default field="district_zh" expression="" applyOnUpdate="0"/>
+        <default field="address" expression="" applyOnUpdate="0"/>
+        <default field="state" expression="" applyOnUpdate="0"/>
+        <default field="old" expression="" applyOnUpdate="0"/>
+        <default field="old_2" expression="" applyOnUpdate="0"/>
+        <default field="a" expression="" applyOnUpdate="0"/>
+        <default field="b" expression="" applyOnUpdate="0"/>
+        <default field="c" expression="" applyOnUpdate="0"/>
+        <default field="d" expression="" applyOnUpdate="0"/>
+        <default field="e" expression="" applyOnUpdate="0"/>
+        <default field="f" expression="" applyOnUpdate="0"/>
+        <default field="g" expression="" applyOnUpdate="0"/>
+        <default field="h" expression="" applyOnUpdate="0"/>
+        <default field="latitude" expression="" applyOnUpdate="0"/>
+        <default field="longitude" expression="" applyOnUpdate="0"/>
+        <default field="UID" expression="" applyOnUpdate="0"/>
+        <default field="no_img" expression="" applyOnUpdate="0"/>
       </defaults>
       <constraints>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="name_zh"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="name_en"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="region"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="address"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="state"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="old"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="a"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="b"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="c"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="d"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="e"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="f"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="g"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="h"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="latitude"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="longitude"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="UID"/>
-        <constraint unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0" field="no_img"/>
+        <constraint unique_strength="0" constraints="0" field="name_zh" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="District_code" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="name_en" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="distinct_en" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="district_zh" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="address" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="state" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="old" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="old_2" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="a" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="b" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="c" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="d" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="e" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="f" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="g" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="h" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="latitude" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="longitude" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="UID" notnull_strength="0" exp_strength="0"/>
+        <constraint unique_strength="0" constraints="0" field="no_img" notnull_strength="0" exp_strength="0"/>
       </constraints>
       <constraintExpressions>
         <constraint exp="" desc="" field="name_zh"/>
+        <constraint exp="" desc="" field="District_code"/>
         <constraint exp="" desc="" field="name_en"/>
-        <constraint exp="" desc="" field="region"/>
+        <constraint exp="" desc="" field="distinct_en"/>
+        <constraint exp="" desc="" field="district_zh"/>
         <constraint exp="" desc="" field="address"/>
         <constraint exp="" desc="" field="state"/>
         <constraint exp="" desc="" field="old"/>
+        <constraint exp="" desc="" field="old_2"/>
         <constraint exp="" desc="" field="a"/>
         <constraint exp="" desc="" field="b"/>
         <constraint exp="" desc="" field="c"/>
@@ -1251,7 +2132,7 @@
       <attributeactions>
         <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <conditionalstyles>
@@ -1278,7 +2159,8 @@
     <layer id="OSM_Standard_fccbb562_9c61_40dd_9bfd_dcf6bf823b48"/>
     <layer id="temples_georef_29e476f0_89f5_4bc8_8492_f353cbf3e64a"/>
     <layer id="temple_georefed_old_54e9f0d3_1d8f_4d98_9703_2a37aaf0e851"/>
-    <layer id="temples_merged_9cd2f436_e23f_4071_b1a6_c5a20a121673"/>
+    <layer id="temples_merged_9059bdfd_97dd_4ff6_80b3_df16998716ea"/>
+    <layer id="temple_new_georefed_a5991932_9d46_4a93_8b6a_1b39cc97fe61"/>
   </layerorder>
   <properties>
     <Digitizing>
@@ -1329,9 +2211,9 @@
   </properties>
   <dataDefinedServerProperties>
     <Option type="Map">
-      <Option type="QString" name="name" value=""/>
+      <Option name="name" value="" type="QString"/>
       <Option name="properties"/>
-      <Option type="QString" name="type" value="collection"/>
+      <Option name="type" value="collection" type="QString"/>
     </Option>
   </dataDefinedServerProperties>
   <visibility-presets/>
@@ -1352,7 +2234,7 @@
   <Bookmarks/>
   <ProjectViewSettings UseProjectScales="0">
     <Scales/>
-    <DefaultViewExtent xmin="11544902.74822545796632767" ymax="217594.68980340013513342" ymin="167549.83864597330102697" xmax="11583647.14912153035402298">
+    <DefaultViewExtent xmax="11775223.22899271734058857" ymax="300588.72716055816272274" xmin="11372404.19419229216873646" ymin="84401.12334288662532344">
       <spatialrefsys>
         <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - 85°S to 85°N"],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
         <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
@@ -1366,18 +2248,18 @@
       </spatialrefsys>
     </DefaultViewExtent>
   </ProjectViewSettings>
-  <ProjectTimeSettings timeStep="1" cumulativeTemporalRange="0" frameRate="1" timeStepUnit="h"/>
+  <ProjectTimeSettings timeStep="1" cumulativeTemporalRange="0" timeStepUnit="h" frameRate="1"/>
   <ProjectDisplaySettings>
     <BearingFormat id="bearing">
       <Option type="Map">
-        <Option type="QChar" name="decimal_separator" value=""/>
-        <Option type="int" name="decimals" value="6"/>
-        <Option type="int" name="direction_format" value="0"/>
-        <Option type="int" name="rounding_type" value="0"/>
-        <Option type="bool" name="show_plus" value="false"/>
-        <Option type="bool" name="show_thousand_separator" value="true"/>
-        <Option type="bool" name="show_trailing_zeros" value="false"/>
-        <Option type="QChar" name="thousand_separator" value=""/>
+        <Option name="decimal_separator" value="" type="QChar"/>
+        <Option name="decimals" value="6" type="int"/>
+        <Option name="direction_format" value="0" type="int"/>
+        <Option name="rounding_type" value="0" type="int"/>
+        <Option name="show_plus" value="false" type="bool"/>
+        <Option name="show_thousand_separator" value="true" type="bool"/>
+        <Option name="show_trailing_zeros" value="false" type="bool"/>
+        <Option name="thousand_separator" value="" type="QChar"/>
       </Option>
     </BearingFormat>
   </ProjectDisplaySettings>
