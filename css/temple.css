@@ -52,6 +52,10 @@ ul {
 	font-size: 3em;
 }
 
+.active-card {
+	background-color: red;
+}
+
 /* Lightbox */
 #overlay {
 	background: rgba(0, 0, 0, 0.7);

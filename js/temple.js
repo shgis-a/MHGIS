@@ -10,7 +10,167 @@ function toggleSidebar() {
 	}
 }
 
+function loadSidebarInfo(dataPoint) {
+	sidebar.open('info')
 
+	var html_const = ""
+	var sources_const = "<li><b>Sources</b>:<ul>"
+
+	var sources = {
+		"old": "MHGIS Research(1)",
+		"old2": "MHGIS Research(2)",
+		"a": "马来西亚华文铭刻萃编-傅吾康",
+		"b": "马来西亚华团总名册",
+		"c": "一庙一路网站",
+		"d": "《走进巴生庙宇》",
+		"e": "NUS",
+		"f": "马校 RA",
+		"g": "马来西亚神庙文化（已不存在）",
+		"h": "福建会馆出版物"
+	}
+
+	Object.entries(dataPoint).forEach(function (line) {
+
+		if (line[0].substring(0, 6) == "source") {
+			if (line[1] == "TRUE") {
+				sources_const = sources_const + "<li>" + sources[line[0].slice(7)] + "</li>"
+			}
+		} else if (line[1] != "" && line[1] != null) {
+
+			var line_const = "<li><b>" + line[0] + "</b>:" + line[1] + "</li>"
+			html_const = html_const + line_const
+		}
+	})
+
+	html_const = html_const + sources_const + "</li>"
+
+	$(".point_details").empty().append(html_const)
+
+	$(".gallery").empty()
+
+	if (!dataPoint["no_img"]) {
+		$(".gallery").append("<p>There are no images associated with this temple.</p>")
+	} else {
+		$(".gallery").empty()
+
+		for (var i = 1; i <= dataPoint.no_img; i++) {
+
+			var formattedNumber = ("0" + i).slice(-2);
+
+			var dir = "./" + "temple_img" + "/" + dataPoint.UID + "/" + formattedNumber + ".jpg"
+
+			var htmlcode = "<div class='image row'><div class='img-wrapper'><a href='" + dir + "'><img src='" + dir + "'><div class='img-overlay'><i class='fa fa-plus-circle' aria-hidden='true'></i></div></a></div></div>"
+
+			$(".gallery").append(htmlcode)
+			// gallery lightbox
+			// Gallery image hover
+			$(".img-wrapper").hover(
+				function () {
+					$(this).find(".img-overlay").animate({
+						opacity: 1
+					}, 600);
+				},
+				function () {
+					$(this).find(".img-overlay").animate({
+						opacity: 0
+					}, 600);
+				}
+			);
+
+			// Lightbox
+			var $overlay = $('<div id="overlay"></div>');
+			var $image = $("<img>");
+			var $prevButton = $('<div id="prevButton"><i class="fa fa-chevron-left"></i></div>');
+			var $nextButton = $('<div id="nextButton"><i class="fa fa-chevron-right"></i></div>');
+			var $exitButton = $('<div id="exitButton"><i class="fa fa-times"></i></div>');
+
+			// Add overlay
+			$overlay.append($image).prepend($prevButton).append($nextButton).append($exitButton);
+			$(".gallery").after($overlay);
+
+			// Hide overlay on default
+			$overlay.hide();
+
+			// When an image is clicked
+			$(".img-overlay").click(function (event) {
+				// Prevents default behavior
+				event.preventDefault();
+
+				// Adds href attribute to variable
+				var imageLocation = $(this).parent().attr("href");
+				// Add the image src to $image
+				$image.attr("src", imageLocation);
+				// Fade in the overlay
+				$overlay.fadeIn("slow");
+			});
+
+			// When the overlay is clicked
+			$overlay.click(function () {
+				// Fade out the overlay
+				$(this).fadeOut("slow");
+			});
+
+			// keyboard navigation
+			$(document).keydown(function (e) {
+				if (e.keyCode == 37) {
+					// Left
+					$prevButton.click()
+				} else if (e.keyCode == 39) {
+					// Right
+					$nextButton.click()
+				} else if (e.keyCode == 27) {
+					$exitButton.click()
+				}
+			})
+
+			// When next button is clicked
+			$nextButton.click(function (event) {
+				// Hide the current image
+				$("#overlay img").hide();
+				// Overlay image location
+				var $currentImgSrc = $("#overlay img").attr("src");
+				// Image with matching location of the overlay image
+				var $currentImg = $(".gallery img[src='" + $currentImgSrc + "']");
+				// Finds the next image
+				var $nextImg = $($currentImg.closest(".image").next().find("img"));
+				// All of the images in the gallery
+				var $images = $(".gallery img");
+				// If there is a next image
+				if ($nextImg.length > 0) {
+					// Fade in the next image
+					$("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
+				} else {
+					// Otherwise fade in the first image
+					$("#overlay img").attr("src", $($images[0]).attr("src")).fadeIn(800);
+				}
+				// Prevents overlay from being hidden
+				event.stopPropagation();
+			});
+
+			// When previous button is clicked
+			$prevButton.click(function (event) {
+				// Hide the current image
+				$("#overlay img").hide();
+				// Overlay image location
+				var $currentImgSrc = $("#overlay img").attr("src");
+				// Image with matching location of the overlay image
+				var $currentImg = $('#gallery img[src="' + $currentImgSrc + '"]');
+				// Finds the next image
+				var $nextImg = $($currentImg.closest(".image").prev().find("img"));
+				// Fade in the next image
+				$("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
+				// Prevents overlay from being hidden
+				event.stopPropagation();
+			});
+
+			// When the exit button is clicked
+			$exitButton.click(function () {
+				// Fade out the overlay
+				$("#overlay").fadeOut("slow");
+			});
+		}
+	}
+}
 
 function loadPoints(filtered_terri, filtered_cat) {
 	// Function to load roster layer when changing tab to "temple"
@@ -23,7 +183,7 @@ function loadPoints(filtered_terri, filtered_cat) {
 	$("#cardsContTemple").empty()
 
 	// Load the temple dataset
-	var x = $.getJSON("./json/temples_merged.json", function (data) {
+	var x = $.getJSON("./json/merged_temples.json", function (data) {
 
 		// Iterate through each point...
 		data.forEach(function (dataPoint, index) {
@@ -42,160 +202,7 @@ function loadPoints(filtered_terri, filtered_cat) {
 				color: "#000000",
 				opacity: 0.7
 			}).on("click", function () {
-				sidebar.open('info')
-
-				var name = dataPoint.name_en + " " + dataPoint.name_zh
-
-				$(".det_name").empty().append(name)
-				$(".det_address").empty().append(dataPoint.address)
-				$(".det_states").empty().append(dataPoint.state)
-				$(".det_region").empty().append(dataPoint.region)
-
-				var sources_html = ""
-				var sources = {
-					"old": "MHGIS Research",
-					"a": "马来西亚华文铭刻萃编-傅吾康",
-					"b": "马来西亚华团总名册",
-					"c": "一庙一路网站",
-					"d": "《走进巴生庙宇》",
-					"e": "NUS",
-					"f": "马校 RA",
-					"g": "马来西亚神庙文化（已不存在）",
-					"h": "福建会馆出版物"
-				}
-
-				$.each(sources, function (e) {
-					if (dataPoint[e] == true) {
-						sources_html = sources_html + "<li>" + sources[e] + "</li>"
-					}
-				})
-
-				$(".det_sources").empty().append(sources_html)
-
-				$(".gallery").empty()
-
-				if (!dataPoint["no_img"]) {
-					$(".gallery").append("<p>There are no images associated with this temple.</p>")
-				} else {
-					$(".gallery").empty()
-
-					for (var i = 1; i <= dataPoint.no_img; i++) {
-
-						var formattedNumber = ("0" + i).slice(-2);
-
-						var dir = "./" + "temple_img" + "/" + dataPoint.UID + "/" + formattedNumber + ".jpg"
-
-						var htmlcode = "<div class='image row'><div class='img-wrapper'><a href='" + dir + "'><img src='" + dir + "'><div class='img-overlay'><i class='fa fa-plus-circle' aria-hidden='true'></i></div></a></div></div>"
-
-						$(".gallery").append(htmlcode)
-						// gallery lightbox
-						// Gallery image hover
-						$(".img-wrapper").hover(
-							function () {
-								$(this).find(".img-overlay").animate({
-									opacity: 1
-								}, 600);
-							},
-							function () {
-								$(this).find(".img-overlay").animate({
-									opacity: 0
-								}, 600);
-							}
-						);
-
-						// Lightbox
-						var $overlay = $('<div id="overlay"></div>');
-						var $image = $("<img>");
-						var $prevButton = $('<div id="prevButton"><i class="fa fa-chevron-left"></i></div>');
-						var $nextButton = $('<div id="nextButton"><i class="fa fa-chevron-right"></i></div>');
-						var $exitButton = $('<div id="exitButton"><i class="fa fa-times"></i></div>');
-
-						// Add overlay
-						$overlay.append($image).prepend($prevButton).append($nextButton).append($exitButton);
-						$(".gallery").after($overlay);
-
-						// Hide overlay on default
-						$overlay.hide();
-
-						// When an image is clicked
-						$(".img-overlay").click(function (event) {
-							// Prevents default behavior
-							event.preventDefault();
-
-							// Adds href attribute to variable
-							var imageLocation = $(this).parent().attr("href");
-							// Add the image src to $image
-							$image.attr("src", imageLocation);
-							// Fade in the overlay
-							$overlay.fadeIn("slow");
-						});
-
-						// When the overlay is clicked
-						$overlay.click(function () {
-							// Fade out the overlay
-							$(this).fadeOut("slow");
-						});
-
-						// keyboard navigation
-						$(document).keydown(function (e) {
-							if (e.keyCode == 37) {
-								// Left
-								$prevButton.click()
-							} else if (e.keyCode == 39) {
-								// Right
-								$nextButton.click()
-							} else if (e.keyCode == 27) {
-								$exitButton.click()
-							}
-						})
-
-						// When next button is clicked
-						$nextButton.click(function (event) {
-							// Hide the current image
-							$("#overlay img").hide();
-							// Overlay image location
-							var $currentImgSrc = $("#overlay img").attr("src");
-							// Image with matching location of the overlay image
-							var $currentImg = $(".gallery img[src='" + $currentImgSrc + "']");
-							// Finds the next image
-							var $nextImg = $($currentImg.closest(".image").next().find("img"));
-							// All of the images in the gallery
-							var $images = $(".gallery img");
-							// If there is a next image
-							if ($nextImg.length > 0) {
-								// Fade in the next image
-								$("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
-							} else {
-								// Otherwise fade in the first image
-								$("#overlay img").attr("src", $($images[0]).attr("src")).fadeIn(800);
-							}
-							// Prevents overlay from being hidden
-							event.stopPropagation();
-						});
-
-						// When previous button is clicked
-						$prevButton.click(function (event) {
-							// Hide the current image
-							$("#overlay img").hide();
-							// Overlay image location
-							var $currentImgSrc = $("#overlay img").attr("src");
-							// Image with matching location of the overlay image
-							var $currentImg = $('#gallery img[src="' + $currentImgSrc + '"]');
-							// Finds the next image
-							var $nextImg = $($currentImg.closest(".image").prev().find("img"));
-							// Fade in the next image
-							$("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
-							// Prevents overlay from being hidden
-							event.stopPropagation();
-						});
-
-						// When the exit button is clicked
-						$exitButton.click(function () {
-							// Fade out the overlay
-							$("#overlay").fadeOut("slow");
-						});
-					}
-				}
+				loadSidebarInfo(dataPoint);
 			});
 
 
@@ -244,6 +251,24 @@ var active_card = $(".card")
 
 function fuseLoad(shownUID) {
 
+	var keys = []
+
+	Object.entries(shownUID[0]).forEach(function (line) {
+
+		if (line[0] == "Name_EN" || line[0] == "Name_ZH" || line[0] == "state") {
+			keys.push({
+				name: line[0],
+				weight: 1
+			})
+		} else if (line[0].substring(0, 6) != "source" && line[0] != "UID" && line[0] != "no_img" && line[0] != "latitude" && line[0] != "longitude") {
+			keys.push({
+				name: line[0],
+				weight: 0.5
+			})
+		}
+	})
+
+
 	const options = {
 		shouldSort: true,
 		tokenize: true,
@@ -253,26 +278,7 @@ function fuseLoad(shownUID) {
 		threshold: 0.3,
 		minMatchCharLength: 3,
 		// Search in `author` and in `tags` array
-		keys: [{
-				name: 'name_zh',
-				weight: 1
-					},
-			{
-				name: 'name_en',
-				weight: 1
-					},
-			{
-				name: 'region',
-				weight: 1
-					},
-			{
-				name: "address",
-				weight: 0.5
-					},
-			{
-				name: "state",
-				weight: 0.5
-					}]
+		keys: keys
 	}
 	const fuse = new Fuse(shownUID, options)
 
@@ -295,16 +301,21 @@ function fuseLoad(shownUID) {
 			// TODO: highlight matches
 			var matchIndexes = e.matches
 
-			matchIndexes.forEach(function (e) {})
+			var sources_html = "<div class='card' lat='" + dataPoint.latitude + "' lon='" + dataPoint.longitude + "' id='" + dataPoint.UID + "'> <ul>"
 
-			// Write card text for visible points
-			var card_text = "<div class='card' lat='" + dataPoint.latitude + "' lon='" + dataPoint.longitude + "' id='" + dataPoint.UID + "'> <ul>" + "<li>" + dataPoint.name_en + "</li><li>" + dataPoint.name_zh + "</li><li>Address: " + dataPoint.address + "</li><li>State: " + dataPoint.state + "</li><li> region: " + dataPoint.region + "</li></ul></div>"
-			console.log(card_text)
+			Object.entries(dataPoint).forEach(function (line) {
+				if (line[0].substring(0, 6) != "source" && line[1] != "" && line[1] != null) {
 
-			var popup_text = "<li>" + dataPoint.name_en + "</li><li>" + dataPoint.name_zh + "</li><li>Address: " + dataPoint.address + "</li><li>State: " + dataPoint.state + "</li><li> region: " + dataPoint.region + "</li></ul>"
+					var line = "<li><b>" + line[0] + "</b>:" + line[1] + "</li>"
+					sources_html = sources_html + line
+				}
+			})
+
+			sources_html = sources_html + "</ul></div>"
+
 
 			// Add the card to the document
-			$(".cards-cont").append(card_text)
+			$(".cards-cont").append(sources_html)
 
 			latlng = [dataPoint.latitude, dataPoint.longitude]
 			var pointer = L.circleMarker(latlng, {
@@ -316,178 +327,20 @@ function fuseLoad(shownUID) {
 				color: "#ff0000",
 				opacity: 1
 			}).on("click", function () {
-				sidebar.open('info')
-
-				var name = dataPoint.name_en + " " + dataPoint.name_zh
-
-				$(".det_name").empty().append(name)
-				$(".det_address").empty().append(dataPoint.address)
-				$(".det_states").empty().append(dataPoint.state)
-				$(".det_region").empty().append(dataPoint.region)
-
-				var sources_html = ""
-				var sources = {
-					"old": "MHGIS Research",
-					"a": "马来西亚华文铭刻萃编-傅吾康",
-					"b": "马来西亚华团总名册",
-					"c": "一庙一路网站",
-					"d": "《走进巴生庙宇》",
-					"e": "NUS",
-					"f": "马校 RA",
-					"g": "马来西亚神庙文化（已不存在）",
-					"h": "福建会馆出版物"
-				}
-
-				$.each(sources, function (e) {
-					if (dataPoint[e] == true) {
-						sources_html = sources_html + "<li>" + sources[e] + "</li>"
-					}
-				})
-
-				$(".det_sources").empty().append(sources_html)
-
-				$(".gallery").empty()
-
-				if (!dataPoint["no_img"]) {
-					$(".gallery").append("<p>There are no images associated with this temple.</p>")
-				} else {
-					$(".gallery").empty()
-
-					for (var i = 1; i <= dataPoint.no_img; i++) {
-
-						var formattedNumber = ("0" + i).slice(-2);
-
-						var dir = "./" + "temple_img" + "/" + dataPoint.UID + "/" + formattedNumber + ".jpg"
-
-						var htmlcode = "<div class='image row'><div class='img-wrapper'><a href='" + dir + "'><img src='" + dir + "'><div class='img-overlay'><i class='fa fa-plus-circle' aria-hidden='true'></i></div></a></div></div>"
-
-						$(".gallery").append(htmlcode)
-						// gallery lightbox
-						// Gallery image hover
-						$(".img-wrapper").hover(
-							function () {
-								$(this).find(".img-overlay").animate({
-									opacity: 1
-								}, 600);
-							},
-							function () {
-								$(this).find(".img-overlay").animate({
-									opacity: 0
-								}, 600);
-							}
-						);
-
-						// Lightbox
-						var $overlay = $('<div id="overlay"></div>');
-						var $image = $("<img>");
-						var $prevButton = $('<div id="prevButton"><i class="fa fa-chevron-left"></i></div>');
-						var $nextButton = $('<div id="nextButton"><i class="fa fa-chevron-right"></i></div>');
-						var $exitButton = $('<div id="exitButton"><i class="fa fa-times"></i></div>');
-
-						// Add overlay
-						$overlay.append($image).prepend($prevButton).append($nextButton).append($exitButton);
-						$(".gallery").after($overlay);
-
-						// Hide overlay on default
-						$overlay.hide();
-
-						// When an image is clicked
-						$(".img-overlay").click(function (event) {
-							// Prevents default behavior
-							event.preventDefault();
-
-							// Adds href attribute to variable
-							var imageLocation = $(this).parent().attr("href");
-							// Add the image src to $image
-							$image.attr("src", imageLocation);
-							// Fade in the overlay
-							$overlay.fadeIn("slow");
-						});
-
-						// When the overlay is clicked
-						$overlay.click(function () {
-							// Fade out the overlay
-							$(this).fadeOut("slow");
-						});
-
-						// keyboard navigation
-						$(document).keydown(function (e) {
-							if (e.keyCode == 37) {
-								// Left
-								$prevButton.click()
-							} else if (e.keyCode == 39) {
-								// Right
-								$nextButton.click()
-							} else if (e.keyCode == 27) {
-								$exitButton.click()
-							}
-						})
-
-						// When next button is clicked
-						$nextButton.click(function (event) {
-							// Hide the current image
-							$("#overlay img").hide();
-							// Overlay image location
-							var $currentImgSrc = $("#overlay img").attr("src");
-							// Image with matching location of the overlay image
-							var $currentImg = $(".gallery img[src='" + $currentImgSrc + "']");
-							// Finds the next image
-							var $nextImg = $($currentImg.closest(".image").next().find("img"));
-							// All of the images in the gallery
-							var $images = $(".gallery img");
-							// If there is a next image
-							if ($nextImg.length > 0) {
-								// Fade in the next image
-								$("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
-							} else {
-								// Otherwise fade in the first image
-								$("#overlay img").attr("src", $($images[0]).attr("src")).fadeIn(800);
-							}
-							// Prevents overlay from being hidden
-							event.stopPropagation();
-						});
-
-						// When previous button is clicked
-						$prevButton.click(function (event) {
-							// Hide the current image
-							$("#overlay img").hide();
-							// Overlay image location
-							var $currentImgSrc = $("#overlay img").attr("src");
-							// Image with matching location of the overlay image
-							var $currentImg = $('#gallery img[src="' + $currentImgSrc + '"]');
-							// Finds the next image
-							var $nextImg = $($currentImg.closest(".image").prev().find("img"));
-							// Fade in the next image
-							$("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
-							// Prevents overlay from being hidden
-							event.stopPropagation();
-						});
-
-						// When the exit button is clicked
-						$exitButton.click(function () {
-							// Fade out the overlay
-							$("#overlay").fadeOut("slow");
-						});
-					}
-				}
+				loadSidebarInfo(dataPoint)
 			});
 			highlight_layers.addLayer(pointer)
-
 		})
 		// Selecting points from cards
 
 		// Zoom to point and highlight point if a card is clicked.
 		$(".card").on('click', function () {
-
 			// Change beackground color of active card
 			active_card.removeClass("active-card")
 			active_card = $(this)
 			active_card.addClass("active-card")
 
 			map.flyTo([active_card.attr("lat"), active_card.attr("lon") - 0.01], 15)
-
-			var id = active_card.attr("id")
-
 		})
 	})
 }
