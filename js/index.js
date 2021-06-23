@@ -45,10 +45,10 @@ $(document).ready(function () {
 			pointer = L.circleMarker(latlng, {
 				renderer: renderer,
 				radius: 5,
-				fillColor: "#377eb8",
+				fillColor: "#66c2a5",
+				fillOpacity: 0.5,
 				weight: 1,
-				color: "#000000",
-				opacity: 0.3
+				color: "#000000"
 			}).bindPopup(popup_text, {
 				maxWidth: 300,
 				closeOnClick: false,
@@ -67,15 +67,35 @@ $(document).ready(function () {
 		data.forEach(function (item, index) {
 
 			// Load popup to a buffer variable
-			var popup_text = "<p>Dataset: Temples</p><ul>"
-			var popup_suffix = "</ul>"
+			var html_const = "<p>Dataset: Temples</p><ul>"
+			var sources_const = "<li><b>Sources</b>:<ul>"
+
+			var sources = {
+				"old": "MHGIS Research(1)",
+				"old2": "MHGIS Research(2)",
+				"a": "马来西亚华文铭刻萃编-傅吾康",
+				"b": "马来西亚华团总名册",
+				"c": "一庙一路网站",
+				"d": "《走进巴生庙宇》",
+				"e": "NUS",
+				"f": "马校 RA",
+				"g": "马来西亚神庙文化（已不存在）",
+				"h": "福建会馆出版物"
+			}
 
 			Object.entries(item).forEach(function (line) {
-				var line_buffer = "<li><b>" + line[0] + "</b>:" + line[1] + "</li>"
-				popup_text = popup_text + line_buffer
+				if (line[0].substring(0, 6) == "source") {
+					if (line[1] == "TRUE") {
+						sources_const = sources_const + "<li>" + sources[line[0].slice(7)] + "</li>"
+					}
+				} else if (line[1] != "" && line[1] != null) {
+
+					var line_const = "<li><b>" + line[0] + "</b>: " + line[1] + "</li>"
+					html_const = html_const + line_const
+				}
 			})
 
-			popup_text = popup_text + popup_suffix
+			html_const = html_const + sources_const + "</li>"
 
 			UID = item["UID"]
 
@@ -85,10 +105,54 @@ $(document).ready(function () {
 			pointer = L.circleMarker(latlng, {
 				renderer: renderer,
 				radius: 5,
-				fillColor: "#ff7f00",
+				fillColor: "#fc8d62",
+				fillOpacity: 0.5,
 				weight: 1,
 				color: "#000000",
-				opacity: 0.3
+				opacity: 1
+			}).bindPopup(html_const, {
+				maxWidth: 300,
+				closeOnClick: false,
+				keepInView: false
+			})
+
+			// Add the point to the layer group
+			layers.addLayer(pointer)
+		})
+	})
+
+	// Load new villages
+	$.getJSON("./json/new_village_processed.json", function (data) {
+
+		// Iterate through each point...
+		data.forEach(function (item, index) {
+
+			// Load popup to a buffer variable
+			var popup_text = "<p>Dataset: New Villages</p><ul>"
+			var popup_suffix = "</ul>"
+
+			var UID = 0
+
+			Object.entries(item).forEach(function (line) {
+				var line_buffer = "<li><b>" + line[0] + "</b>: " + line[1] + "</li>"
+				popup_text = popup_text + line_buffer
+			})
+
+			popup_text = popup_text + popup_suffix
+
+			UID = UID + 1
+
+			// Draw the point and attach the popup text
+			latlng = [item.lat, item.lng]
+			var pointer = UID
+			pointer = L.circleMarker(latlng, {
+				renderer: renderer,
+				radius: 5,
+				fillColor: "#8da0cb",
+				fillOpacity: 0.5,
+				weight: 1,
+				color: "#000000",
+				opacity: 1
 			}).bindPopup(popup_text, {
 				maxWidth: 300,
 				closeOnClick: false,
