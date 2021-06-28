@@ -44,21 +44,51 @@ function loadPoints(filtered_terri, filtered_cat) {
 	$("#cardsContTemple").empty()
 
 	// Load the temple dataset
-	var x = $.getJSON("./json/new_village_processed.json", function (data) {
+	$.getJSON("./json/new_village_processed.json", function (data) {
+		var year_values = data.map(x => x.Founding_Year).filter(x => x !== null),
+			max_year = Math.max.apply(null, year_values),
+			min_year = Math.min.apply(null, year_values),
+			breaks = chroma.limits(year_values, 'q', 4);
+
+
+		function getColour(d) {
+			if (d == null) {
+				return "#d1d1d1"
+			} else {
+				var scale = chroma.scale('YlOrRd').classes(breaks);
+				return scale(d).hex();
+			}
+		}
+
+		$(".legend").append("<li> <div class='swatch' style='background-color: #d1d1d1'></div> No Data </li>")
+
+		for (let i = 0; i < breaks.length - 1; i++) {
+
+			var ThisYear = getColour(breaks[i] + 1),
+				lowYear = breaks[i],
+				highYear = breaks[i + 1] - 1
+
+			if (highYear == max_year - 1) {
+				highYear = highYear + 1
+			}
+
+			var constructor = "<li> <div class='swatch' style='background-color: " + getColour(breaks[i]) + "'" + "></div>" + lowYear + " - " + highYear + "</li>"
+
+			$(".legend").append(constructor)
+		}
 
 		// Iterate through each point...
 		data.forEach(function (dataPoint, index) {
 
 			var UID = dataPoint["UID"],
-				photos_color = (!!dataPoint["no_img"]) ? "#a65628" : "#377eb8";
-			// Draw the point and attach the popup text
-			latlng = [dataPoint.lat, dataPoint.lng]
+				// Draw the point and attach the popup text
+				latlng = [dataPoint.lat, dataPoint.lng]
 			var pointer = dataPoint["UID"]
 			pointer = L.circleMarker(latlng, {
 				renderer: renderer,
 				radius: 5,
-				fillColor: photos_color,
-				fillOpacity: 0.7,
+				fillColor: getColour(dataPoint.Founding_Year),
+				fillOpacity: 1,
 				weight: 1,
 				color: "#000000",
 				opacity: 0.7
